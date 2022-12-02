@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
     extend: {
+      backgroundImage: {
+        'grain-texture': "url('/images/grain-texture.png')",
+      },
       colors: {
         'primary-black': '#141414',
         'primary-blue': '#0E57FF',
