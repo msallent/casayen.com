@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.tsx'],
@@ -12,6 +14,10 @@ module.exports = {
         'secondary-black': '#101010',
         'secondary-blue': '#003BC3',
         'secondary-white': '#F5F5F5',
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)', ...fontFamily.sans],
+        serif: ['var(--font-ebgaramond)', ...fontFamily.serif],
       },
     },
   },
