@@ -17,7 +17,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
-        serif: ['var(--font-ebgaramond)', ...fontFamily.serif],
+        serif: ['var(--font-eb-garamond)', ...fontFamily.serif],
+        title: ['var(--font-pp-neue-world)', ...fontFamily.serif],
       },
     },
   },
