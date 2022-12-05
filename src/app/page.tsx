@@ -1,5 +1,9 @@
-import { Title } from '@/components/Title';
+import { Navbar } from '@/components/Navbar';
 
 export default function Home() {
-  return <Title>Hello world!</Title>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
