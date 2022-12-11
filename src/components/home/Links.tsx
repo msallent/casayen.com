@@ -1,9 +1,10 @@
+import Image from 'next/image';
 import { LinkFeatured } from '@/components/LinkFeatured';
 import SphereSVG from '@/assets/svgs/sphere.svg';
 import SingleArrowSVG from '@/assets/svgs/single-arrow.svg';
 import OrbitSVG from '@/assets/svgs/orbit.svg';
 import SphereTextSVG from '@/assets/svgs/sphere-text.svg';
-import GradientSVG from '@/assets/svgs/gradient-2.svg';
+import backgroundGradient from '@/assets/images/gradient-2.png';
 
 const LINKS = [
   { label: 'Yoniverse', path: '/' },
@@ -32,7 +33,13 @@ export function Links() {
         <SingleArrowSVG className="w-3 ml-auto mt-2.5 mr-px" />
       </div>
 
-      <GradientSVG className="absolute -top-1/2 right-0 -z-10" />
+      <Image
+        aria-hidden
+        src={backgroundGradient}
+        alt="Background gradient"
+        className="absolute -top-1/2 right-0 -z-10"
+        loading="eager"
+      />
 
       <ul className="mt-20 mx-5">
         {LINKS.map((link, index) => (

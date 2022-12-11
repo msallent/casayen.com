@@ -1,12 +1,19 @@
+import Image from 'next/image';
 import CirclesSVG from '@/assets/svgs/circles.svg';
 import StarsSVG from '@/assets/svgs/stars.svg';
 import DoubleArrowSVG from '@/assets/svgs/double-arrow.svg';
-import GradientSVG from '@/assets/svgs/gradient-1.svg';
+import backgroundGradient from '@/assets/images/gradient-1.png';
 
 export function Hero() {
   return (
     <section className="mt-24 text-primary-blue">
-      <GradientSVG className="absolute top-0 left-0 -z-10" />
+      <Image
+        aria-hidden
+        src={backgroundGradient}
+        alt="Background gradient"
+        className="absolute top-0 left-0 w-full -z-10"
+        loading="eager"
+      />
 
       <div className="flex flex-col font-title-full text-[90px] w-full">
         <div className="relative flex items-center gap-1.5 ml-[4%]">
