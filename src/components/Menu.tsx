@@ -14,7 +14,7 @@ const MENU_LINKS = [
   { label: 'Blog', path: '/' },
   { label: 'FAQ', path: '/' },
   { label: 'Contacto', path: '/' },
-];
+] as const;
 
 type MenuProps = {
   onClose: () => void;
@@ -22,7 +22,7 @@ type MenuProps = {
 
 export function Menu({ onClose }: MenuProps) {
   return createPortal(
-    <div className="fixed inset-0 px-5 py-[30px] overflow-auto bg-primary-blue">
+    <div className="fixed inset-0 px-5 py-[30px] overflow-auto z-20 bg-primary-blue">
       <div className="flex items-center justify-between">
         <YenSVG className="h-8" />
         <button type="button" aria-label="Cerrar menu" onClick={onClose}>
