@@ -16,7 +16,12 @@ export function Footer() {
         </a>
         <span className="uppercase mt-8 mb-2">Social</span>
         <div className="flex justify-between items-end">
-          <a href="https://instagram.com/casa.yen" target="_blank" rel="noreferrer">
+          <a
+            aria-label="Instagram"
+            href="https://instagram.com/casa.yen"
+            target="_blank"
+            rel="noreferrer"
+          >
             <InstagramSVG className="w-8" />
           </a>
           <span className="text-base underline">TÉRMINOS Y CONDICIONES</span>
