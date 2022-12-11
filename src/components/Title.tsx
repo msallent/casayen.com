@@ -2,19 +2,23 @@ import { ReactNode } from 'react';
 import classNames from 'classnames';
 
 type TitleSize = 'small' | 'default';
+type TitleVariant = 'primary' | 'secondary';
 
 type TitleProps = {
   size?: TitleSize;
+  variant?: TitleVariant;
   children: ReactNode;
 };
 
-export function Title({ size = 'default', children }: TitleProps) {
+export function Title({ size = 'default', variant = 'primary', children }: TitleProps) {
   return (
     <h1
       className={classNames(
         'font-title-full text-primary-blue',
         { 'text-[200px]': size === 'default' },
-        { 'text-[60px]': size === 'small' }
+        { 'text-[60px]': size === 'small' },
+        { 'text-primary-blue': variant === 'primary' },
+        { 'text-primary-black': variant === 'secondary' }
       )}
     >
       {children}
