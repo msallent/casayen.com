@@ -14,7 +14,7 @@ const LINKS = [
 
 export function Links() {
   return (
-    <section className="mt-32 mb-32 relative text-primary-blue">
+    <section className="mt-32 relative text-primary-blue">
       <div className="flex flex-col ml-5">
         <span className="leading-5">UNITE AL</span>
         <span className="leading-5">VIAJE</span>
