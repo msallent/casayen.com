@@ -17,7 +17,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="mx-5 mt-[30px]">
+    <nav className="mx-5 mt-[30px]">
       <div className="flex items-center justify-between">
         <YenSVG className="h-8" />
         <button type="button" aria-label="Abrir menu" onClick={handleOpenMenu}>
@@ -25,6 +25,6 @@ export function Navbar() {
         </button>
       </div>
       {isMenuOpen && <Menu onClose={handleCloseMenu} />}
-    </div>
+    </nav>
   );
 }
