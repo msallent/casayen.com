@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { EB_Garamond, Inter } from '@next/font/google';
 import localFont from '@next/font/local';
 import { Navbar } from '@/components/Navbar';
-
+import { Footer } from '@/components/Footer';
 import '@/styles/globals.css';
 
 type LayoutProps = {
@@ -24,6 +24,7 @@ export default function Layout({ children }: LayoutProps) {
       <body className="overscroll-none bg-primary-black selection:bg-secondary-white">
         <Navbar />
         <main className="overflow-hidden">{children}</main>
+        <Footer />
         <div className="fixed left-0 top-0 z-20 mix-blend-overlay bg-grain-texture w-full h-full pointer-events-none" />
       </body>
     </html>
