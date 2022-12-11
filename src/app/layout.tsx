@@ -21,7 +21,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
       <head />
-      <body className="overscroll-none bg-primary-black selection:bg-secondary-white">
+      <body className="overscroll-none text-sm bg-primary-black selection:bg-secondary-white">
         <Navbar />
         <main className="overflow-hidden">{children}</main>
         <Footer />

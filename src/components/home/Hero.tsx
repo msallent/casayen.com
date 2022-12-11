@@ -37,7 +37,7 @@ export function Hero() {
 
       <DoubleArrowSVG className="w-6 mt-6 mx-auto mb-10" />
 
-      <div className="text-sm relative left-[-22px] whitespace-nowrap">
+      <div className="relative left-[-22px] whitespace-nowrap">
         COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
         <span className="mx-1.5">≈</span>COSMIC SEXUALITY
       </div>

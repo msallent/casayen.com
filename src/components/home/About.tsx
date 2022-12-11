@@ -10,7 +10,7 @@ export function About() {
       <div className="relative text-center">
         <div className="mb-4">¿QUÉ ES YEN?</div>
         <Title size="small">Yen es un proyecto de Sexualidad Consciente</Title>
-        <div className="mt-4 uppercase text-sm leading-[18px]">
+        <div className="mt-4 uppercase leading-[18px]">
           Un espacio para la liberación del cuerpo y el corazón, la recuperación del placer, la
           soberanía y la autogestión.{' '}
           <span className="italic font-serif">

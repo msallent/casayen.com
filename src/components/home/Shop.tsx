@@ -14,7 +14,7 @@ export function Shop() {
         <Title variant="secondary" size="small">
           Productos YEN
         </Title>
-        <div className="mt-4 mb-11 w-[330px] uppercase text-sm leading-[18px]">
+        <div className="mt-4 mb-11 w-[330px] uppercase leading-[18px]">
           Encontrá en un solo lugar todas las herramientas que necesitás para embarcarte en tu viaje
           de auto-descubrimiento y reprogramación sexual. productos ética y responsablemente
           producidos.
