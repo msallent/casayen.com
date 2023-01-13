@@ -1,11 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import NextLink from 'next/link';
 import { Menu } from '@/components/Menu';
 import YenSVG from '@/assets/svgs/yen.svg';
 import MenuSVG from '@/assets/svgs/menu.svg';
 
 export function Navbar() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleOpenMenu = () => {
@@ -16,10 +19,16 @@ export function Navbar() {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
   return (
     <nav className="mx-5 mt-[30px]">
       <div className="flex items-center justify-between">
-        <YenSVG className="h-8" />
+        <NextLink href="/">
+          <YenSVG className="h-8" />
+        </NextLink>
         <button type="button" aria-label="Abrir menu" onClick={handleOpenMenu}>
           <MenuSVG className="w-12" />
         </button>
