@@ -11,9 +11,7 @@ export function Shop() {
 
       <div className="relative pt-40 mx-5 text-center flex flex-col items-center">
         <GlyphsSVG className="w-28 mb-8" />
-        <Title variant="secondary" size="small">
-          Productos YEN
-        </Title>
+        <Title variant="secondary">Productos YEN</Title>
         <div className="mt-4 mb-11 w-[330px] uppercase leading-[18px]">
           Encontrá en un solo lugar todas las herramientas que necesitás para embarcarte en tu viaje
           de auto-descubrimiento y reprogramación sexual. productos ética y responsablemente
