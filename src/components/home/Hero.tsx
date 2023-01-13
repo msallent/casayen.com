@@ -15,7 +15,7 @@ export function Hero() {
         loading="eager"
       />
 
-      <div className="flex flex-col font-title-full text-[90px] w-full">
+      <div className="flex flex-col font-title-full text-[24vw] w-full">
         <div className="relative flex items-center gap-1.5 ml-[4%]">
           <div className="text-[60px]">→</div>
           <div className="font-sans text-xs tracking-normal w-20 text-right leading-[14px]">
@@ -28,7 +28,7 @@ export function Hero() {
         <h1 className="ml-[4%]">INTER-</h1>
         <h1 className="ml-[18%]">GALÁCTICO</h1>
         <h1 className="ml-[14%]">DE REPRO-</h1>
-        <h1 className="ml-[4%]">GRAMACIÓN</h1>
+        <h1 className="ml-[4%]">GRAMACION</h1>
         <div className="relative flex items-center ml-[23%]">
           <h1>SEXUAL</h1>
           <div className="absolute top-[-54%] right-[25%] text-[40px] rotate-90">‡</div>
