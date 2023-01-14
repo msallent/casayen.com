@@ -10,7 +10,7 @@ import InstagramSVG from '@/assets/svgs/instagram.svg';
 import backgroundGradient1 from '@/assets/images/gradient-2.png';
 import backgroundGradient2 from '@/assets/images/gradient-3.png';
 
-export default function Talleres() {
+export default function Yen() {
   return (
     <>
       <section className="mt-4 mx-5">
