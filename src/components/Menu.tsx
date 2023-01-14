@@ -10,7 +10,7 @@ const MENU_LINKS = [
   { label: 'Yoniverse', path: '/' },
   { label: 'Talleres Online', path: '/talleres-online' },
   { label: 'Presenciales', path: '/' },
-  { label: 'Yen', path: '/' },
+  { label: 'Yen', path: '/detras-de-yen' },
   { label: 'Blog', path: '/' },
   { label: 'FAQ', path: '/' },
   { label: 'Contacto', path: '/' },
