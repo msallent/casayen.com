@@ -1,12 +1,23 @@
+'use client';
+
+import { useState } from 'react';
 import { Expandable } from '@/components/Expandable';
+import { ModalBuy } from '@/components/ModalBuy';
 
 export function List() {
+  const [selectedTaller, setSelectedTaller] = useState(null);
+
+  const handleCloseBuyModal = () => {
+    setSelectedTaller(null);
+  };
+
   return (
     <>
       <div className="uppercase italic font-serif mt-12 text-primary-blue">
         (!) Importante: los videos estarán disponibles por 10 días (una vez que envíes tu
         comprobante de pago)
       </div>
+
       <div className="mt-5 mb-20">
         <Expandable
           title="Yoni Magic"
@@ -44,6 +55,8 @@ export function List() {
           </div>
         </Expandable>
       </div>
+
+      {!!selectedTaller && <ModalBuy onClose={handleCloseBuyModal} />}
     </>
   );
 }
