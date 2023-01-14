@@ -24,7 +24,6 @@ export function List() {
           description="Como empezar a usar el huevo Yoni"
           buttonLabel={{ closed: 'Info', open: 'Cerrar' }}
         >
-          0
           <div className="text-primary-blue">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
             optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
