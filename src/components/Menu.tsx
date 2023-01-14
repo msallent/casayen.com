@@ -26,7 +26,7 @@ export function Menu({ onClose }: MenuProps) {
       <div className="flex items-center justify-between">
         <YenSVG className="h-8" />
         <button type="button" aria-label="Cerrar menu" onClick={onClose}>
-          <CloseSVG className="w-8 h-8" />
+          <CloseSVG className="w-8 h-8 text-white" />
         </button>
       </div>
       <SmallStarsSVG className="w-6 h-6 mt-2 mx-auto mb-3" />
