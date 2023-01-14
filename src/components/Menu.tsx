@@ -12,7 +12,7 @@ const MENU_LINKS = [
   { label: 'Presenciales', path: '/' },
   { label: 'Yen', path: '/detras-de-yen' },
   { label: 'Blog', path: '/' },
-  { label: 'FAQ', path: '/' },
+  { label: 'FAQ', path: '/faq' },
   { label: 'Contacto', path: '/' },
 ] as const;
 
