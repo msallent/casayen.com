@@ -1,4 +1,4 @@
-import { List } from '@/components/talleres/List';
+import { List } from '@/components/talleres-online/List';
 import { Title } from '@/components/Title';
 import { TitlePage } from '@/components/TitlePage';
 

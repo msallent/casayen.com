@@ -8,7 +8,7 @@ import backgroundGradient from '@/assets/images/gradient-2.png';
 
 const LINKS = [
   { label: 'Yoniverse', path: '/' },
-  { label: 'Talleres Online', path: '/' },
+  { label: 'Talleres Online', path: '/talleres-online' },
   { label: 'Presenciales', path: '/' },
 ] as const;
 

@@ -8,7 +8,7 @@ import SmallStarsSVG from '@/assets/svgs/small-stars.svg';
 const MENU_LINKS = [
   { label: 'Home', path: '/' },
   { label: 'Yoniverse', path: '/' },
-  { label: 'Talleres Online', path: '/talleres' },
+  { label: 'Talleres Online', path: '/talleres-online' },
   { label: 'Presenciales', path: '/' },
   { label: 'Yen', path: '/' },
   { label: 'Blog', path: '/' },
