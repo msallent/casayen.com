@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/Button';
+import { Title } from '@/components/Title';
 import CloseSVG from '@/assets/svgs/close.svg';
 import CirclesSVG from '@/assets/svgs/circles-2.svg';
 import backgroundGradient from '@/assets/images/gradient-1.png';
@@ -23,10 +24,12 @@ export function ModalBuy({ onClose }: ModalBuyProps) {
 
         <div className="flex flex-col items-center justify-center text-primary-blue">
           <div className="flex flex-col items-center px-5 w-full">
-            <div className="font-title-full text-[40px] mb-2.5 mx-10">Yoni Magic</div>
-            <span className="uppercase text-center font-medium mx-10 leading-[18px]">
+            <div className="mx-10">
+              <Title size="small">Yoni Magic</Title>
+            </div>
+            <div className="uppercase text-center font-medium mt-2.5 mx-10 leading-[18px]">
               Como empezar a usar el huevo Yoni
-            </span>
+            </div>
           </div>
 
           <div className="my-6 w-full relative">

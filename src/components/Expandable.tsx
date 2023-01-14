@@ -2,6 +2,7 @@
 
 import { ReactNode, useState } from 'react';
 import classNames from 'classnames';
+import { Title } from '@/components/Title';
 import PlusSVG from '@/assets/svgs/plus.svg';
 
 type ExpandableProps = {
@@ -36,8 +37,8 @@ export function Expandable({
     >
       <div className="flex items-start justify-between text-primary-blue">
         <div className="max-w-[250px]">
-          <div className="font-title-full text-[40px] mb-2.5">{title}</div>
-          <span className="uppercase">{description}</span>
+          <Title size="small">{title}</Title>
+          <div className="uppercase mt-2.5">{description}</div>
         </div>
         <button className="flex flex-col items-end" onClick={toggle}>
           <PlusSVG className={classNames('w-8 h-8 mb-2', { 'rotate-45': isExpanded })} />
