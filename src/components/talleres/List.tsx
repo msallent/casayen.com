@@ -26,9 +26,9 @@ export function List() {
           buttonLabel={{ closed: 'Info', open: 'Cerrar' }}
         >
           <div className="text-primary-blue">
-            LoremmLorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas
-            qui optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam
-            perferendis, tempora laborum, ea omnis sed sequi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
+            optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
+            tempora laborum, ea omnis sed sequi!
           </div>
         </Expandable>
         <Expandable
@@ -38,9 +38,9 @@ export function List() {
           withBottomBorder
         >
           <div className="text-primary-blue">
-            LoremmLorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas
-            qui optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam
-            perferendis, tempora laborum, ea omnis sed sequi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
+            optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
+            tempora laborum, ea omnis sed sequi!
           </div>
         </Expandable>
       </div>
