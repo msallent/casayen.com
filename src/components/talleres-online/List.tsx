@@ -22,7 +22,7 @@ export function List() {
         <Expandable
           title="Yoni Magic"
           description="Como empezar a usar el huevo Yoni"
-          buttonLabel={{ closed: 'Info', open: 'Cerrar' }}
+          buttonLabel={{ collapsed: 'Info', expanded: 'Cerrar' }}
         >
           <div className="text-primary-blue">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
@@ -33,7 +33,7 @@ export function List() {
         <Expandable
           title="Detox Hormonal y Reconexión Sexual"
           description="No Spoon + Yen"
-          buttonLabel={{ closed: 'Info', open: 'Cerrar' }}
+          buttonLabel={{ collapsed: 'Info', expanded: 'Cerrar' }}
         >
           <div className="text-primary-blue">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
@@ -44,7 +44,7 @@ export function List() {
         <Expandable
           title="Sexualidad Consciente ¹⁰¹"
           description="Si no sabés por dónde empezar"
-          buttonLabel={{ closed: 'Info', open: 'Cerrar' }}
+          buttonLabel={{ collapsed: 'Info', expanded: 'Cerrar' }}
           withBottomBorder
         >
           <div className="text-primary-blue">

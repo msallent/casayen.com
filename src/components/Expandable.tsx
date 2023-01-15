@@ -10,8 +10,8 @@ type ExpandableProps = {
   children: ReactNode;
   description?: string;
   buttonLabel?: {
-    closed: string;
-    open: string;
+    collapsed: string;
+    expanded: string;
   };
   withBottomBorder?: boolean;
 };
@@ -41,11 +41,17 @@ export function Expandable({
           {description && <div className="uppercase mt-2.5">{description}</div>}
         </div>
 
-        <button className="flex flex-col items-end" onClick={toggle}>
+        <button
+          className="flex flex-col items-end"
+          onClick={toggle}
+          aria-label={
+            isExpanded ? buttonLabel?.expanded || 'Colapsar' : buttonLabel?.collapsed || 'Expandir'
+          }
+        >
           <PlusSVG className={classNames('w-8 h-8 mb-2', { 'rotate-45': isExpanded })} />
           {buttonLabel && (
             <span className="uppercase">
-              {isExpanded ? buttonLabel?.open : buttonLabel?.closed}
+              {isExpanded ? buttonLabel?.expanded : buttonLabel?.collapsed}
             </span>
           )}
         </button>
