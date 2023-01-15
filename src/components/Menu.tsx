@@ -22,16 +22,16 @@ type MenuProps = {
 
 export function Menu({ onClose }: MenuProps) {
   return createPortal(
-    <div className="fixed inset-0 px-5 py-[30px] overflow-auto z-10 bg-primary-blue">
+    <div className="fixed inset-0 z-10 overflow-auto bg-primary-blue px-5 py-[30px]">
       <div className="flex items-center justify-between">
         <YenLogoSVG className="h-8" />
 
         <button type="button" aria-label="Cerrar menu" onClick={onClose}>
-          <CloseSVG className="w-8 h-8 text-white" />
+          <CloseSVG className="h-8 w-8 text-white" />
         </button>
       </div>
 
-      <StarsSVG className="w-6 h-6 mt-2 mx-auto mb-3" />
+      <StarsSVG className="mx-auto mt-2 mb-3 h-6 w-6" />
 
       <Button variant="secondary">
         <a
@@ -44,7 +44,7 @@ export function Menu({ onClose }: MenuProps) {
         </a>
       </Button>
 
-      <ul className="space-y-6 mt-12">
+      <ul className="mt-12 space-y-6">
         {MENU_LINKS.map((link, index) => (
           <li key={index}>
             <Link href={link.path}>{link.label}</Link>

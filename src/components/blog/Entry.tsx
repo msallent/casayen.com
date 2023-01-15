@@ -11,11 +11,11 @@ type EntryProps = {
 
 export function Entry({ title, url, description }: EntryProps) {
   return (
-    <div className="flex flex-col pb-6 border-b border-primary-blue">
+    <div className="flex flex-col border-b border-primary-blue pb-6">
       <Image
         src={blogEntryPlaceholderImage}
         alt="Blog entry"
-        className="w-full mb-6"
+        className="mb-6 w-full"
         placeholder="blur"
       />
 
@@ -25,7 +25,7 @@ export function Entry({ title, url, description }: EntryProps) {
 
       <NextLink
         href={url}
-        className="mt-3 font-serif font-medium uppercase tracking-[0.075em] [text-shadow:0_0_7px_rgba(255,255,255,0.65)] text-secondary-white"
+        className="mt-3 font-serif font-medium uppercase tracking-[0.075em] text-secondary-white [text-shadow:0_0_7px_rgba(255,255,255,0.65)]"
       >
         Leer más →
       </NextLink>

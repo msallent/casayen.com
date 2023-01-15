@@ -6,7 +6,7 @@ type BadgeProps = {
 
 export function Badge({ children }: BadgeProps) {
   return (
-    <span className="uppercase font-medium px-1.5 py-0.5 border rounded-[40px] border-primary-blue">
+    <span className="rounded-[40px] border border-primary-blue px-1.5 py-0.5 font-medium uppercase">
       {children}
     </span>
   );

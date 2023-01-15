@@ -7,27 +7,27 @@ import backgroundGradient from '@/assets/images/gradient-1.webp';
 export function Hero() {
   return (
     <section className="mt-24 text-primary-blue">
-      <div className="flex flex-col font-title-full text-[24vw] w-full">
-        <div className="relative flex items-center gap-1.5 ml-[4%]">
+      <div className="font-title-full flex w-full flex-col text-[24vw]">
+        <div className="relative ml-[4%] flex items-center gap-1.5">
           <div className="text-[60px]">→</div>
-          <div className="font-sans text-xs tracking-normal w-20 text-right leading-[14px]">
+          <div className="w-20 text-right font-sans text-xs leading-[14px] tracking-normal">
             BIENVENIDX A TU
           </div>
           <h1>VIAJE</h1>
-          <EllipsisSVG className="absolute top-[-30%] left-[4%] w-[230px] z-10 pointer-events-none" />
-          <StarsSVG className="absolute top-[-60%] left-[80%] w-[49px] z-10 pointer-events-none" />
+          <EllipsisSVG className="pointer-events-none absolute top-[-30%] left-[4%] z-10 w-[230px]" />
+          <StarsSVG className="pointer-events-none absolute top-[-60%] left-[80%] z-10 w-[49px]" />
         </div>
         <h1 className="ml-[4%]">INTER-</h1>
         <h1 className="ml-[18%]">GALÁCTICO</h1>
         <h1 className="ml-[14%]">DE REPRO-</h1>
         <h1 className="ml-[4%]">GRAMACION</h1>
-        <div className="relative flex items-center ml-[23%]">
+        <div className="relative ml-[23%] flex items-center">
           <h1>SEXUAL</h1>
-          <div className="absolute top-[-54%] right-[25%] text-[40px] rotate-90">‡</div>
+          <div className="absolute top-[-54%] right-[25%] rotate-90 text-[40px]">‡</div>
         </div>
       </div>
 
-      <ChevronDouble className="w-6 mt-6 mx-auto mb-10" />
+      <ChevronDouble className="mx-auto mt-6 mb-10 w-6" />
 
       <div className="relative left-[-22px] whitespace-nowrap">
         COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
@@ -38,7 +38,7 @@ export function Hero() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 w-full -z-10"
+        className="absolute top-0 left-0 -z-10 w-full"
         placeholder="blur"
         priority
       />

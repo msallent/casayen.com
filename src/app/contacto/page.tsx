@@ -10,22 +10,22 @@ import backgroundGradient from '@/assets/images/gradient-3.webp';
 
 export default function Contacto() {
   return (
-    <section className="mt-16 mx-5">
+    <section className="mx-5 mt-16">
       <div className="uppercase text-primary-blue">
-        <div className="flex items-baseline justify-between pt-7 pb-3 border-y border-primary-blue">
+        <div className="flex items-baseline justify-between border-y border-primary-blue pt-7 pb-3">
           <Title>Tenés dudas /</Title>
           <Globes1SVG className="h-5" />
         </div>
-        <div className="flex items-baseline justify-between pt-7 pb-3 border-b border-primary-blue">
+        <div className="flex items-baseline justify-between border-b border-primary-blue pt-7 pb-3">
           <Globes2SVG className="h-5" />
           <div className="relative flex items-center">
             <Title>comentarios?</Title>
-            <div className="absolute font-title-full top-[-12px] left-[-25px] text-[30px] rotate-90">
+            <div className="font-title-full absolute top-[-12px] left-[-25px] rotate-90 text-[30px]">
               ‡
             </div>
           </div>
         </div>
-        <div className="flex items-baseline justify-end pt-7 pb-3 border-b border-primary-blue">
+        <div className="flex items-baseline justify-end border-b border-primary-blue pt-7 pb-3">
           <div className="relative flex items-center">
             <Title>→→ hablemos</Title>
             <EllipsisSVG className="absolute top-[-15px] right-[-20px] w-full" />
@@ -34,21 +34,21 @@ export default function Contacto() {
 
         <ul className="mt-10 mb-16 space-y-5">
           <li className="flex items-center gap-5">
-            <ChevronSVG className="rotate-[270deg] w-5" />
+            <ChevronSVG className="w-5 rotate-[270deg]" />
             <div>
               <Badge>Yen</Badge>
               <Badge>info@casayen.com</Badge>
             </div>
           </li>
           <li className="flex items-center gap-5">
-            <ChevronSVG className="rotate-[270deg] w-5" />
+            <ChevronSVG className="w-5 rotate-[270deg]" />
             <div>
               <Badge>Shop</Badge>
               <Badge>shop@casayen.com</Badge>
             </div>
           </li>
           <li className="flex items-center gap-5">
-            <ChevronSVG className="rotate-[270deg] w-5" />
+            <ChevronSVG className="w-5 rotate-[270deg]" />
             <div>
               <Badge>Instagram</Badge>
               <Badge>@casa.yen</Badge>
@@ -65,7 +65,7 @@ export default function Contacto() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 w-full -z-10"
+        className="absolute top-0 left-0 -z-10 w-full"
         placeholder="blur"
         priority
       />

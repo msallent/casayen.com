@@ -5,10 +5,10 @@ import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 export default function Talleres() {
   return (
-    <section className="mt-4 mx-5">
+    <section className="mx-5 mt-4">
       <TitlePage>TALLERES ONLINE</TitlePage>
 
-      <div className="uppercase mt-4 text-center text-primary-blue">
+      <div className="mt-4 text-center uppercase text-primary-blue">
         En esta sección vas a encontrar TODOS los talleres pregrabados para que hagas a tu propio
         ritmo.
       </div>
@@ -19,7 +19,7 @@ export default function Talleres() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 w-full -z-10"
+        className="absolute top-0 left-0 -z-10 w-full"
         placeholder="blur"
         priority
       />

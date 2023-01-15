@@ -8,8 +8,8 @@ type TitlePageProps = {
 
 export function TitlePage({ children }: TitlePageProps) {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <StarsSVG className="w-6 h-6 mt-2 mx-auto mb-4 text-primary-blue" />
+    <div className="flex flex-col items-center justify-center">
+      <StarsSVG className="mx-auto mt-2 mb-4 h-6 w-6 text-primary-blue" />
       <Title>{children}</Title>
     </div>
   );

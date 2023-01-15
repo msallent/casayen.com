@@ -14,7 +14,7 @@ import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 export default function Yen() {
   return (
     <>
-      <section className="mt-4 mx-5">
+      <section className="mx-5 mt-4">
         <TitlePage>DETRÁS DE YEN</TitlePage>
 
         <div className="relative mb-8">
@@ -60,10 +60,10 @@ export default function Yen() {
           priority
         />
 
-        <div className="flex flex-col items-center justify-center text-center mt-20 mb-16">
-          <div className="flex items-center gap-2 mb-4">
+        <div className="mt-20 mb-16 flex flex-col items-center justify-center text-center">
+          <div className="mb-4 flex items-center gap-2">
             <div className="w-10 border border-primary-blue" />
-            <span className="uppercase font-medium text-primary-blue">Convertí mi proceso de</span>
+            <span className="font-medium uppercase text-primary-blue">Convertí mi proceso de</span>
           </div>
           <div className="relative">
             <Title>
@@ -74,7 +74,7 @@ export default function Yen() {
             </Title>
             <Image
               src={yenUterusImage}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] pb-3"
+              className="absolute top-1/2 left-1/2 w-[200px] -translate-x-1/2 -translate-y-1/2 pb-3"
               placeholder="blur"
               alt="Uterus"
             />
@@ -87,7 +87,7 @@ export default function Yen() {
             <div>↓</div>
             <div>↓</div>
           </div>
-          <div className="flex flex-col items-end text-2xl space-y-0.5">
+          <div className="flex flex-col items-end space-y-0.5 text-2xl">
             <a href="mailto:info@casayen.com">info@casayen.com</a>
             <a
               className="flex items-center"
@@ -96,7 +96,7 @@ export default function Yen() {
               target="_blank"
               rel="noreferrer"
             >
-              <InstagramSVG className="w-5 mr-2.5" />
+              <InstagramSVG className="mr-2.5 w-5" />
               <span>@casa.yen</span>
             </a>
           </div>
@@ -106,7 +106,7 @@ export default function Yen() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute top-0 left-0 w-full -z-10"
+          className="absolute top-0 left-0 -z-10 w-full"
           placeholder="blur"
           priority
         />
@@ -116,7 +116,7 @@ export default function Yen() {
         <GradientYenSVG />
         <Star2SVG className="absolute left-[40%] top-0 w-[70px]" />
         <Star2SVG className="absolute left-0 bottom-[14.5%] w-[170px]" />
-        <GridSVG className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[calc(100%-2.5rem)]" />
+        <GridSVG className="absolute left-1/2 bottom-0 w-[calc(100%-2.5rem)] -translate-x-1/2" />
       </div>
     </>
   );

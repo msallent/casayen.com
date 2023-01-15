@@ -5,7 +5,7 @@ import homeUterusImage from '@/assets/images/home-uterus.webp';
 
 export function About() {
   return (
-    <section className="mt-14 mx-5 text-primary-blue">
+    <section className="mx-5 mt-14 text-primary-blue">
       <YenStarsSVG className="mb-14" />
 
       <div className="relative text-center">
@@ -16,7 +16,7 @@ export function About() {
         <div className="mt-4 uppercase leading-[18px]">
           Un espacio para la liberación del cuerpo y el corazón, la recuperación del placer, la
           soberanía y la autogestión.{' '}
-          <span className="italic font-serif">
+          <span className="font-serif italic">
             Viene a derribar mandatos y a trabajar el trauma que nos habita
           </span>{' '}
           producto de tantas generaciones en las que la sexualidad fue tabú y herramienta de
@@ -27,14 +27,14 @@ export function About() {
         <Image
           alt="Yen"
           src={homeUterusImage}
-          className="absolute top-0 right-0 opacity-60 -z-10"
+          className="absolute top-0 right-0 -z-10 opacity-60"
           placeholder="blur"
         />
 
         <Image
           alt="Yen"
           src={homeUterusImage}
-          className="absolute top-[35%] left-0 opacity-60 -z-10"
+          className="absolute top-[35%] left-0 -z-10 opacity-60"
           placeholder="blur"
         />
       </div>

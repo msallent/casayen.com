@@ -21,11 +21,11 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
       <head />
-      <body className="overscroll-none text-sm bg-primary-black selection:bg-secondary-white">
+      <body className="overscroll-none bg-primary-black text-sm selection:bg-secondary-white">
         <Navbar />
         <main className="overflow-hidden">{children}</main>
         <Footer />
-        <div className="fixed left-0 top-0 z-20 mix-blend-overlay bg-grain-texture w-full h-full pointer-events-none" />
+        <div className="pointer-events-none fixed left-0 top-0 z-20 h-full w-full bg-grain-texture mix-blend-overlay" />
       </body>
     </html>
   );

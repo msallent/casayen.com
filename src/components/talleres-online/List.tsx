@@ -13,7 +13,7 @@ export function List() {
 
   return (
     <>
-      <div className="uppercase italic font-serif mt-12 text-primary-blue">
+      <div className="mt-12 font-serif uppercase italic text-primary-blue">
         (!) Importante: los videos estarán disponibles por 10 días (una vez que envíes tu
         comprobante de pago)
       </div>

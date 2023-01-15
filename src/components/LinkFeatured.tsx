@@ -19,16 +19,16 @@ export function LinkFeatured({ href, index, children, withBottomBorder }: LinkPr
         { 'border-b': withBottomBorder }
       )}
     >
-      <SnowflakeSVG className="absolute w-2 top-1/2 left-0 -translate-y-1/2" />
+      <SnowflakeSVG className="absolute top-1/2 left-0 w-2 -translate-y-1/2" />
 
-      <div className="relative text-center w-full">
-        <span className="font-sans text-xs absolute top-[-20%]">
+      <div className="relative w-full text-center">
+        <span className="absolute top-[-20%] font-sans text-xs">
           {index.toString().padStart(2, '0')}
         </span>
         <span className="ml-5">{children} →</span>
       </div>
 
-      <SnowflakeSVG className="absolute w-2 top-1/2 right-0 -translate-y-1/2" />
+      <SnowflakeSVG className="absolute top-1/2 right-0 w-2 -translate-y-1/2" />
     </NextLink>
   );
 }

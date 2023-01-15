@@ -4,22 +4,22 @@ import InstagramSVG from '@/assets/svgs/instagram.svg';
 
 export function Footer() {
   return (
-    <footer className="pt-8 px-5 pb-14 bg-secondary-black">
+    <footer className="bg-secondary-black px-5 pt-8 pb-14">
       <YenSloganSVG className="w-36" />
 
-      <div className="flex flex-col mt-5 border-t border-primary-blue text-primary-blue">
-        <span className="uppercase mt-10 mb-2">Contacto Yen</span>
+      <div className="mt-5 flex flex-col border-t border-primary-blue text-primary-blue">
+        <span className="mt-10 mb-2 uppercase">Contacto Yen</span>
         <a href="mailto:info@casayen.com">
           <Title size="small">info@casayen.com</Title>
         </a>
 
-        <span className="uppercase mt-8 mb-2">Contacto Shop</span>
+        <span className="mt-8 mb-2 uppercase">Contacto Shop</span>
         <a href="mailto:shop@casayen.com">
           <Title size="small">shop@casayen.com</Title>
         </a>
 
-        <span className="uppercase mt-8 mb-2">Social</span>
-        <div className="flex justify-between items-end">
+        <span className="mt-8 mb-2 uppercase">Social</span>
+        <div className="flex items-end justify-between">
           <a
             aria-label="Instagram"
             href="https://instagram.com/casa.yen"

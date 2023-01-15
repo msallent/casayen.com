@@ -5,10 +5,10 @@ import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 export default function Blog() {
   return (
-    <section className="mt-4 mx-5 mb-20">
+    <section className="mx-5 mt-4 mb-20">
       <TitlePage>YEN BLOG</TitlePage>
 
-      <div className="uppercase mt-4 mb-12 text-center text-primary-blue">
+      <div className="mt-4 mb-12 text-center uppercase text-primary-blue">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab esse illo fuga explicabo.
       </div>
 
@@ -18,7 +18,7 @@ export default function Blog() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 w-full -z-10"
+        className="absolute top-0 left-0 -z-10 w-full"
         placeholder="blur"
         priority
       />
