@@ -6,7 +6,7 @@ import Globes1SVG from '@/assets/svgs/globes-1.svg';
 import Globes2SVG from '@/assets/svgs/globes-2.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-4.svg';
 import ChevronSVG from '@/assets/svgs/chevron.svg';
-import backgroundGradient from '@/assets/images/gradient-3.png';
+import backgroundGradient from '@/assets/images/gradient-3.webp';
 
 export default function Contacto() {
   return (

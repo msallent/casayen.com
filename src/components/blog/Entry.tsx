@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { Title } from '@/components/Title';
-import blogEntryPlaceholderImage from '@/assets/images/blog-entry-placeholder.png';
+import blogEntryPlaceholderImage from '@/assets/images/blog-entry-placeholder.webp';
 
 type EntryProps = {
   title: string;

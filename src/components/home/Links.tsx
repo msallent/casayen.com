@@ -4,7 +4,7 @@ import GlobeSVG from '@/assets/svgs/globe.svg';
 import ChevronSVG from '@/assets/svgs/chevron.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-2.svg';
 import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
-import backgroundGradient from '@/assets/images/gradient-2.png';
+import backgroundGradient from '@/assets/images/gradient-2.webp';
 
 const LINKS = [
   { label: 'Yoniverse', path: '/' },

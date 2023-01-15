@@ -4,7 +4,7 @@ import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
 import CloseSVG from '@/assets/svgs/close.svg';
 import EllipsisVG from '@/assets/svgs/ellipsis-3.svg';
-import backgroundGradient from '@/assets/images/gradient-1.png';
+import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 type ModalBuyProps = {
   onClose: () => void;

@@ -6,10 +6,10 @@ import Star1SVG from '@/assets/svgs/star-1.svg';
 import Star2SVG from '@/assets/svgs/star-2.svg';
 import InstagramSVG from '@/assets/svgs/instagram.svg';
 import GradientYenSVG from '@/assets/svgs/gradient-yen.svg';
-import yenCamiImage from '@/assets/images/yen-cami.png';
-import yenUterusImage from '@/assets/images/yen-uterus.png';
-import backgroundGradient1 from '@/assets/images/gradient-1.png';
-import backgroundGradient2 from '@/assets/images/gradient-2.png';
+import yenCamiImage from '@/assets/images/yen-cami.webp';
+import yenUterusImage from '@/assets/images/yen-uterus.webp';
+import backgroundGradient1 from '@/assets/images/gradient-1.webp';
+import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
 export default function Yen() {
   return (

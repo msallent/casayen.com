@@ -2,7 +2,7 @@ import Image from 'next/image';
 import StarsSVG from '@/assets/svgs/stars-1.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-1.svg';
 import ChevronDouble from '@/assets/svgs/chevron-double.svg';
-import backgroundGradient from '@/assets/images/gradient-1.png';
+import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 export function Hero() {
   return (

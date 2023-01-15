@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'grain-texture': "url('/images/grain-texture.png')",
+        'grain-texture': "url('/images/grain-texture.webp')",
       },
       colors: {
         'primary-black': '#141414',

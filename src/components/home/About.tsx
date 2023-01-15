@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Title } from '@/components/Title';
 import YenStarsSVG from '@/assets/svgs/yen-stars.svg';
-import homeUterusImage from '@/assets/images/home-uterus.png';
+import homeUterusImage from '@/assets/images/home-uterus.webp';
 
 export function About() {
   return (

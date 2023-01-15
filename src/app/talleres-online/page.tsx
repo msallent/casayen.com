@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { List } from '@/components/talleres-online/List';
 import { TitlePage } from '@/components/TitlePage';
-import backgroundGradient from '@/assets/images/gradient-1.png';
+import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 export default function Talleres() {
   return (
