@@ -13,7 +13,7 @@ const MENU_LINKS = [
   { label: 'Yen', path: '/detras-de-yen' },
   { label: 'Blog', path: '/' },
   { label: 'FAQ', path: '/faq' },
-  { label: 'Contacto', path: '/' },
+  { label: 'Contacto', path: '/contacto' },
 ] as const;
 
 type MenuProps = {
