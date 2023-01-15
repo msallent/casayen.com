@@ -8,7 +8,8 @@ import StarSlimSVG from '@/assets/svgs/star-slim.svg';
 import YenGradientSVG from '@/assets/svgs/yen-gradient.svg';
 import GridSVG from '@/assets/svgs/grid.svg';
 import InstagramSVG from '@/assets/svgs/instagram.svg';
-import backgroundGradient from '@/assets/images/gradient-2.png';
+import backgroundGradient1 from '@/assets/images/gradient-1.png';
+import backgroundGradient2 from '@/assets/images/gradient-2.png';
 
 export default function Yen() {
   return (
@@ -52,7 +53,7 @@ export default function Yen() {
 
         <Image
           aria-hidden
-          src={backgroundGradient}
+          src={backgroundGradient2}
           alt="Background gradient"
           className="absolute top-0 right-0 -z-10"
           loading="eager"
@@ -99,6 +100,15 @@ export default function Yen() {
             </a>
           </div>
         </div>
+
+        <Image
+          aria-hidden
+          src={backgroundGradient1}
+          alt="Background gradient"
+          className="absolute top-0 left-0 w-full -z-10"
+          loading="eager"
+          priority
+        />
       </section>
 
       <div className="relative mt-8 h-[280px]">

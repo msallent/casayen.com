@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import CirclesSVG from '@/assets/svgs/circles.svg';
 import StarsSVG from '@/assets/svgs/stars.svg';
 import DoubleArrowSVG from '@/assets/svgs/double-arrow.svg';
+import backgroundGradient from '@/assets/images/gradient-1.png';
 
 export function Hero() {
   return (
@@ -31,6 +33,15 @@ export function Hero() {
         COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
         <span className="mx-1.5">≈</span>COSMIC SEXUALITY
       </div>
+
+      <Image
+        aria-hidden
+        src={backgroundGradient}
+        alt="Background gradient"
+        className="absolute top-0 left-0 w-full -z-10"
+        loading="eager"
+        priority
+      />
     </section>
   );
 }

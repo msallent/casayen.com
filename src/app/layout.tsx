@@ -1,10 +1,8 @@
 import { ReactNode } from 'react';
 import { EB_Garamond, Inter } from '@next/font/google';
 import localFont from '@next/font/local';
-import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import backgroundGradient from '@/assets/images/gradient-1.png';
 import '@/styles/globals.css';
 
 type LayoutProps = {
@@ -28,14 +26,6 @@ export default function Layout({ children }: LayoutProps) {
         <main className="overflow-hidden">{children}</main>
         <Footer />
         <div className="fixed left-0 top-0 z-20 mix-blend-overlay bg-grain-texture w-full h-full pointer-events-none" />
-        <Image
-          aria-hidden
-          src={backgroundGradient}
-          alt="Background gradient"
-          className="absolute top-0 left-0 w-full -z-10"
-          loading="eager"
-          priority
-        />
       </body>
     </html>
   );
