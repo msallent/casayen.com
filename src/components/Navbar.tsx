@@ -26,7 +26,7 @@ export function Navbar() {
   return (
     <nav className="mx-5 mt-[30px]">
       <div className="flex items-center justify-between">
-        <NextLink href="/">
+        <NextLink href="/" aria-label="Home">
           <YenLogoSVG className="h-8" />
         </NextLink>
 
