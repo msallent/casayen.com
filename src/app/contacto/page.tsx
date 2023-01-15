@@ -56,7 +56,7 @@ export default function Contacto() {
           </li>
         </ul>
 
-        <div className="h-[45px]">
+        <div className="h-[75px]">
           <GridSVG />
         </div>
       </div>
