@@ -11,7 +11,7 @@ const MENU_LINKS = [
   { label: 'Talleres Online', path: '/talleres-online' },
   { label: 'Presenciales', path: '/' },
   { label: 'Yen', path: '/detras-de-yen' },
-  { label: 'Blog', path: '/' },
+  { label: 'Blog', path: '/blog' },
   { label: 'FAQ', path: '/faq' },
   { label: 'Contacto', path: '/contacto' },
 ] as const;
