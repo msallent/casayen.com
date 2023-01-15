@@ -4,8 +4,8 @@ import { Title } from '@/components/Title';
 import GridSVG from '@/assets/svgs/grid.svg';
 import Globes1SVG from '@/assets/svgs/globes-1.svg';
 import Globes2SVG from '@/assets/svgs/globes-2.svg';
-import CirclesSVG from '@/assets/svgs/circles-3.svg';
-import SingleArrowSVG from '@/assets/svgs/single-arrow.svg';
+import EllipsisSVG from '@/assets/svgs/ellipsis-4.svg';
+import ChevronSVG from '@/assets/svgs/chevron.svg';
 import backgroundGradient from '@/assets/images/gradient-3.png';
 
 export default function Contacto() {
@@ -28,27 +28,27 @@ export default function Contacto() {
         <div className="flex items-baseline justify-end pt-7 pb-3 border-b border-primary-blue">
           <div className="relative flex items-center">
             <Title>→→ hablemos</Title>
-            <CirclesSVG className="absolute top-[-15px] right-[-20px] w-full" />
+            <EllipsisSVG className="absolute top-[-15px] right-[-20px] w-full" />
           </div>
         </div>
 
         <ul className="mt-10 mb-16 space-y-5">
           <li className="flex items-center gap-5">
-            <SingleArrowSVG className="rotate-[270deg] w-5" />
+            <ChevronSVG className="rotate-[270deg] w-5" />
             <div>
               <Badge>Yen</Badge>
               <Badge>info@casayen.com</Badge>
             </div>
           </li>
           <li className="flex items-center gap-5">
-            <SingleArrowSVG className="rotate-[270deg] w-5" />
+            <ChevronSVG className="rotate-[270deg] w-5" />
             <div>
               <Badge>Shop</Badge>
               <Badge>shop@casayen.com</Badge>
             </div>
           </li>
           <li className="flex items-center gap-5">
-            <SingleArrowSVG className="rotate-[270deg] w-5" />
+            <ChevronSVG className="rotate-[270deg] w-5" />
             <div>
               <Badge>Instagram</Badge>
               <Badge>@casa.yen</Badge>

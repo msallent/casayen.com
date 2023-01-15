@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import CirclesSVG from '@/assets/svgs/circles.svg';
-import StarsSVG from '@/assets/svgs/stars.svg';
-import DoubleArrowSVG from '@/assets/svgs/double-arrow.svg';
+import StarsSVG from '@/assets/svgs/stars-1.svg';
+import EllipsisSVG from '@/assets/svgs/ellipsis-1.svg';
+import ChevronDouble from '@/assets/svgs/chevron-double.svg';
 import backgroundGradient from '@/assets/images/gradient-1.png';
 
 export function Hero() {
@@ -14,7 +14,7 @@ export function Hero() {
             BIENVENIDX A TU
           </div>
           <h1>VIAJE</h1>
-          <CirclesSVG className="absolute top-[-30%] left-[4%] w-[230px] z-10 pointer-events-none" />
+          <EllipsisSVG className="absolute top-[-30%] left-[4%] w-[230px] z-10 pointer-events-none" />
           <StarsSVG className="absolute top-[-60%] left-[80%] w-[49px] z-10 pointer-events-none" />
         </div>
         <h1 className="ml-[4%]">INTER-</h1>
@@ -27,7 +27,7 @@ export function Hero() {
         </div>
       </div>
 
-      <DoubleArrowSVG className="w-6 mt-6 mx-auto mb-10" />
+      <ChevronDouble className="w-6 mt-6 mx-auto mb-10" />
 
       <div className="relative left-[-22px] whitespace-nowrap">
         COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY

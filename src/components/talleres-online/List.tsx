@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Expandable } from '@/components/Expandable';
 import { ModalBuy } from '@/components/ModalBuy';
+import { Expandable } from '@/components/Expandable';
 
 export function List() {
   const [selectedTaller, setSelectedTaller] = useState(null);
@@ -55,7 +55,7 @@ export function List() {
         </Expandable>
       </div>
 
-      {!!selectedTaller && <ModalBuy onClose={handleCloseBuyModal} />}
+      {selectedTaller && <ModalBuy onClose={handleCloseBuyModal} />}
     </>
   );
 }

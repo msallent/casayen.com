@@ -8,7 +8,6 @@ export function List() {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nulla, fugit deleniti consequatur rem dicta ea autem eligendi quasi ullam necessitatibus voluptatem dignissimos saepe!"
         url="/"
       />
-
       <Entry
         title="Lorem ipsum dolor sit"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nulla, fugit deleniti consequatur rem dicta ea autem eligendi quasi ullam necessitatibus voluptatem dignissimos saepe!"

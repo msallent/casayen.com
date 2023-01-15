@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import NextLink from 'next/link';
-import SnowflakeSVG from '@/assets/svgs/snowflake.svg';
 import classNames from 'classnames';
+import SnowflakeSVG from '@/assets/svgs/snowflake.svg';
 
 type LinkProps = {
   href: string;
@@ -20,12 +20,14 @@ export function LinkFeatured({ href, index, children, withBottomBorder }: LinkPr
       )}
     >
       <SnowflakeSVG className="absolute w-2 top-1/2 left-0 -translate-y-1/2" />
+
       <div className="relative text-center w-full">
         <span className="font-sans text-xs absolute top-[-20%]">
           {index.toString().padStart(2, '0')}
         </span>
         <span className="ml-5">{children} →</span>
       </div>
+
       <SnowflakeSVG className="absolute w-2 top-1/2 right-0 -translate-y-1/2" />
     </NextLink>
   );

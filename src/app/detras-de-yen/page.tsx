@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { Title } from '@/components/Title';
 import { TitlePage } from '@/components/TitlePage';
-import camiImage from '@/assets/images/cami.png';
-import uterusImage from '@/assets/images/uterus.png';
-import StarSVG from '@/assets/svgs/star.svg';
-import StarSlimSVG from '@/assets/svgs/star-slim.svg';
-import YenGradientSVG from '@/assets/svgs/yen-gradient.svg';
 import GridSVG from '@/assets/svgs/grid.svg';
+import Star1SVG from '@/assets/svgs/star-1.svg';
+import Star2SVG from '@/assets/svgs/star-2.svg';
 import InstagramSVG from '@/assets/svgs/instagram.svg';
+import GradientYenSVG from '@/assets/svgs/gradient-yen.svg';
+import yenCamiImage from '@/assets/images/yen-cami.png';
+import yenUterusImage from '@/assets/images/yen-uterus.png';
 import backgroundGradient1 from '@/assets/images/gradient-1.png';
 import backgroundGradient2 from '@/assets/images/gradient-2.png';
 
@@ -19,14 +19,14 @@ export default function Yen() {
 
         <div className="relative mb-8">
           <Image
-            src={camiImage}
+            src={yenCamiImage}
             className="mt-4 px-2"
             alt="Cami Yen"
             loading="eager"
             quality={100}
             priority
           />
-          <StarSVG className="absolute bottom-[-20px] left-[-15px] w-[130px]" />
+          <Star1SVG className="absolute bottom-[-20px] left-[-15px] w-[130px]" />
         </div>
 
         <Title size="small">Hola, soy Cami :)</Title>
@@ -73,7 +73,7 @@ export default function Yen() {
               <div>de mi Vida</div>
             </Title>
             <Image
-              src={uterusImage}
+              src={yenUterusImage}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] pb-3"
               alt="Uterus"
             />
@@ -112,9 +112,9 @@ export default function Yen() {
       </section>
 
       <div className="relative mt-8 h-[280px]">
-        <YenGradientSVG />
-        <StarSlimSVG className="absolute left-[40%] top-0 w-[70px]" />
-        <StarSlimSVG className="absolute left-0 bottom-[14.5%] w-[170px]" />
+        <GradientYenSVG />
+        <Star2SVG className="absolute left-[40%] top-0 w-[70px]" />
+        <Star2SVG className="absolute left-0 bottom-[14.5%] w-[170px]" />
         <GridSVG className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[calc(100%-2.5rem)]" />
       </div>
     </>

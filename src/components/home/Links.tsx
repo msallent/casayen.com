@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { LinkFeatured } from '@/components/LinkFeatured';
-import SphereSVG from '@/assets/svgs/sphere.svg';
-import SingleArrowSVG from '@/assets/svgs/single-arrow.svg';
-import OrbitSVG from '@/assets/svgs/orbit.svg';
-import SphereTextSVG from '@/assets/svgs/sphere-text.svg';
+import GlobeSVG from '@/assets/svgs/globe.svg';
+import ChevronSVG from '@/assets/svgs/chevron.svg';
+import EllipsisSVG from '@/assets/svgs/ellipsis-2.svg';
+import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
 import backgroundGradient from '@/assets/images/gradient-2.png';
 
 const LINKS = [
@@ -18,19 +18,19 @@ export function Links() {
       <div className="flex flex-col ml-5">
         <span className="leading-5">UNITE AL</span>
         <span className="leading-5">VIAJE</span>
-        <SingleArrowSVG className="w-3 mt-2.5 ml-px" />
+        <ChevronSVG className="w-3 mt-2.5 ml-px" />
       </div>
 
       <div className="relative mt-9 mb-16">
-        <SphereSVG className="w-[50px] h-[50px] mx-auto" />
-        <OrbitSVG className="absolute h-[345px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-        <SphereTextSVG className="absolute h-[276px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <GlobeSVG className="w-[50px] h-[50px] mx-auto" />
+        <EllipsisSVG className="absolute h-[345px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <TextEllipsisSVG className="absolute h-[276px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       <div className="flex flex-col mr-5">
         <span className="leading-5 text-right">UNITE AL</span>
         <span className="leading-5 text-right">VIAJE</span>
-        <SingleArrowSVG className="w-3 ml-auto mt-2.5 mr-px" />
+        <ChevronSVG className="w-3 ml-auto mt-2.5 mr-px" />
       </div>
 
       <Image

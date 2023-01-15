@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { Badge } from '@/components/Badge';
-import { Button } from '@/components/Button';
 import { Title } from '@/components/Title';
+import { Button } from '@/components/Button';
 import CloseSVG from '@/assets/svgs/close.svg';
-import CirclesSVG from '@/assets/svgs/circles-2.svg';
+import EllipsisVG from '@/assets/svgs/ellipsis-3.svg';
 import backgroundGradient from '@/assets/images/gradient-1.png';
 
 type ModalBuyProps = {
@@ -41,12 +41,13 @@ export function ModalBuy({ onClose }: ModalBuyProps) {
               </span>
               <Badge>info@casayen.com</Badge>
             </div>
-            <CirclesSVG />
+            <EllipsisVG />
           </div>
 
           <div className="flex flex-col items-center px-5 w-full">
             <div className="mb-1.5 font-bold">↓ TERRITORIO ARGENTINO</div>
             <Button>COMPRAR →</Button>
+
             <div className="mt-5 mb-1.5 font-bold">RESTO DEL MUNDO ↓</div>
             <Button>COMPRAR X PAYPAL →</Button>
           </div>
