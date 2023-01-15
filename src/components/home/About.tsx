@@ -28,12 +28,14 @@ export function About() {
           alt="Yen"
           src={homeUterusImage}
           className="absolute top-0 right-0 opacity-60 -z-10"
+          placeholder="blur"
         />
 
         <Image
           alt="Yen"
           src={homeUterusImage}
           className="absolute top-[35%] left-0 opacity-60 -z-10"
+          placeholder="blur"
         />
       </div>
     </section>

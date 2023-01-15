@@ -12,7 +12,12 @@ type EntryProps = {
 export function Entry({ title, url, description }: EntryProps) {
   return (
     <div className="flex flex-col pb-6 border-b border-primary-blue">
-      <Image aria-hidden src={blogEntryPlaceholderImage} alt="Blog entry" className="w-full mb-6" />
+      <Image
+        src={blogEntryPlaceholderImage}
+        alt="Blog entry"
+        className="w-full mb-6"
+        placeholder="blur"
+      />
 
       <Title size="small">{title}</Title>
 

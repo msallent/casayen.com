@@ -22,7 +22,7 @@ export default function Yen() {
             src={yenCamiImage}
             className="mt-4 px-2"
             alt="Cami Yen"
-            loading="eager"
+            placeholder="blur"
             quality={100}
             priority
           />
@@ -56,7 +56,7 @@ export default function Yen() {
           src={backgroundGradient2}
           alt="Background gradient"
           className="absolute top-0 right-0 -z-10"
-          loading="eager"
+          placeholder="blur"
           priority
         />
 
@@ -75,6 +75,7 @@ export default function Yen() {
             <Image
               src={yenUterusImage}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] pb-3"
+              placeholder="blur"
               alt="Uterus"
             />
           </div>
@@ -106,7 +107,7 @@ export default function Yen() {
           src={backgroundGradient1}
           alt="Background gradient"
           className="absolute top-0 left-0 w-full -z-10"
-          loading="eager"
+          placeholder="blur"
           priority
         />
       </section>

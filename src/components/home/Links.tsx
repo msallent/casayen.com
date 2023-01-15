@@ -38,6 +38,7 @@ export function Links() {
         src={backgroundGradient}
         alt="Background gradient"
         className="absolute -top-1/2 right-0 -z-10"
+        placeholder="blur"
       />
 
       <ul className="mt-20 mx-5">

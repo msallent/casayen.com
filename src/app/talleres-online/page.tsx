@@ -20,7 +20,7 @@ export default function Talleres() {
         src={backgroundGradient}
         alt="Background gradient"
         className="absolute top-0 left-0 w-full -z-10"
-        loading="eager"
+        placeholder="blur"
         priority
       />
     </section>

@@ -58,6 +58,7 @@ export function ModalBuy({ onClose }: ModalBuyProps) {
           src={backgroundGradient}
           alt="Background gradient"
           className="absolute top-0 left-0 h-full w-full -z-10"
+          placeholder="blur"
         />
 
         <Image
@@ -65,6 +66,7 @@ export function ModalBuy({ onClose }: ModalBuyProps) {
           src={backgroundGradient}
           alt="Background gradient"
           className="absolute top-0 left-0 h-full w-full -z-10 rotate-180"
+          placeholder="blur"
         />
       </div>
 
