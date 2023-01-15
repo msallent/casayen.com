@@ -87,7 +87,7 @@ export default function Yen() {
             <div>↓</div>
             <div>↓</div>
           </div>
-          <div className="flex flex-col items-end text-2xl">
+          <div className="flex flex-col items-end text-2xl space-y-0.5">
             <a href="mailto:info@casayen.com">info@casayen.com</a>
             <a
               className="flex items-center"
