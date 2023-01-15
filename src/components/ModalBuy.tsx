@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Badge } from '@/components/Badge';
 import { Button } from '@/components/Button';
 import { Title } from '@/components/Title';
 import CloseSVG from '@/assets/svgs/close.svg';
@@ -35,12 +36,10 @@ export function ModalBuy({ onClose }: ModalBuyProps) {
           <div className="my-6 w-full relative">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col items-center text-center mx-10 leading-[18px]">
               <span className="font-bold">&gt;&gt; IMPORTANTE &lt;&lt;</span>
-              <span className="uppercase font-medium">
+              <span className="uppercase font-medium mb-4">
                 Para completar tu compra y acceder al material, enviá el comprobante de pago a:
               </span>
-              <span className="uppercase font-medium px-1.5 mt-4 border rounded-[40px] border-primary-blue">
-                info@casayen.com
-              </span>
+              <Badge>info@casayen.com</Badge>
             </div>
             <CirclesSVG />
           </div>
