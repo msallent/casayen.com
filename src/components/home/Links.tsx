@@ -1,18 +1,16 @@
 import Image from 'next/image';
 import { LinkFeatured } from '@/components/LinkFeatured';
+import { fetchContent } from '@/utils/fetch';
+import { TLinkFeatured } from '@/types/contentful';
 import GlobeSVG from '@/assets/svgs/globe.svg';
 import ChevronSVG from '@/assets/svgs/chevron.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-2.svg';
 import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
 import backgroundGradient from '@/assets/images/gradient-2.webp';
 
-const LINKS = [
-  { label: 'Yoniverse', path: '/' },
-  { label: 'Talleres Online', path: '/talleres-online' },
-  { label: 'Presenciales', path: '/' },
-] as const;
+export async function Links() {
+  const featuredLinks = await fetchContent<TLinkFeatured>('?content_type=link-featured');
 
-export function Links() {
   return (
     <section className="relative mt-32 text-primary-blue">
       <div className="ml-5 flex flex-col">
@@ -42,14 +40,14 @@ export function Links() {
       />
 
       <ul className="mx-5 mt-20">
-        {LINKS.map((link, index) => (
+        {featuredLinks.items.map(({ fields }, index) => (
           <li key={index}>
             <LinkFeatured
-              href={link.path}
+              href={fields.url}
               index={index + 1}
-              withBottomBorder={index === LINKS.length - 1}
+              withBottomBorder={index === featuredLinks.items.length - 1}
             >
-              {link.label}
+              {fields.name}
             </LinkFeatured>
           </li>
         ))}
