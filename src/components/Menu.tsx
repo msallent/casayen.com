@@ -5,22 +5,17 @@ import CloseSVG from '@/assets/svgs/close.svg';
 import StarsSVG from '@/assets/svgs/stars-2.svg';
 import YenLogoSVG from '@/assets/svgs/yen-logo.svg';
 
-const MENU_LINKS = [
-  { label: 'Home', path: '/' },
-  { label: 'Yoniverse', path: '/' },
-  { label: 'Talleres Online', path: '/talleres-online' },
-  { label: 'Presenciales', path: '/' },
-  { label: 'Yen', path: '/detras-de-yen' },
-  { label: 'Blog', path: '/blog' },
-  { label: 'FAQ', path: '/faq' },
-  { label: 'Contacto', path: '/contacto' },
-] as const;
+export type MenuItem = {
+  label: string;
+  url: `/${string}`;
+};
 
 type MenuProps = {
+  items: Array<MenuItem>;
   onClose: () => void;
 };
 
-export function Menu({ onClose }: MenuProps) {
+export function Menu({ items, onClose }: MenuProps) {
   return createPortal(
     <div className="fixed inset-0 z-10 overflow-auto bg-primary-blue px-5 py-[30px]">
       <div className="flex items-center justify-between">
@@ -45,9 +40,9 @@ export function Menu({ onClose }: MenuProps) {
       </Button>
 
       <ul className="mt-12 space-y-6">
-        {MENU_LINKS.map((link, index) => (
+        {items.map((link, index) => (
           <li key={index}>
-            <Link href={link.path}>{link.label}</Link>
+            <Link href={link.url}>{link.label}</Link>
           </li>
         ))}
       </ul>
