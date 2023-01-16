@@ -3,11 +3,15 @@
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
-import { Menu } from '@/components/Menu';
+import { Menu, MenuItem } from '@/components/Menu';
 import YenLogoSVG from '@/assets/svgs/yen-logo.svg';
 import MenuSVG from '@/assets/svgs/menu.svg';
 
-export function Navbar() {
+type NavbarProps = {
+  menuItems: Array<MenuItem>;
+};
+
+export function Navbar({ menuItems }: NavbarProps) {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,7 +39,7 @@ export function Navbar() {
         </button>
       </div>
 
-      {isMenuOpen && <Menu onClose={handleCloseMenu} />}
+      {isMenuOpen && <Menu items={menuItems} onClose={handleCloseMenu} />}
     </nav>
   );
 }
