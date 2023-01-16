@@ -21,7 +21,7 @@ import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
 export default async function Home() {
   const { data } = await fetchContent<PageHomeData>(`query PageHome {
-    pageHome(id: "6WgRiUN0qX62eEbopC5LlO") {
+    pageHome(id: "${process.env.CONTENTFUL_PAGE_HOME_ID}") {
       featuredLinksCollection {
         items {
           label
