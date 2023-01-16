@@ -1,15 +1,16 @@
-type ContentfulEntry<T> = {
-  fields: T;
-};
-
 export type ContentfulResponse<T> = {
-  total: number;
-  skip: number;
-  limit: number;
-  items: Array<ContentfulEntry<T>>;
+  data: T;
 };
 
-export type TLinkFeatured = {
-  name: string;
+export type PageHomeData = {
+  pageHome: {
+    featuredLinksCollection: {
+      items: Array<LinkFeatured>;
+    };
+  };
+};
+
+type LinkFeatured = {
+  label: string;
   url: `/${string}`;
 };
