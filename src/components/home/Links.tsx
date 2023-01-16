@@ -9,7 +9,7 @@ import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
 import backgroundGradient from '@/assets/images/gradient-2.webp';
 
 export async function Links() {
-  const featuredLinks = await fetchContent<TLinkFeatured>('?content_type=link-featured');
+  const featuredLinks = await fetchContent<TLinkFeatured>('linkFeatured');
 
   return (
     <section className="relative mt-32 text-primary-blue">
