@@ -5,12 +5,12 @@ export type ContentfulResponse<T> = {
 export type PageHomeData = {
   pageHome: {
     featuredLinksCollection: {
-      items: Array<LinkFeatured>;
+      items: Array<Link>;
     };
   };
 };
 
-type LinkFeatured = {
+type Link = {
   label: string;
   url: `/${string}`;
 };
