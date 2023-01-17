@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
+import { useEffect, useRef } from 'react';
+import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock';
 import { Badge } from '@/components/Badge';
 import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
@@ -14,9 +16,19 @@ type ModalBuyProps = {
 };
 
 export function ModalBuy({ taller, onClose }: ModalBuyProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (modalRef.current) disableBodyScroll(modalRef.current);
+    return () => clearAllBodyScrollLocks();
+  }, []);
+
   return createPortal(
     <>
-      <div className="fixed top-1/2 left-1/2 z-10 w-[calc(100%-2.5rem)] -translate-y-1/2 -translate-x-1/2 bg-primary-black pt-9 pb-5">
+      <div
+        ref={modalRef}
+        className="fixed top-1/2 left-1/2 z-10 w-[calc(100%-2.5rem)] -translate-y-1/2 -translate-x-1/2 bg-primary-black pt-9 pb-5"
+      >
         <button
           className="absolute -top-10 right-0"
           type="button"

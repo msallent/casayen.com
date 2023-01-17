@@ -1,4 +1,6 @@
+import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
+import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock';
 import { Link } from '@/components/Link';
 import { Button } from '@/components/Button';
 import { Link as TLink } from '@/types/contentful';
@@ -12,8 +14,15 @@ type MenuProps = {
 };
 
 export function Menu({ items, onClose }: MenuProps) {
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (menuRef.current) disableBodyScroll(menuRef.current);
+    return () => clearAllBodyScrollLocks();
+  }, []);
+
   return createPortal(
-    <div className="fixed inset-0 z-10 overflow-auto bg-primary-blue px-5 py-[30px]">
+    <div ref={menuRef} className="fixed inset-0 z-10 overflow-auto bg-primary-blue px-5 py-[30px]">
       <div className="flex items-center justify-between">
         <YenLogoSVG className="h-8" />
 
