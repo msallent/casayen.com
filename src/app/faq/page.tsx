@@ -1,9 +1,27 @@
 import Image from 'next/image';
 import { TitlePage } from '@/components/TitlePage';
 import { Expandable } from '@/components/Expandable';
+import { PageFAQData } from '@/types/contentful';
+import { parseRichText } from '@/utils/richText';
+import { fetchContent } from '@/utils/fetch';
 import backgroundGradient from '@/assets/images/gradient-1.webp';
 
-export default function FAQ() {
+export default async function FAQ() {
+  const { data } = await fetchContent<PageFAQData>(`query PageFAQ {
+    pageFaq(id: "${process.env.CONTENTFUL_PAGE_FAQ_ID}") {
+      faqsCollection {
+        items {
+          title
+          content {
+            json
+          }
+        }
+      }
+    }
+  }`);
+
+  const faqs = data.pageFaq.faqsCollection.items;
+
   return (
     <section className="mx-5 mt-4">
       <TitlePage>F.A.Q.</TitlePage>
@@ -13,34 +31,11 @@ export default function FAQ() {
       </div>
 
       <div className="mt-12 mb-20">
-        <Expandable title="¿Cómo sé si necesito sanar mi energía sexual?">
-          <div className="text-primary-blue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
-            optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
-            tempora laborum, ea omnis sed sequi!
-          </div>
-        </Expandable>
-        <Expandable title="¿Qué es un huevo Yoni?">
-          <div className="text-primary-blue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
-            optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
-            tempora laborum, ea omnis sed sequi!
-          </div>
-        </Expandable>
-        <Expandable title="¿Qué son las vaporizaciones Yoni?">
-          <div className="text-primary-blue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
-            optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
-            tempora laborum, ea omnis sed sequi!
-          </div>
-        </Expandable>
-        <Expandable title="¿Cómo curar infecciones con Aceite de Neem?" withBottomBorder>
-          <div className="text-primary-blue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est provident voluptas qui
-            optio tenetur eveniet, ipsam tempore dolorem laboriosam rerum explicabo nam perferendis,
-            tempora laborum, ea omnis sed sequi!
-          </div>
-        </Expandable>
+        {faqs.map((faq) => (
+          <Expandable key={faq.title} title={faq.title}>
+            <div className="text-primary-blue">{parseRichText(faq.content.json)}</div>
+          </Expandable>
+        ))}
       </div>
 
       <Image

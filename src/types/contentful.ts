@@ -28,6 +28,14 @@ export type PageTalleresOnlineData = {
   };
 };
 
+export type PageFAQData = {
+  pageFaq: {
+    faqsCollection: {
+      items: Array<FAQ>;
+    };
+  };
+};
+
 export type ContentfulRichText = {
   json: Document;
 };
@@ -48,4 +56,9 @@ export type Taller = {
   forYou?: ContentfulRichText;
   info?: ContentfulRichText;
   syllabus?: ContentfulRichText;
+};
+
+export type FAQ = {
+  title: string;
+  content: ContentfulRichText;
 };
