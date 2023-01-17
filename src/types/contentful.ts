@@ -1,3 +1,5 @@
+import { Document } from '@contentful/rich-text-types';
+
 export type ContentfulResponse<T> = {
   data: T;
 };
@@ -18,7 +20,32 @@ export type PageHomeData = {
   };
 };
 
-type Link = {
+export type PageTalleresOnlineData = {
+  pageTalleresOnline: {
+    talleresCollection: {
+      items: Array<Taller>;
+    };
+  };
+};
+
+export type ContentfulRichText = {
+  json: Document;
+};
+
+export type Link = {
   label: string;
   url: `/${string}`;
+};
+
+export type Taller = {
+  title: string;
+  hot?: boolean;
+  shortDescription?: string;
+  longDescription?: string;
+  duration?: string;
+  value?: ContentfulRichText;
+  includes?: ContentfulRichText;
+  forYou?: ContentfulRichText;
+  info?: ContentfulRichText;
+  syllabus?: ContentfulRichText;
 };
