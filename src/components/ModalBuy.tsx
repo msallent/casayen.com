@@ -2,15 +2,17 @@ import Image from 'next/image';
 import { Badge } from '@/components/Badge';
 import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
+import { Taller } from '@/types/contentful';
 import CloseSVG from '@/assets/svgs/close.svg';
 import EllipsisVG from '@/assets/svgs/ellipsis-3.svg';
 import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 type ModalBuyProps = {
+  taller: Taller;
   onClose: () => void;
 };
 
-export function ModalBuy({ onClose }: ModalBuyProps) {
+export function ModalBuy({ taller, onClose }: ModalBuyProps) {
   return (
     <>
       <div className="fixed top-1/2 left-1/2 z-10 w-[calc(100%-2.5rem)] -translate-y-1/2 -translate-x-1/2 bg-primary-black pt-9 pb-5">
@@ -25,11 +27,11 @@ export function ModalBuy({ onClose }: ModalBuyProps) {
 
         <div className="flex flex-col items-center justify-center text-primary-blue">
           <div className="flex w-full flex-col items-center px-5">
-            <div className="mx-10">
-              <Title size="small">Yoni Magic</Title>
+            <div className="mx-10 text-center">
+              <Title size="small">{taller.title}</Title>
             </div>
             <div className="mx-10 mt-2.5 text-center font-medium uppercase leading-[18px]">
-              Como empezar a usar el huevo Yoni
+              {taller.shortDescription}
             </div>
           </div>
 
