@@ -3,13 +3,13 @@ import NextLink from 'next/link';
 import { Title } from '@/components/Title';
 import blogEntryPlaceholderImage from '@/assets/images/blog-entry-placeholder.webp';
 
-type EntryProps = {
+type EntryBlogProps = {
   title: string;
   url: string;
   description?: string;
 };
 
-export function Entry({ title, url, description }: EntryProps) {
+export function EntryBlog({ title, url, description }: EntryBlogProps) {
   return (
     <div className="flex flex-col border-b border-primary-blue pb-6">
       <Image
