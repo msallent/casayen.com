@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { createPortal } from 'react-dom';
 import { Badge } from '@/components/Badge';
 import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
@@ -13,7 +14,7 @@ type ModalBuyProps = {
 };
 
 export function ModalBuy({ taller, onClose }: ModalBuyProps) {
-  return (
+  return createPortal(
     <>
       <div className="fixed top-1/2 left-1/2 z-10 w-[calc(100%-2.5rem)] -translate-y-1/2 -translate-x-1/2 bg-primary-black pt-9 pb-5">
         <button
@@ -73,6 +74,7 @@ export function ModalBuy({ taller, onClose }: ModalBuyProps) {
       </div>
 
       <div className="fixed inset-0 z-0 bg-primary-black opacity-80" onClick={onClose} />
-    </>
+    </>,
+    document.body
   );
 }
