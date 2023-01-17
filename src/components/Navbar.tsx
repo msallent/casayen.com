@@ -3,12 +3,13 @@
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
-import { Menu, MenuItem } from '@/components/Menu';
+import { Menu } from '@/components/Menu';
+import { Link } from '@/types/contentful';
 import YenLogoSVG from '@/assets/svgs/yen-logo.svg';
 import MenuSVG from '@/assets/svgs/menu.svg';
 
 type NavbarProps = {
-  menuItems: Array<MenuItem>;
+  menuItems: Array<Link>;
 };
 
 export function Navbar({ menuItems }: NavbarProps) {

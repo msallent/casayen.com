@@ -1,17 +1,13 @@
 import { createPortal } from 'react-dom';
 import { Link } from '@/components/Link';
 import { Button } from '@/components/Button';
+import { Link as TLink } from '@/types/contentful';
 import CloseSVG from '@/assets/svgs/close.svg';
 import StarsSVG from '@/assets/svgs/stars-2.svg';
 import YenLogoSVG from '@/assets/svgs/yen-logo.svg';
 
-export type MenuItem = {
-  label: string;
-  url: `/${string}`;
-};
-
 type MenuProps = {
-  items: Array<MenuItem>;
+  items: Array<TLink>;
   onClose: () => void;
 };
 
