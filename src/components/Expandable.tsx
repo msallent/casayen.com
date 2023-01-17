@@ -31,7 +31,7 @@ export function Expandable({
 
   return (
     <div
-      className={classNames('pt-8 pb-6 border-t border-primary-blue', {
+      className={classNames('pt-8 pb-6 border-t border-primary-blue last:pb-0', {
         'border-b': withBottomBorder,
       })}
     >
