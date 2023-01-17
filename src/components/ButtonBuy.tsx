@@ -1,9 +1,15 @@
+'use client';
+
 import { Button } from '@/components/Button';
 
-export function ButtonBuy() {
+type ButtonBuyProps = {
+  onClick: () => void;
+};
+
+export function ButtonBuy({ onClick }: ButtonBuyProps) {
   return (
     <div className="flex flex-col gap-5">
-      <Button>COMPRAR →</Button>
+      <Button onClick={onClick}>COMPRAR →</Button>
 
       <div className="rounded-sm border border-secondary-white py-2.5 px-3.5 text-center font-serif uppercase leading-[100%] tracking-[0.075em] text-secondary-white">
         &gt;&gt; IMPORTANTE &lt;&lt; PARA COMPLETAR TU COMPRA Y ACCEDER AL MATERIAL ENVIÁ EL
