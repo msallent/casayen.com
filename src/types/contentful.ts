@@ -4,6 +4,15 @@ export type ContentfulResponse<T> = {
   data: T;
 };
 
+export type ContentfulPage = {
+  title: string;
+  subtitle?: string;
+};
+
+export type ContentfulRichText = {
+  json: Document;
+};
+
 export type NavbarMenuData = {
   navbarMenu: {
     menuItemsCollection: {
@@ -13,7 +22,7 @@ export type NavbarMenuData = {
 };
 
 export type PageHomeData = {
-  pageHome: {
+  pageHome: ContentfulPage & {
     featuredLinksCollection: {
       items: Array<Link>;
     };
@@ -21,7 +30,8 @@ export type PageHomeData = {
 };
 
 export type PageTalleresOnlineData = {
-  pageTalleresOnline: {
+  pageTalleresOnline: ContentfulPage & {
+    disclaimer?: string;
     talleresCollection: {
       items: Array<Taller>;
     };
@@ -29,15 +39,11 @@ export type PageTalleresOnlineData = {
 };
 
 export type PageFAQData = {
-  pageFaq: {
+  pageFaq: ContentfulPage & {
     faqsCollection: {
       items: Array<FAQ>;
     };
   };
-};
-
-export type ContentfulRichText = {
-  json: Document;
 };
 
 export type Link = {
