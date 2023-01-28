@@ -1,20 +1,20 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { Title } from '@/components/Title';
-import blogEntryPlaceholderImage from '@/assets/images/blog-entry-placeholder.webp';
+import previewBlogPostPlaceholderImage from '@/assets/images/preview-blog-post-placeholder.webp';
 
-type EntryBlogProps = {
+type PreviewBlogPostProps = {
   title: string;
   url: string;
   description?: string;
 };
 
-export function EntryBlog({ title, url, description }: EntryBlogProps) {
+export function PreviewBlogPost({ title, url, description }: PreviewBlogPostProps) {
   return (
     <div className="flex flex-col border-b border-primary-blue pb-6">
       <Image
-        src={blogEntryPlaceholderImage}
-        alt="Blog entry"
+        src={previewBlogPostPlaceholderImage}
+        alt="Blog post"
         className="mb-6 w-full"
         placeholder="blur"
       />
