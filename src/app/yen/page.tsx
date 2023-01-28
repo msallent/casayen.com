@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { Title } from '@/components/Title';
 import { TitlePage } from '@/components/TitlePage';
+import { fetchContent } from '@/utils/fetch';
+import { PageYenData } from '@/types/contentful';
 import GridSVG from '@/assets/svgs/grid.svg';
 import Star1SVG from '@/assets/svgs/star-1.svg';
 import Star2SVG from '@/assets/svgs/star-2.svg';
@@ -11,11 +13,22 @@ import yenUterusImage from '@/assets/images/yen-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
-export default function Yen() {
+export default async function Yen() {
+  const {
+    data: {
+      pageYen: { title, subtitle },
+    },
+  } = await fetchContent<PageYenData>(`query PageYen {
+    pageYen(id: "${process.env.CONTENTFUL_PAGE_YEN_ID}") {
+      title
+      subtitle
+    }
+  }`);
+
   return (
     <>
       <section className="mx-5 mt-4">
-        <TitlePage>DETRÁS DE YEN</TitlePage>
+        <TitlePage title={title} subtitle={subtitle} />
 
         <div className="relative mb-8">
           <Image

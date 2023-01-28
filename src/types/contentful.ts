@@ -38,6 +38,21 @@ export type PageTalleresOnlineData = {
   };
 };
 
+export type PageYenData = {
+  pageYen: ContentfulPage;
+};
+
+export type PageBlogData = {
+  pageBlog: ContentfulPage;
+  pageBlogPostCollection: {
+    items: Array<PreviewBlogPost>;
+  };
+};
+
+export type PageBlogPostData = {
+  pageBlogPost: BlogPost;
+};
+
 export type PageFAQData = {
   pageFaq: ContentfulPage & {
     faqsCollection: {
@@ -63,6 +78,15 @@ export type Taller = {
   info?: ContentfulRichText;
   syllabus?: ContentfulRichText;
 };
+
+export type BlogPost = {
+  title: string;
+  url: string;
+  description?: string;
+  body: ContentfulRichText;
+};
+
+export type PreviewBlogPost = Pick<BlogPost, 'title' | 'url' | 'description'>;
 
 export type FAQ = {
   title: string;

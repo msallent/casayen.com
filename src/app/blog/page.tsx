@@ -1,28 +1,43 @@
 import Image from 'next/image';
 import { PreviewBlogPost } from '@/components/PreviewBlogPost';
 import { TitlePage } from '@/components/TitlePage';
+import { fetchContent } from '@/utils/fetch';
+import { PageBlogData } from '@/types/contentful';
 import backgroundGradient from '@/assets/images/gradient-1.webp';
 
-export default function Blog() {
+export default async function Blog() {
+  const {
+    data: {
+      pageBlog: { title, subtitle },
+      pageBlogPostCollection,
+    },
+  } = await fetchContent<PageBlogData>(`query PageBlog {
+    pageBlog(id: "${process.env.CONTENTFUL_PAGE_BLOG_ID}") {
+      title
+      subtitle
+    }
+    pageBlogPostCollection {
+      items {
+        title
+        url
+        description
+      }
+    }
+  }`);
+
   return (
     <section className="mx-5 mt-4 mb-20">
-      <TitlePage>YEN BLOG</TitlePage>
-
-      <div className="mt-4 mb-12 text-center uppercase text-primary-blue">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab esse illo fuga explicabo.
-      </div>
+      <TitlePage title={title} subtitle={subtitle} />
 
       <div className="mt-12 mb-20 space-y-16">
-        <PreviewBlogPost
-          title="Lorem ipsum dolor sit"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nulla, fugit deleniti consequatur rem dicta ea autem eligendi quasi ullam necessitatibus voluptatem dignissimos saepe!"
-          url="/"
-        />
-        <PreviewBlogPost
-          title="Lorem ipsum dolor sit"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nulla, fugit deleniti consequatur rem dicta ea autem eligendi quasi ullam necessitatibus voluptatem dignissimos saepe!"
-          url="/"
-        />
+        {pageBlogPostCollection.items.map((blogPost) => (
+          <PreviewBlogPost
+            key={blogPost.title}
+            title={blogPost.title}
+            description={blogPost.description}
+            url={`blog/${blogPost.url}`}
+          />
+        ))}
       </div>
 
       <Image
