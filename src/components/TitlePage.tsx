@@ -1,16 +1,17 @@
-import { ReactNode } from 'react';
 import { Title } from '@/components/Title';
 import StarsSVG from '@/assets/svgs/stars-2.svg';
 
 type TitlePageProps = {
-  children: ReactNode;
+  title: string;
+  subtitle?: string;
 };
 
-export function TitlePage({ children }: TitlePageProps) {
+export function TitlePage({ title, subtitle }: TitlePageProps) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <StarsSVG className="mx-auto mt-2 mb-4 h-6 w-6 text-primary-blue" />
-      <Title>{children}</Title>
+    <div className="flex flex-col items-center justify-center uppercase text-primary-blue">
+      <StarsSVG className="mx-auto mt-2 mb-4 h-6 w-6" />
+      <Title>{title}</Title>
+      {subtitle && <div className="mt-4 text-center uppercase">{subtitle}</div>}
     </div>
   );
 }
