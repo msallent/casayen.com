@@ -9,8 +9,30 @@ export type ContentfulPage = {
   subtitle?: string;
 };
 
+export type ContentfulDynamicPage = {
+  url: string;
+};
+
 export type ContentfulRichText = {
   json: Document;
+};
+
+export type ContentfulAsset = {
+  sys: {
+    id: string;
+  };
+  url: string;
+  title: string;
+  width: number;
+  height: number;
+};
+
+export type ContentfulRichTextWithAssets = ContentfulRichText & {
+  links: {
+    assets: {
+      block: Array<ContentfulAsset>;
+    };
+  };
 };
 
 export type NavbarMenuData = {
@@ -49,8 +71,16 @@ export type PageBlogData = {
   };
 };
 
+export type PageBlogPostParams = {
+  pageBlogPostCollection: {
+    items: Array<ContentfulDynamicPage>;
+  };
+};
+
 export type PageBlogPostData = {
-  pageBlogPost: BlogPost;
+  pageBlogPostCollection: {
+    items: [BlogPost];
+  };
 };
 
 export type PageFAQData = {
@@ -83,7 +113,10 @@ export type BlogPost = {
   title: string;
   url: string;
   description?: string;
-  body: ContentfulRichText;
+  body: ContentfulRichTextWithAssets;
+  sys: {
+    publishedAt: string;
+  };
 };
 
 export type PreviewBlogPost = Pick<BlogPost, 'title' | 'url' | 'description'>;
