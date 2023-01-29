@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Balancer from 'react-wrap-balancer';
 import { Title } from '@/components/Title';
 import { fetchContent } from '@/utils/fetch';
 import { parseRichText } from '@/utils/richText';
@@ -58,7 +59,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
         />
 
         <div className="inset-center absolute w-full text-center uppercase">
-          <Title>{blogPost.title}</Title>
+          <Title>
+            <Balancer>{blogPost.title}</Balancer>
+          </Title>
         </div>
       </div>
 
