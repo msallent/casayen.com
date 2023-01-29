@@ -87,7 +87,7 @@ export default async function Yen() {
             </Title>
             <Image
               src={yenUterusImage}
-              className="absolute top-1/2 left-1/2 w-[200px] -translate-x-1/2 -translate-y-1/2 pb-3"
+              className="inset-center absolute w-[200px] pb-3"
               placeholder="blur"
               alt="Uterus"
             />

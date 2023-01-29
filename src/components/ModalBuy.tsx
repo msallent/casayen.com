@@ -16,7 +16,7 @@ type ModalBuyProps = {
 export function ModalBuy({ taller, onClose }: ModalBuyProps) {
   return createPortal(
     <>
-      <div className="fixed top-1/2 left-1/2 z-10 w-[calc(100%-2.5rem)] -translate-y-1/2 -translate-x-1/2 bg-primary-black pt-9 pb-5">
+      <div className="inset-center fixed z-10 w-[calc(100%-2.5rem)] bg-primary-black pt-9 pb-5">
         <button
           className="absolute -top-10 right-0"
           type="button"

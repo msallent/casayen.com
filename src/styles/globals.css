@@ -6,4 +6,8 @@
   .font-title-full {
     @apply font-title leading-[78.5%] tracking-[-0.02em] [text-shadow:0_0_19px_rgba(0,59,195,0.4)];
   }
+
+  .inset-center {
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
 }
