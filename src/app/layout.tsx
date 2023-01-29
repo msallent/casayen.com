@@ -36,7 +36,7 @@ export default async function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
       <head />
-      <body className="overscroll-none bg-primary-black text-sm selection:bg-secondary-white">
+      <body className="overscroll-none bg-primary-black text-sm selection:bg-secondary-white sm:text-base">
         <Navbar menuItems={menuItems} />
         <main className="overflow-hidden">{children}</main>
         <Footer />
