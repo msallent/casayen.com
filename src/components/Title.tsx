@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import classNames from 'classnames';
+import Balancer from 'react-wrap-balancer';
 
 type TitleSize = 'small' | 'default';
 type TitleVariant = 'primary' | 'secondary';
@@ -21,7 +22,7 @@ export function Title({ size = 'default', variant = 'primary', children }: Title
         { 'text-primary-black': variant === 'secondary' }
       )}
     >
-      {children}
+      <Balancer>{children}</Balancer>
     </h1>
   );
 }
