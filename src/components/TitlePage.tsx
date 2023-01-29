@@ -8,10 +8,10 @@ type TitlePageProps = {
 
 export function TitlePage({ title, subtitle }: TitlePageProps) {
   return (
-    <div className="flex flex-col items-center justify-center uppercase text-primary-blue">
+    <div className="flex flex-col items-center justify-center text-center uppercase text-primary-blue">
       <StarsSVG className="mx-auto mt-2 mb-4 h-6 w-6" />
       <Title>{title}</Title>
-      {subtitle && <div className="mt-4 text-center uppercase">{subtitle}</div>}
+      {subtitle && <div className="mt-4">{subtitle}</div>}
     </div>
   );
 }
