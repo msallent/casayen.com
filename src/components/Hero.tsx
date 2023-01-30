@@ -25,16 +25,19 @@ export function Hero() {
         <h1 className="ml-[15%]">GALÁCTICO</h1>
         <h1 className="ml-[11%]">DE REPRO-</h1>
         <h1 className="ml-[1%]">GRAMACION</h1>
-        <div className="relative ml-[23%] flex items-center">
-          <h1>SEXUAL</h1>
+        <h1 className="relative ml-[23%]">
+          <span>SEXUAL</span>
           <div className="absolute top-[-54%] right-[18%] rotate-90 text-[3rem]">‡</div>
-        </div>
+        </h1>
       </div>
 
       <div className="hidden sm:block sm:text-center">
         <h1>INTERGALÁCTICO DE</h1>
         <h1>REPROGRAMACION</h1>
-        <h1>SEXUAL</h1>
+        <h1 className="relative">
+          <span>SEXUAL</span>
+          <div className="absolute top-[-54%] right-[28%] rotate-90 text-[3rem]">‡</div>
+        </h1>
       </div>
 
       <Stars3SVG className="hidden sm:mx-auto sm:mt-6 sm:block sm:w-3/5" />
