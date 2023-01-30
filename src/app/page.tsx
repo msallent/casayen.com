@@ -137,7 +137,7 @@ export default async function Home() {
       <section className="relative mt-40 pb-20 sm:mt-64">
         <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10" />
 
-        <div className="relative mx-5 flex flex-col items-center pt-40 text-center sm:mx-10 sm:pt-56">
+        <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56">
           <GlyphsSVG className="mb-8 w-28" />
 
           <Title variant="secondary">Productos YEN</Title>
