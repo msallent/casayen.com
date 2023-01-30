@@ -15,7 +15,7 @@ export function LinkFeatured({ href, index, children, withBottomBorder }: LinkPr
     <NextLink
       href={href}
       className={classNames(
-        'flex justify-between relative font-title-full uppercase text-[40px] pt-8 pb-5 border-t border-primary-blue',
+        'flex justify-between relative font-title-full uppercase text-[2.85rem] leading-[78.5%] pt-8 pb-5 border-t border-primary-blue',
         { 'border-b': withBottomBorder }
       )}
     >

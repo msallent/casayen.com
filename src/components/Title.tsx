@@ -15,8 +15,8 @@ export function Title({ size = 'default', variant = 'primary', children }: Title
     <h1
       className={classNames(
         'font-title-full text-primary-blue',
-        { 'text-[60px]': size === 'default' },
-        { 'text-[40px]': size === 'small' },
+        { 'text-[4.285rem] leading-[78.5%]': size === 'default' },
+        { 'text-[2.85rem] leading-[78.5%]': size === 'small' },
         { 'text-primary-blue': variant === 'primary' },
         { 'text-primary-black': variant === 'secondary' }
       )}
