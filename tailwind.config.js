@@ -20,6 +20,9 @@ module.exports = {
         serif: ['var(--font-eb-garamond)', ...fontFamily.serif],
         title: ['var(--font-pp-neue-world)', ...fontFamily.serif],
       },
+      screens: {
+        md: '744px',
+      },
     },
   },
 };
