@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Balancer from 'react-wrap-balancer';
+import { Hero } from '@/components/Hero';
 import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
 import { LinkFeatured } from '@/components/LinkFeatured';
@@ -6,13 +8,10 @@ import { fetchContent } from '@/utils/fetch';
 import { PageHomeData } from '@/types/contentful';
 import GlobeSVG from '@/assets/svgs/globe.svg';
 import RunesSVG from '@/assets/svgs/runes.svg';
-import StarsSVG from '@/assets/svgs/stars-1.svg';
 import GlyphsSVG from '@/assets/svgs/glyphs.svg';
 import ChevronSVG from '@/assets/svgs/chevron.svg';
 import YenStarsSVG from '@/assets/svgs/yen-stars.svg';
-import Ellipsis1SVG from '@/assets/svgs/ellipsis-1.svg';
-import Ellipsis2SVG from '@/assets/svgs/ellipsis-2.svg';
-import ChevronDouble from '@/assets/svgs/chevron-double.svg';
+import EllipsisSVG from '@/assets/svgs/ellipsis-2.svg';
 import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
 import GradientShopSVG from '@/assets/svgs/gradient-shop.svg';
 import homeUterusImage from '@/assets/images/home-uterus.webp';
@@ -36,31 +35,12 @@ export default async function Home() {
   return (
     <>
       <section className="mt-24 text-primary-blue">
-        <div className="font-title-full flex w-full flex-col text-[24vw]">
-          <div className="relative ml-[4%] flex items-center gap-1.5">
-            <div className="text-[60px]">→</div>
-            <div className="w-20 text-right font-sans text-xs leading-[14px] tracking-normal">
-              BIENVENIDX A TU
-            </div>
-            <h1>VIAJE</h1>
-            <Ellipsis1SVG className="pointer-events-none absolute top-[-30%] left-[4%] z-10 w-[230px]" />
-            <StarsSVG className="pointer-events-none absolute top-[-60%] left-[80%] z-10 w-[49px]" />
-          </div>
-          <h1 className="ml-[4%]">INTER-</h1>
-          <h1 className="ml-[18%]">GALÁCTICO</h1>
-          <h1 className="ml-[14%]">DE REPRO-</h1>
-          <h1 className="ml-[4%]">GRAMACION</h1>
-          <div className="relative ml-[23%] flex items-center">
-            <h1>SEXUAL</h1>
-            <div className="absolute top-[-54%] right-[25%] rotate-90 text-[40px]">‡</div>
-          </div>
-        </div>
+        <Hero />
 
-        <ChevronDouble className="mx-auto mt-6 mb-10 w-6" />
-
-        <div className="relative left-[-22px] whitespace-nowrap">
+        <div className="relative -left-6 whitespace-nowrap">
           COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
-          <span className="mx-1.5">≈</span>COSMIC SEXUALITY
+          <span className="mx-1.5">≈</span>COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC
+          SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
         </div>
 
         <Image
@@ -73,43 +53,47 @@ export default async function Home() {
         />
       </section>
 
-      <section className="mx-5 mt-14 text-primary-blue">
-        <YenStarsSVG className="mb-14" />
+      <section className="mx-5 mt-16 text-primary-blue sm:mx-10 sm:mt-20">
+        <YenStarsSVG className="mb-20" />
 
         <div className="relative text-center">
           <div className="mb-4">¿QUÉ ES YEN?</div>
 
-          <Title>Yen es un proyecto de Sexualidad Consciente</Title>
+          <Title>
+            <Balancer>Yen es un proyecto de Sexualidad Consciente</Balancer>
+          </Title>
 
-          <div className="mt-4 uppercase leading-[18px]">
-            Un espacio para la liberación del cuerpo y el corazón, la recuperación del placer, la
-            soberanía y la autogestión.{' '}
-            <span className="font-serif italic">
-              Viene a derribar mandatos y a trabajar el trauma que nos habita
-            </span>{' '}
-            producto de tantas generaciones en las que la sexualidad fue tabú y herramienta de
-            sometimiento del alma. La propuesta es trabajo de la sombra desde una óptica super
-            occidental.
+          <div className="mt-4 uppercase leading-[129%]">
+            <Balancer>
+              Un espacio para la liberación del cuerpo y el corazón, la recuperación del placer, la
+              soberanía y la autogestión.{' '}
+              <span className="font-serif italic">
+                Viene a derribar mandatos y a trabajar el trauma que nos habita
+              </span>{' '}
+              producto de tantas generaciones en las que la sexualidad fue tabú y herramienta de
+              sometimiento del alma. La propuesta es trabajo de la sombra desde una óptica super
+              occidental.
+            </Balancer>
           </div>
 
           <Image
             alt="Yen"
             src={homeUterusImage}
-            className="absolute top-0 right-0 -z-10 opacity-60"
+            className="absolute -top-8 right-0 -z-10 opacity-60"
             placeholder="blur"
           />
 
           <Image
             alt="Yen"
             src={homeUterusImage}
-            className="absolute top-[35%] left-0 -z-10 opacity-60"
+            className="absolute top-[40%] left-0 -z-10 opacity-60"
             placeholder="blur"
           />
         </div>
       </section>
 
-      <section className="relative mt-32 text-primary-blue">
-        <div className="ml-5 flex flex-col">
+      <section className="relative mt-44 text-primary-blue sm:mt-52">
+        <div className="ml-5 flex flex-col sm:ml-10">
           <span className="leading-5">UNITE AL</span>
           <span className="leading-5">VIAJE</span>
           <ChevronSVG className="mt-2.5 ml-px w-3" />
@@ -117,11 +101,11 @@ export default async function Home() {
 
         <div className="relative mt-9 mb-16">
           <GlobeSVG className="mx-auto h-[50px] w-[50px]" />
-          <Ellipsis2SVG className="inset-center absolute h-[345px]" />
+          <EllipsisSVG className="inset-center absolute h-[345px]" />
           <TextEllipsisSVG className="inset-center absolute h-[276px]" />
         </div>
 
-        <div className="mr-5 flex flex-col">
+        <div className="mr-5 flex flex-col sm:mr-10">
           <span className="text-right leading-5">UNITE AL</span>
           <span className="text-right leading-5">VIAJE</span>
           <ChevronSVG className="ml-auto mt-2.5 mr-px w-3" />
@@ -135,7 +119,7 @@ export default async function Home() {
           placeholder="blur"
         />
 
-        <ul className="mx-5 mt-20">
+        <ul className="mx-5 mt-24 sm:mx-10">
           {featuredLinks.map((link, index) => (
             <li key={index}>
               <LinkFeatured
@@ -150,18 +134,20 @@ export default async function Home() {
         </ul>
       </section>
 
-      <section className="relative mt-40 pb-20">
-        <RunesSVG className="absolute top-[-45px] mx-5" />
+      <section className="relative mt-40 pb-20 sm:mt-64">
+        <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10" />
 
-        <div className="relative mx-5 flex flex-col items-center pt-40 text-center">
+        <div className="relative mx-5 flex flex-col items-center pt-40 text-center sm:mx-10 sm:pt-56">
           <GlyphsSVG className="mb-8 w-28" />
 
           <Title variant="secondary">Productos YEN</Title>
 
-          <div className="mt-4 mb-11 w-[330px] uppercase leading-[18px]">
-            Encontrá en un solo lugar todas las herramientas que necesitás para embarcarte en tu
-            viaje de auto-descubrimiento y reprogramación sexual. productos ética y responsablemente
-            producidos.
+          <div className="mt-4 mb-11 uppercase leading-[129%]">
+            <Balancer>
+              Encontrá en un solo lugar todas las herramientas que necesitás para embarcarte en tu
+              viaje de auto-descubrimiento y reprogramación sexual. productos ética y
+              responsablemente producidos.
+            </Balancer>
           </div>
 
           <Button variant="secondary">
