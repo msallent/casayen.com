@@ -10,7 +10,7 @@ export function Link({ href, children }: LinkProps) {
   return (
     <NextLink
       href={href}
-      className="font-title-full flex justify-between border-b border-primary-black pb-3 text-[40px] uppercase text-primary-black"
+      className="font-title-full flex justify-between border-b border-primary-black pb-3 text-[2.85rem] uppercase text-primary-black"
     >
       {children}
       <span>→</span>

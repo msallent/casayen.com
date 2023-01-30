@@ -31,13 +31,13 @@ export function ModalBuy({ taller, onClose }: ModalBuyProps) {
             <div className="mx-10 text-center">
               <Title size="small">{taller.title}</Title>
             </div>
-            <div className="mx-10 mt-2.5 text-center font-medium uppercase leading-[18px]">
+            <div className="mx-10 mt-2.5 text-center font-medium uppercase leading-[129%]">
               {taller.shortDescription}
             </div>
           </div>
 
           <div className="relative my-6 w-full">
-            <div className="absolute left-0 top-1/2 mx-10 flex -translate-y-1/2 flex-col items-center text-center leading-[18px]">
+            <div className="absolute left-0 top-1/2 mx-10 flex -translate-y-1/2 flex-col items-center text-center leading-[129%]">
               <span className="font-bold">&gt;&gt; IMPORTANTE &lt;&lt;</span>
               <span className="mb-4 font-medium uppercase">
                 Para completar tu compra y acceder al material, enviá el comprobante de pago a:

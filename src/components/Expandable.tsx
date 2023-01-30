@@ -36,7 +36,7 @@ export function Expandable({
       })}
     >
       <div className="flex items-start justify-between text-primary-blue">
-        <div className="max-w-[250px]">
+        <div className="max-w-[75%]">
           <Title size="small">{title}</Title>
           {description && <div className="mt-2.5 uppercase">{description}</div>}
         </div>
