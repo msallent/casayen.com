@@ -20,7 +20,11 @@ const ppNeueWorld = localFont({
 });
 
 export default async function Layout({ children }: LayoutProps) {
-  const { data } = await fetchContent<NavbarMenuData>(`query NavbarMenu {
+  const {
+    data: {
+      navbarMenu: { menuItemsCollection },
+    },
+  } = await fetchContent<NavbarMenuData>(`query NavbarMenu {
     navbarMenu(id: "${process.env.CONTENTFUL_NAVBAR_MENU_ID}") {
       menuItemsCollection {
         items {
@@ -31,13 +35,11 @@ export default async function Layout({ children }: LayoutProps) {
     }
   }`);
 
-  const menuItems = data.navbarMenu.menuItemsCollection.items;
-
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
       <head />
       <body className="overscroll-none bg-primary-black selection:bg-secondary-white">
-        <Navbar menuItems={menuItems} />
+        <Navbar menuItems={menuItemsCollection.items} />
         <main className="overflow-hidden">{children}</main>
         <Footer />
         <div className="pointer-events-none fixed left-0 top-0 z-20 h-full w-full bg-grain-texture mix-blend-overlay" />

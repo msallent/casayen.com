@@ -19,7 +19,11 @@ import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
 export default async function Home() {
-  const { data } = await fetchContent<PageHomeData>(`query PageHome {
+  const {
+    data: {
+      pageHome: { featuredLinksCollection },
+    },
+  } = await fetchContent<PageHomeData>(`query PageHome {
     pageHome(id: "${process.env.CONTENTFUL_PAGE_HOME_ID}") {
       featuredLinksCollection {
         items {
@@ -29,8 +33,6 @@ export default async function Home() {
       }
     }
   }`);
-
-  const featuredLinks = data.pageHome.featuredLinksCollection.items;
 
   return (
     <>
@@ -120,7 +122,7 @@ export default async function Home() {
         />
 
         <ul className="mx-5 mt-24 border-b border-primary-blue sm:mx-10">
-          {featuredLinks.map((link, index) => (
+          {featuredLinksCollection.items.map((link, index) => (
             <li key={index}>
               <LinkFeatured href={link.url} index={index + 1}>
                 {link.label}

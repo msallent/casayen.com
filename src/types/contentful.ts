@@ -44,7 +44,7 @@ export type NavbarMenuData = {
 };
 
 export type PageHomeData = {
-  pageHome: ContentfulPage & {
+  pageHome: {
     featuredLinksCollection: {
       items: Array<Link>;
     };
