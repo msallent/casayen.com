@@ -13,12 +13,14 @@ export function PreviewBlogPost({ title, url, description }: PreviewBlogPostProp
   return (
     <div className="flex flex-col border-b border-primary-blue pb-6">
       <div className="mb-6 flex aspect-square items-center overflow-hidden sm:aspect-video">
-        <Image
-          src={previewBlogPostPlaceholderImage}
-          alt="Blog post"
-          className="w-full"
-          placeholder="blur"
-        />
+        <NextLink href={url} className="w-full">
+          <Image
+            src={previewBlogPostPlaceholderImage}
+            alt="Blog post"
+            className="w-full"
+            placeholder="blur"
+          />
+        </NextLink>
       </div>
 
       <Title size="small">{title}</Title>
