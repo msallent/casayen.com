@@ -65,7 +65,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         </div>
       </div>
 
-      <div className="mx-5 mt-14">
+      <div className="mx-5 mt-14 sm:mx-10">
         <span>{formateDateString(blogPost.sys.publishedAt)}</span>
 
         <div className="my-5 italic">{blogPost.description}</div>
