@@ -30,12 +30,10 @@ export function ExpandableTaller({ taller }: ExpandableTallerProps) {
         buttonLabel={{ collapsed: 'Info', expanded: 'Cerrar' }}
       >
         <div className="text-primary-blue [&_ul~p]:mt-4 [&_p+p]:mt-4">
-          {taller.longDescription && (
-            <div className="text-lg leading-5">{taller.longDescription}</div>
-          )}
+          {taller.longDescription && <div>{taller.longDescription}</div>}
           {taller.duration && (
-            <div className="mt-2 uppercase text-white">
-              Duración del Taller: <span className="font-bold">{taller.duration}</span>
+            <div className="mt-2 text-sm uppercase text-white">
+              Duración: <span className="font-bold">{taller.duration}</span>
             </div>
           )}
           {taller.value && (
