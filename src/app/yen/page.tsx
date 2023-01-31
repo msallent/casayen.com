@@ -143,8 +143,8 @@ export default async function Yen() {
       <div className="relative mt-8 h-80 sm:h-[25rem]">
         <GradientYenSVG />
         <Star2SVG className="absolute left-[40%] top-0 w-20" />
-        <Star2SVG className="absolute left-0 bottom-[16%] w-48 sm:left-5 sm:bottom-[19%] md:left-10 md:bottom-[15%]" />
-        <GridSVG className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 px-5 sm:hidden" />
+        <Star2SVG className="absolute left-0 bottom-[16%] w-48 sm:left-2 sm:bottom-[16%] md:left-6 md:bottom-[14%]" />
+        <GridSVG className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28" />
       </div>
     </>
   );
