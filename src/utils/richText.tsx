@@ -20,8 +20,8 @@ export function parseRichText(richTextDocument: Document, assets?: Array<Content
       [MARKS.UNDERLINE]: (children) => <span className="underline">{children}</span>,
     },
     renderNode: {
-      [BLOCKS.HEADING_1]: (_, children) => <h1 className="text-5xl">{children}</h1>,
-      [BLOCKS.HEADING_2]: (_, children) => <h2 className="text-5xl">{children}</h2>,
+      [BLOCKS.HEADING_1]: (_, children) => <h1 className="font-title-full text-6xl">{children}</h1>,
+      [BLOCKS.HEADING_2]: (_, children) => <h2 className="font-title-full text-5xl">{children}</h2>,
       [BLOCKS.HEADING_3]: (_, children) => <h3 className="text-4xl">{children}</h3>,
       [BLOCKS.HEADING_4]: (_, children) => <h4 className="text-2xl">{children}</h4>,
       [BLOCKS.HEADING_5]: (_, children) => <h5 className="text-xl">{children}</h5>,
