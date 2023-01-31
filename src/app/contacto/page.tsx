@@ -10,8 +10,8 @@ import backgroundGradient from '@/assets/images/gradient-3.webp';
 
 export default function Contacto() {
   return (
-    <section className="mx-5 mt-16">
-      <div className="uppercase text-primary-blue">
+    <section className="relative mt-16">
+      <div className="mx-5 uppercase text-primary-blue sm:mx-10">
         <div className="flex items-baseline justify-between border-y border-primary-blue pt-7 pb-3">
           <Title>Tenés dudas /</Title>
           <Globes1SVG className="h-5" />
@@ -20,7 +20,7 @@ export default function Contacto() {
           <Globes2SVG className="h-5" />
           <div className="relative flex items-center">
             <Title>comentarios?</Title>
-            <div className="font-title-full absolute top-[-12px] left-[-25px] rotate-90 text-[30px]">
+            <div className="font-title-full absolute top-[-0.75rem] left-[-1.75rem] rotate-90 text-[2rem]">
               ‡
             </div>
           </div>
@@ -28,11 +28,11 @@ export default function Contacto() {
         <div className="flex items-baseline justify-end border-b border-primary-blue pt-7 pb-3">
           <div className="relative flex items-center">
             <Title>→→ hablemos</Title>
-            <EllipsisSVG className="absolute top-[-15px] right-[-20px] w-full" />
+            <EllipsisSVG className="absolute top-[-1rem] right-[-3rem] w-full" />
           </div>
         </div>
 
-        <ul className="mt-10 mb-16 space-y-5">
+        <ul className="mt-10 mb-28 space-y-5">
           <li className="flex items-center gap-5">
             <ChevronSVG className="w-5 rotate-[270deg]" />
             <div>
@@ -56,7 +56,7 @@ export default function Contacto() {
           </li>
         </ul>
 
-        <div className="h-[75px]">
+        <div className="h-20">
           <GridSVG />
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Contacto() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 -z-10 w-full"
+        className="absolute -top-36 left-0 -z-10 w-full sm:-top-64 md:-top-96"
         placeholder="blur"
         priority
       />
