@@ -43,14 +43,14 @@ export default async function Talleres() {
   }`);
 
   return (
-    <section className="mx-5 mt-4">
+    <section className="mx-5 mt-4 sm:mx-10">
       <TitlePage title={title} subtitle={subtitle} />
 
       {disclaimer && (
         <div className="mt-12 font-serif uppercase italic text-primary-blue">{disclaimer}</div>
       )}
 
-      <div className="mt-5 mb-20">
+      <div className="mt-5 mb-20 border-b border-primary-blue pb-6">
         {talleresCollection.items.map((taller) => (
           <ExpandableTaller key={taller.title} taller={taller} />
         ))}
