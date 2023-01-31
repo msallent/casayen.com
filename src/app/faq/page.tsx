@@ -27,10 +27,10 @@ export default async function FAQ() {
   }`);
 
   return (
-    <section className="mx-5 mt-4">
+    <section className="mx-5 mt-4 sm:mx-10">
       <TitlePage title={title} subtitle={subtitle} />
 
-      <div className="mt-12 mb-20">
+      <div className="mt-12 mb-20 border-b border-primary-blue">
         {faqsCollection.items.map((faq) => (
           <Expandable key={faq.title} title={faq.title}>
             <div className="text-primary-blue">{parseRichText(faq.content.json)}</div>
