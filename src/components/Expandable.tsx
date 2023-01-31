@@ -24,7 +24,7 @@ export function Expandable({ title, children, description, buttonLabel }: Expand
   };
 
   return (
-    <div className="border-t border-primary-blue pt-8 pb-6 last:pb-0">
+    <div className="border-t border-primary-blue pt-8 pb-6">
       <div className="flex items-start justify-between text-primary-blue">
         <div className="max-w-[75%]">
           <Title size="small">

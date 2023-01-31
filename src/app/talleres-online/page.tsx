@@ -50,7 +50,7 @@ export default async function Talleres() {
         <div className="mt-12 font-serif uppercase italic text-primary-blue">{disclaimer}</div>
       )}
 
-      <div className="mt-5 mb-20 border-b border-primary-blue pb-6">
+      <div className="mt-5 mb-20 border-b border-primary-blue">
         {talleresCollection.items.map((taller) => (
           <ExpandableTaller key={taller.title} taller={taller} />
         ))}
