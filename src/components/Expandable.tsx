@@ -1,6 +1,7 @@
 'use client';
 
 import { ReactNode, useState } from 'react';
+import Balancer from 'react-wrap-balancer';
 import classNames from 'classnames';
 import { Title } from '@/components/Title';
 import PlusSVG from '@/assets/svgs/plus.svg';
@@ -37,7 +38,9 @@ export function Expandable({
     >
       <div className="flex items-start justify-between text-primary-blue">
         <div className="max-w-[75%]">
-          <Title size="small">{title}</Title>
+          <Title size="small">
+            <Balancer>{title}</Balancer>
+          </Title>
           {description && <div className="mt-2.5 uppercase">{description}</div>}
         </div>
 
