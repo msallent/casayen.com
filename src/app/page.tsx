@@ -119,14 +119,10 @@ export default async function Home() {
           placeholder="blur"
         />
 
-        <ul className="mx-5 mt-24 sm:mx-10">
+        <ul className="mx-5 mt-24 border-b border-primary-blue sm:mx-10">
           {featuredLinks.map((link, index) => (
             <li key={index}>
-              <LinkFeatured
-                href={link.url}
-                index={index + 1}
-                withBottomBorder={index === featuredLinks.length - 1}
-              >
+              <LinkFeatured href={link.url} index={index + 1}>
                 {link.label}
               </LinkFeatured>
             </li>

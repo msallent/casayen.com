@@ -14,16 +14,9 @@ type ExpandableProps = {
     collapsed: string;
     expanded: string;
   };
-  withBottomBorder?: boolean;
 };
 
-export function Expandable({
-  title,
-  children,
-  description,
-  buttonLabel,
-  withBottomBorder,
-}: ExpandableProps) {
+export function Expandable({ title, children, description, buttonLabel }: ExpandableProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggle = () => {
@@ -31,11 +24,7 @@ export function Expandable({
   };
 
   return (
-    <div
-      className={classNames('pt-8 pb-6 border-t border-primary-blue last:pb-0', {
-        'border-b': withBottomBorder,
-      })}
-    >
+    <div className="border-t border-primary-blue pt-8 pb-6 last:pb-0">
       <div className="flex items-start justify-between text-primary-blue">
         <div className="max-w-[75%]">
           <Title size="small">
