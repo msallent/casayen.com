@@ -33,7 +33,7 @@ export default async function Yen() {
         <div className="relative mb-8">
           <Image
             src={yenCamiImage}
-            className="mt-4 px-2"
+            className="mt-4 sm:mx-auto sm:w-4/5"
             alt="Cami Yen"
             placeholder="blur"
             quality={100}
@@ -43,25 +43,40 @@ export default async function Yen() {
         </div>
 
         <Title size="small">Hola, soy Cami :)</Title>
-        <div className="mt-2.5 text-primary-blue">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium in
-          repellendus placeat consequuntur culpa dicta, officia doloribus officiis deleniti totam
-          harum atque quod? Voluptatum fugiat quibusdam atque temporibus esse! Beatae, quis aliquid
-          vitae quo nesciunt eligendi consequuntur fugiat, maiores nihil ex in accusantium placeat,
-          odit iure accusamus. Rem unde natus animi laudantium, inventore possimus voluptatem.
-          Debitis facilis similique totam. Consequatur distinctio dolorum natus accusantium beatae
-          sapiente nihil debitis? Sit iure nesciunt voluptatum, inventore explicabo est optio quos
-          facere iusto dolores illo magni quibusdam provident ut minima. Rem, magnam in!
-        </div>
-        <div className="mt-2.5 text-primary-blue">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium in
-          repellendus placeat consequuntur culpa dicta, officia doloribus officiis deleniti totam
-          harum atque quod? Voluptatum fugiat quibusdam atque temporibus esse! Beatae, quis aliquid
-          vitae quo nesciunt eligendi consequuntur fugiat, maiores nihil ex in accusantium placeat,
-          odit iure accusamus. Rem unde natus animi laudantium, inventore possimus voluptatem.
-          Debitis facilis similique totam. Consequatur distinctio dolorum natus accusantium beatae
-          sapiente nihil debitis? Sit iure nesciunt voluptatum, inventore explicabo est optio quos
-          facere iusto dolores illo magni quibusdam provident ut minima. Rem, magnam in!
+
+        <div className="mt-2.5 space-y-6 text-primary-blue">
+          <div>BIENVENIDX A LA CASA VIRTUAL DE YEN</div>
+          <div>
+            Tengo 31 años y soy de Buenos Aires, Argentina, viviendo entre la ciudad y la selva en
+            Santa Teresa. Originalmente me forme con una licencitura en comunicación y tengo una
+            Maestría en estrategias de comunicación y dirección de arte de la Universidad Elisava de
+            Barcelona. Trabajé en producción de moda y música durante varios años hasta que mi
+            corazón me puso un freno, solté todo lo que creí que era y que quería ser.
+          </div>
+          <div>
+            Convertí mi proceso de desintoxicación y reconexión en el eje central de mi vida y hoy
+            es mi trabajo. Encontrarme con mi sexualidad fue la experiencia más revolucionaria y
+            transformadora de mi vida que me dio herramientas que simplemente no me pude quedar para
+            mí.{' '}
+            <span className="font-bold">
+              Me dedico a la sanación sexual holística haciendo foco en el trabajo del trauma. La
+              liberación de los cuerpos y la recuperación de la soberanía sobre la salud y el placer
+              es mi absoluta pasión y misión.
+            </span>{' '}
+            Trabajo con herramientas como el huevo Yoni, las vaporizaciones Yoni (de las que tengo
+            mi propia línea de productos) y la experiencia somática del Dr. Peter Levine. Tengo
+            programas grupales, talleres online y experiencias presenciales a través de los cuales
+            comparto todo lo que se.
+          </div>
+          <div>
+            Además soy la productora general de los retiros que organizo junto a Mila de No Spoon en
+            Costa Rica.
+          </div>
+          <div>
+            Tuve la fortuna de instruirme con algunos seres increíbles como Sofia Sundari, Mantak
+            Chia y Dr. Gabor Maté aunque soy muy autodidacta y estoy permanentemente en proceso de
+            aprendizaje y formación.
+          </div>
         </div>
 
         <Image
