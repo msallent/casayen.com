@@ -100,7 +100,7 @@ export default async function Yen() {
             <div>↓</div>
             <div>↓</div>
           </div>
-          <div className="flex flex-col items-end space-y-0.5 text-2xl">
+          <div className="flex flex-col items-end space-y-0.5 text-xl">
             <a href="mailto:info@casayen.com">info@casayen.com</a>
             <a
               className="flex items-center"
