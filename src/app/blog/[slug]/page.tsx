@@ -54,7 +54,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         <Image
           src={previewBlogPostPlaceholderImage}
           alt="Blog post"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover brightness-75"
           placeholder="blur"
         />
 
@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
       <div className="mx-5 mt-14">
         <span>{formateDateString(blogPost.sys.publishedAt)}</span>
 
-        <div className="my-5 text-2xl leading-[110%]">{blogPost.description}</div>
+        <div className="my-5 italic">{blogPost.description}</div>
 
         <div className="space-y-4">
           {parseRichText(blogPost.body.json, blogPost.body.links.assets.block)}
