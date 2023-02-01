@@ -85,7 +85,6 @@ export default async function Yen() {
           alt="Background gradient"
           className="absolute top-0 right-0 -z-10"
           placeholder="blur"
-          priority
         />
 
         <div className="mt-20 mb-16 flex flex-col items-center justify-center text-center">
@@ -136,7 +135,6 @@ export default async function Yen() {
           alt="Background gradient"
           className="absolute top-0 left-0 -z-10 w-full"
           placeholder="blur"
-          priority
         />
       </section>
 

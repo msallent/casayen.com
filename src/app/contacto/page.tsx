@@ -67,7 +67,6 @@ export default function Contacto() {
         alt="Background gradient"
         className="absolute -top-36 left-0 -z-10 w-full sm:-top-64 md:-top-96"
         placeholder="blur"
-        priority
       />
     </section>
   );

@@ -46,7 +46,6 @@ export default async function Blog() {
         alt="Background gradient"
         className="absolute top-0 left-0 -z-10 w-full"
         placeholder="blur"
-        priority
       />
     </section>
   );
