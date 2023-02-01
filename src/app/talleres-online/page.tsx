@@ -43,7 +43,7 @@ export default async function Talleres() {
   }`);
 
   return (
-    <section className="mx-5 mt-4 sm:mx-10">
+    <section className="mx-5 mt-4 sm:mx-10 lg:mx-20">
       <TitlePage title={title} subtitle={subtitle} />
 
       {disclaimer && (

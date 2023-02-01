@@ -26,7 +26,7 @@ export default async function Blog() {
   }`);
 
   return (
-    <section className="mx-5 mt-4 mb-20 sm:mx-10">
+    <section className="mx-5 mt-4 mb-20 sm:mx-10 lg:mx-20">
       <TitlePage title={title} subtitle={subtitle} />
 
       <div className="mt-12 mb-20 space-y-16">

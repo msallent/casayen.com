@@ -27,19 +27,19 @@ export default async function Yen() {
 
   return (
     <>
-      <section className="mx-5 mt-4 sm:mx-10">
+      <section className="mx-5 mt-4 sm:mx-10 lg:mx-20">
         <TitlePage title={title} subtitle={subtitle} />
 
         <div className="relative mb-10">
           <Image
             src={yenCamiImage}
-            className="mt-4 sm:mx-auto sm:w-4/5 md:w-4/6"
+            className="mt-4 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5"
             alt="Cami Yen"
             placeholder="blur"
             quality={100}
             priority
           />
-          <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%]" />
+          <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%] lg:bottom-[-3%] lg:left-[17%]" />
         </div>
 
         <Title size="small">Hola, soy Cami :)</Title>
@@ -101,7 +101,7 @@ export default async function Yen() {
             </Title>
             <Image
               src={yenUterusImage}
-              className="inset-center absolute w-56 pb-3"
+              className="inset-center absolute w-56 pb-3 lg:w-64"
               placeholder="blur"
               alt="Uterus"
             />
@@ -141,8 +141,8 @@ export default async function Yen() {
       <div className="relative mt-8 h-80 sm:h-[25rem]">
         <GradientYenSVG />
         <Star2SVG className="absolute left-[40%] top-0 w-20" />
-        <Star2SVG className="absolute left-0 bottom-[16%] w-48 sm:left-2 sm:bottom-[16%] md:left-6 md:bottom-[14%]" />
-        <GridSVG className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28" />
+        <Star2SVG className="absolute left-0 bottom-[16%] w-48 sm:left-2 sm:bottom-[16%] md:left-6 md:bottom-[14%] lg:left-8" />
+        <GridSVG className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32" />
       </div>
     </>
   );

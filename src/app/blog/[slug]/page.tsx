@@ -58,14 +58,14 @@ export default async function BlogPost({ params }: BlogPostProps) {
           placeholder="blur"
         />
 
-        <div className="inset-center absolute w-full text-center uppercase">
+        <div className="inset-center absolute w-full text-center uppercase sm:max-w-[90%] lg:max-w-[80%]">
           <Title>
             <Balancer>{blogPost.title}</Balancer>
           </Title>
         </div>
       </div>
 
-      <div className="mx-5 mt-14 sm:mx-10">
+      <div className="mx-5 mt-14 sm:mx-10 lg:mx-20">
         <span>{formateDateString(blogPost.sys.publishedAt)}</span>
 
         <div className="my-5 italic">{blogPost.description}</div>
