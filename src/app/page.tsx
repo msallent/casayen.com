@@ -103,9 +103,9 @@ export default async function Home() {
         </div>
 
         <div className="relative mt-9 mb-16">
-          <GlobeSVG className="mx-auto h-[50px] w-[50px]" />
-          <EllipsisSVG className="inset-center absolute h-[345px]" />
-          <TextEllipsisSVG className="inset-center absolute h-[276px]" />
+          <GlobeSVG className="mx-auto h-14 w-14" />
+          <EllipsisSVG className="inset-center absolute h-[25rem]" />
+          <TextEllipsisSVG className="inset-center absolute h-[20rem]" />
         </div>
 
         <div className="mr-5 flex flex-col sm:mr-10 lg:mr-20">
