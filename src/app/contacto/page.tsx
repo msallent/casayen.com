@@ -10,7 +10,7 @@ import backgroundGradient from '@/assets/images/gradient-3.webp';
 
 export default function Contacto() {
   return (
-    <section className="relative mt-16">
+    <section className="relative mt-10">
       <div className="mx-5 uppercase text-primary-blue sm:mx-10 lg:mx-20">
         <div className="flex items-baseline justify-between border-y border-primary-blue pt-7 pb-3">
           <Title>Tenés dudas /</Title>

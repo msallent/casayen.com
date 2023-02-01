@@ -27,7 +27,7 @@ export default async function FAQ() {
   }`);
 
   return (
-    <section className="mx-5 mt-4 sm:mx-10 lg:mx-20">
+    <section className="mx-5 sm:mx-10 lg:mx-20">
       <TitlePage title={title} subtitle={subtitle} />
 
       <div className="mt-12 mb-20 border-b border-primary-blue">

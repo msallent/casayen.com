@@ -27,13 +27,13 @@ export default async function Yen() {
 
   return (
     <>
-      <section className="mx-5 mt-4 sm:mx-10 lg:mx-20">
+      <section className="mx-5 sm:mx-10 lg:mx-20">
         <TitlePage title={title} subtitle={subtitle} />
 
-        <div className="relative mb-10">
+        <div className="relative mb-8">
           <Image
             src={yenCamiImage}
-            className="mt-4 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5"
+            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5"
             alt="Cami Yen"
             placeholder="blur"
             quality={100}

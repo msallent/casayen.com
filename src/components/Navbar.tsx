@@ -29,7 +29,7 @@ export function Navbar({ menuItems }: NavbarProps) {
   }, [pathname]);
 
   return (
-    <nav className="mx-5 mt-9 sm:mx-10 lg:mx-20">
+    <nav className="mx-5 mt-8 mb-6 sm:mx-10 lg:mx-20">
       <div className="flex items-center justify-between">
         <NextLink href="/" aria-label="Home">
           <YenLogoSVG className="h-8" />
