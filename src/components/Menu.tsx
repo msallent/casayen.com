@@ -24,7 +24,7 @@ export function Menu({ items, onClose }: MenuProps) {
   return createPortal(
     <div
       ref={menuRef}
-      className="fixed inset-0 z-10 overflow-auto bg-primary-blue px-5 py-9 sm:px-10 lg:px-20"
+      className="fixed inset-0 z-10 overflow-auto bg-primary-blue px-5 py-8 sm:px-10 lg:px-20"
     >
       <div className="flex items-center justify-between">
         <YenLogoSVG className="h-8" />
@@ -34,7 +34,7 @@ export function Menu({ items, onClose }: MenuProps) {
         </button>
       </div>
 
-      <StarsSVG className="mx-auto mt-2 mb-3 h-6 w-6" />
+      <StarsSVG className="mx-auto mt-6 mb-3 h-6 w-6" />
 
       <Button variant="secondary">
         <a
