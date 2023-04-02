@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import NextLink from 'next/link';
 import { Menu } from '@/components/Menu';
+import { MenuList } from '@/components/MenuList';
 import { Link } from '@/types/contentful';
 import YenLogoSVG from '@/assets/svgs/yen-logo.svg';
 import MenuSVG from '@/assets/svgs/menu.svg';
@@ -29,15 +30,24 @@ export function Navbar({ menuItems }: NavbarProps) {
   }, [pathname]);
 
   return (
-    <nav className="mx-5 mt-8 mb-6 sm:mx-10 lg:mx-20">
+    <nav className="mx-5 mb-6 mt-8 sm:mx-10 lg:mx-20">
       <div className="flex items-center justify-between">
         <NextLink href="/" aria-label="Home">
           <YenLogoSVG className="h-8" />
         </NextLink>
 
-        <button type="button" aria-label="Abrir menu" onClick={handleOpenMenu}>
+        <button
+          type="button"
+          className="xl:hidden"
+          aria-label="Abrir menu"
+          onClick={handleOpenMenu}
+        >
           <MenuSVG className="w-12" />
         </button>
+
+        <div className="hidden xl:absolute xl:right-20 xl:top-8 xl:block">
+          <MenuList items={menuItems.slice(1)} />
+        </div>
       </div>
 
       {isMenuOpen && <Menu items={menuItems} onClose={handleCloseMenu} />}
