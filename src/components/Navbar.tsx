@@ -30,10 +30,10 @@ export function Navbar({ menuItems }: NavbarProps) {
   }, [pathname]);
 
   return (
-    <nav className="mx-5 mb-6 mt-8 sm:mx-10 lg:mx-20">
+    <nav className="mx-5 mb-6 mt-8 sm:mx-10 lg:mx-20 xl:m-10">
       <div className="flex items-center justify-between">
         <NextLink href="/" aria-label="Home">
-          <YenLogoSVG className="h-8" />
+          <YenLogoSVG className="h-8 xl:h-12" />
         </NextLink>
 
         <button
@@ -45,7 +45,7 @@ export function Navbar({ menuItems }: NavbarProps) {
           <MenuSVG className="w-12" />
         </button>
 
-        <div className="hidden xl:absolute xl:right-20 xl:top-8 xl:block">
+        <div className="hidden xl:absolute xl:right-10 xl:top-10 xl:block">
           <MenuList items={menuItems.slice(1)} />
         </div>
       </div>

@@ -4,7 +4,7 @@ import InstagramSVG from '@/assets/svgs/instagram.svg';
 
 export function Footer() {
   return (
-    <footer className="bg-secondary-black px-5 py-8 sm:p-10 lg:px-20 xl:px-10 xl:py-14">
+    <footer className="bg-secondary-black px-5 py-8 sm:p-10 lg:px-20 xl:p-10">
       <div className="relative xl:flex xl:justify-between">
         <div className="border-b border-primary-blue pb-5 xl:basis-1/2 xl:self-start">
           <YenSloganSVG className="w-40" />

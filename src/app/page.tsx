@@ -51,12 +51,12 @@ export default async function Home() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute top-0 left-0 -z-10 w-full"
+          className="absolute left-0 top-0 -z-10 w-full"
           placeholder="blur"
         />
       </section>
 
-      <section className="mx-5 mt-16 text-primary-blue sm:mx-10 sm:mt-20 lg:mx-20">
+      <section className="mx-5 mt-16 text-primary-blue sm:mx-10 sm:mt-20 lg:mx-20 xl:mx-10">
         <YenStarsSVG className="mb-20" />
 
         <div className="relative text-center">
@@ -89,29 +89,29 @@ export default async function Home() {
           <Image
             alt="Yen"
             src={homeUterusImage}
-            className="absolute top-[40%] left-0 -z-10 opacity-60"
+            className="absolute left-0 top-[40%] -z-10 opacity-60"
             placeholder="blur"
           />
         </div>
       </section>
 
       <section className="relative mt-44 text-primary-blue sm:mt-52">
-        <div className="ml-5 flex flex-col sm:ml-10 lg:ml-20">
+        <div className="ml-5 flex flex-col sm:ml-10 lg:ml-20 xl:ml-10">
           <span className="leading-5">UNITE AL</span>
           <span className="leading-5">VIAJE</span>
-          <ChevronSVG className="mt-2.5 ml-px w-3" />
+          <ChevronSVG className="ml-px mt-2.5 w-3" />
         </div>
 
-        <div className="relative mt-9 mb-16">
+        <div className="relative mb-16 mt-9">
           <GlobeSVG className="mx-auto h-14 w-14" />
           <EllipsisSVG className="inset-center absolute h-[25rem]" />
           <TextEllipsisSVG className="inset-center absolute h-[20rem]" />
         </div>
 
-        <div className="mr-5 flex flex-col sm:mr-10 lg:mr-20">
+        <div className="mr-5 flex flex-col sm:mr-10 lg:mr-20 xl:mr-10">
           <span className="text-right leading-5">UNITE AL</span>
           <span className="text-right leading-5">VIAJE</span>
-          <ChevronSVG className="ml-auto mt-2.5 mr-px w-3" />
+          <ChevronSVG className="ml-auto mr-px mt-2.5 w-3" />
         </div>
 
         <Image
@@ -122,7 +122,7 @@ export default async function Home() {
           placeholder="blur"
         />
 
-        <ul className="mx-5 mt-24 border-b border-primary-blue sm:mx-10 lg:mx-20">
+        <ul className="mx-5 mt-24 border-b border-primary-blue sm:mx-10 lg:mx-20 xl:mx-10">
           {featuredLinksCollection.items.map((link, index) => (
             <li key={index}>
               <LinkFeatured href={link.url} index={index + 1}>
@@ -134,14 +134,14 @@ export default async function Home() {
       </section>
 
       <section className="relative mt-40 pb-20 sm:mt-64">
-        <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20" />
+        <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20 xl:mx-10" />
 
-        <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56 md:pt-64 lg:mx-20 lg:pt-72">
+        <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56 md:pt-64 lg:mx-20 lg:pt-72 xl:mx-10">
           <GlyphsSVG className="mb-8 w-28" />
 
           <Title variant="secondary">Productos YEN</Title>
 
-          <div className="mt-4 mb-11 uppercase leading-[129%]">
+          <div className="mb-11 mt-4 uppercase leading-[129%]">
             <Balancer>
               Encontrá en un solo lugar todas las herramientas que necesitás para embarcarte en tu
               viaje de auto-descubrimiento y reprogramación sexual. productos ética y
@@ -161,7 +161,7 @@ export default async function Home() {
           </Button>
         </div>
 
-        <GradientShopSVG className="absolute top-0 -left-0 -z-10" />
+        <GradientShopSVG className="absolute -left-0 top-0 -z-10" />
       </section>
     </>
   );
