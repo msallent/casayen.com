@@ -1,6 +1,7 @@
+import { Metadata } from 'next';
 import { ReactNode } from 'react';
-import { EB_Garamond, Inter } from '@next/font/google';
-import localFont from '@next/font/local';
+import { EB_Garamond, Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { fetchContent } from '@/utils/fetch';
@@ -18,6 +19,12 @@ const ppNeueWorld = localFont({
   src: '../assets/fonts/PPNeueWorld.otf',
   variable: '--font-pp-neue-world',
 });
+
+export const metadata: Metadata = {
+  title: 'casayen.com',
+  description: 'Casa Yen',
+  icons: '/favicon.ico',
+};
 
 export default async function Layout({ children }: LayoutProps) {
   const {
@@ -37,7 +44,6 @@ export default async function Layout({ children }: LayoutProps) {
 
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
-      <head />
       <body className="overscroll-none bg-primary-black selection:bg-secondary-white">
         <Navbar menuItems={menuItemsCollection.items} />
         <main className="overflow-hidden">{children}</main>
