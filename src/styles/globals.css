@@ -27,3 +27,9 @@
     font-size: 20px;
   }
 }
+
+@screen xl {
+  :root {
+    font-size: 16px;
+  }
+}
