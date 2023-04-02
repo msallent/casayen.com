@@ -5,9 +5,11 @@ import InstagramSVG from '@/assets/svgs/instagram.svg';
 export function Footer() {
   return (
     <footer className="bg-secondary-black px-5 py-8 sm:p-10 lg:px-20">
-      <YenSloganSVG className="w-36" />
+      <div className="border-b border-primary-blue pb-5">
+        <YenSloganSVG className="w-40" />
+      </div>
 
-      <div className="relative mt-5 flex flex-col border-t border-primary-blue text-primary-blue">
+      <div className="relative flex flex-col text-primary-blue">
         <span className="mb-2 mt-10 uppercase">Contacto Yen</span>
         <a href="mailto:info@casayen.com">
           <Title size="small">info@casayen.com</Title>
