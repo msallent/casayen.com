@@ -19,6 +19,7 @@ import GradientShopSVG from '@/assets/svgs/gradient-shop.svg';
 import GradientShopLargeSVG from '@/assets/svgs/gradient-shop-large.svg';
 import homeUterusImage from '@/assets/images/home-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
+import backgroundGradient1Large from '@/assets/images/gradient-1-large.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
 export default async function Home() {
@@ -55,7 +56,15 @@ export default async function Home() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute left-0 top-0 -z-10 w-full"
+          className="absolute left-0 top-0 -z-10 w-full xl:hidden"
+          placeholder="blur"
+        />
+
+        <Image
+          aria-hidden
+          src={backgroundGradient1Large}
+          alt="Background gradient"
+          className="hidden xl:absolute xl:left-0 xl:top-0 xl:-z-10 xl:block xl:w-full"
           placeholder="blur"
         />
       </section>
