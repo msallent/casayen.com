@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1555">
+  <path fill="url(#a)" d="M0 18h1920v1777H0z"/>
+  <circle cx="959.5" cy="997.5" r="766.5" fill="url(#b)"/>
+  <circle cx="959.5" cy="997.5" r="797" stroke="url(#c)"/>
+  <circle cx="959.5" cy="997.5" r="997" stroke="url(#d)"/>
+  <defs>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="rotate(89.817 363.882 596.78) scale(768.953)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E57FF"/>
+      <stop offset="1" stop-color="#0E57FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="0" cy="0" r="1" gradientTransform="matrix(0 798 -798 0 959.5 200)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003BC3"/>
+      <stop offset="1" stop-color="#003BC3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d" cx="0" cy="0" r="1" gradientTransform="matrix(0 1178 -1178 0 959.5 0)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003BC3"/>
+      <stop offset="1" stop-color="#003BC3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="a" x1="960" x2="960" y1="1293.97" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E57FF"/>
+      <stop offset="1" stop-color="#0E57FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -8,12 +8,14 @@ import { fetchContent } from '@/utils/fetch';
 import { PageHomeData } from '@/types/contentful';
 import GlobeSVG from '@/assets/svgs/globe.svg';
 import RunesSVG from '@/assets/svgs/runes.svg';
+import RunesLargeSVG from '@/assets/svgs/runes-large.svg';
 import GlyphsSVG from '@/assets/svgs/glyphs.svg';
 import ChevronSVG from '@/assets/svgs/chevron.svg';
 import YenStarsSVG from '@/assets/svgs/yen-stars.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-2.svg';
 import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
 import GradientShopSVG from '@/assets/svgs/gradient-shop.svg';
+import GradientShopLargeSVG from '@/assets/svgs/gradient-shop-large.svg';
 import homeUterusImage from '@/assets/images/home-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
@@ -133,35 +135,41 @@ export default async function Home() {
         </ul>
       </section>
 
-      <section className="relative mt-40 pb-20 sm:mt-64">
-        <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20 xl:mx-10" />
+      <section className="relative mt-40 pb-20 sm:mt-64 xl:mt-[28rem] xl:pb-40">
+        <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20 xl:hidden" />
+        <RunesLargeSVG className="hidden xl:absolute xl:inset-x-20 xl:-top-24 xl:block" />
 
-        <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56 md:pt-64 lg:mx-20 lg:pt-72 xl:mx-10">
-          <GlyphsSVG className="mb-8 w-28" />
+        <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56 md:pt-64 lg:mx-20 lg:pt-72 xl:mx-10 xl:pt-60">
+          <GlyphsSVG className="mb-8 w-28 xl:mb-12" />
 
-          <Title variant="secondary">Productos YEN</Title>
+          <div className="xl:w-[35rem]">
+            <Title variant="secondary">Productos YEN</Title>
+          </div>
 
           <div className="mb-11 mt-4 uppercase leading-[129%]">
-            <Balancer>
+            <Balancer className="xl:!max-w-2xl">
               Encontrá en un solo lugar todas las herramientas que necesitás para embarcarte en tu
               viaje de auto-descubrimiento y reprogramación sexual. productos ética y
               responsablemente producidos.
             </Balancer>
           </div>
 
-          <Button variant="secondary">
-            <a
-              className="flex h-full items-center justify-center"
-              href="https://shop.casayen.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              IR AL SHOP ONLINE →
-            </a>
-          </Button>
+          <div className="w-full xl:hidden">
+            <Button variant="secondary">
+              <a
+                className="flex h-full items-center justify-center"
+                href="https://shop.casayen.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                IR AL SHOP ONLINE →
+              </a>
+            </Button>
+          </div>
         </div>
 
-        <GradientShopSVG className="absolute -left-0 top-0 -z-10" />
+        <GradientShopSVG className="absolute -left-0 top-0 -z-10 xl:hidden" />
+        <GradientShopLargeSVG className="hidden xl:absolute xl:-left-0 xl:top-0 xl:-z-10 xl:block" />
       </section>
     </>
   );
