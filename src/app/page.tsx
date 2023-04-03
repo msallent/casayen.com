@@ -12,6 +12,7 @@ import RunesLargeSVG from '@/assets/svgs/runes-large.svg';
 import GlyphsSVG from '@/assets/svgs/glyphs.svg';
 import ChevronSVG from '@/assets/svgs/chevron.svg';
 import YenStarsSVG from '@/assets/svgs/yen-stars.svg';
+import YenStarsLargeSVG from '@/assets/svgs/yen-stars-large.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-2.svg';
 import TextEllipsisSVG from '@/assets/svgs/text-ellipsis.svg';
 import GradientShopSVG from '@/assets/svgs/gradient-shop.svg';
@@ -46,7 +47,8 @@ export default async function Home() {
           <span className="mx-1.5">≈</span>COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC
           SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
           <span className="mx-1.5">≈</span>COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC
-          SEXUALITY
+          SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
+          <span className="mx-1.5">≈</span>COSMIC SEXUALITY
         </div>
 
         <Image
@@ -58,17 +60,21 @@ export default async function Home() {
         />
       </section>
 
-      <section className="mx-5 mt-16 text-primary-blue sm:mx-10 sm:mt-20 lg:mx-20 xl:mx-10">
-        <YenStarsSVG className="mb-20" />
+      <section className="mx-5 mt-16 text-primary-blue sm:mx-10 sm:mt-20 lg:mx-20 xl:mx-32 xl:mt-36">
+        <YenStarsSVG className="mb-20 xl:hidden" />
+        <YenStarsLargeSVG className="hidden xl:mb-20 xl:block" />
 
         <div className="relative text-center">
-          <div className="mb-4">¿QUÉ ES YEN?</div>
+          <div className="mb-4 xl:text-xl">¿QUÉ ES YEN?</div>
 
           <Title>
             <Balancer>Yen es un proyecto de Sexualidad Consciente</Balancer>
           </Title>
 
-          <div className="mt-4 uppercase leading-[129%]">
+          <div className="relative mt-4 uppercase leading-[129%]">
+            <div className="xl:font-title-full hidden xl:absolute xl:-left-16 xl:top-2 xl:block xl:rotate-[270deg] xl:text-[5rem]">
+              †
+            </div>
             <Balancer>
               Un espacio para la liberación del cuerpo y el corazón, la recuperación del placer, la
               soberanía y la autogestión.{' '}
@@ -79,19 +85,22 @@ export default async function Home() {
               sometimiento del alma. La propuesta es trabajo de la sombra desde una óptica super
               occidental.
             </Balancer>
+            <div className="xl:font-title-full hidden xl:absolute xl:-right-16 xl:top-2 xl:block xl:rotate-90 xl:text-[5rem]">
+              †
+            </div>
           </div>
 
           <Image
             alt="Yen"
             src={homeUterusImage}
-            className="absolute -top-8 right-0 -z-10 opacity-60"
+            className="absolute -top-8 right-0 -z-10 w-48 opacity-60 xl:-top-4 xl:w-72"
             placeholder="blur"
           />
 
           <Image
             alt="Yen"
             src={homeUterusImage}
-            className="absolute left-0 top-[40%] -z-10 opacity-60"
+            className="absolute left-0 top-[40%] -z-10 w-48 opacity-60 xl:top-[45%] xl:w-72"
             placeholder="blur"
           />
         </div>
