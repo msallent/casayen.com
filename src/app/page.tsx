@@ -97,23 +97,25 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="relative mt-44 text-primary-blue sm:mt-52">
-        <div className="ml-5 flex flex-col sm:ml-10 lg:ml-20 xl:ml-10">
-          <span className="leading-5">UNITE AL</span>
-          <span className="leading-5">VIAJE</span>
-          <ChevronSVG className="ml-px mt-2.5 w-3" />
-        </div>
+      <section className="relative mt-44 text-primary-blue sm:mt-52 xl:mt-[24rem]">
+        <div className="mx-5 sm:mx-10 lg:mx-20 xl:mx-32 xl:flex xl:items-center xl:justify-between">
+          <div className="flex flex-col">
+            <span className="leading-5">UNITE AL</span>
+            <span className="leading-5">VIAJE</span>
+            <ChevronSVG className="ml-px mt-2.5 w-3" />
+          </div>
 
-        <div className="relative mb-16 mt-9">
-          <GlobeSVG className="mx-auto h-14 w-14" />
-          <EllipsisSVG className="inset-center absolute h-[25rem]" />
-          <TextEllipsisSVG className="inset-center absolute h-[20rem]" />
-        </div>
+          <div className="relative mb-16 mt-9 xl:my-0">
+            <GlobeSVG className="mx-auto h-14 w-14" />
+            <EllipsisSVG className="inset-center absolute h-[25rem]" />
+            <TextEllipsisSVG className="inset-center absolute h-[20rem]" />
+          </div>
 
-        <div className="mr-5 flex flex-col sm:mr-10 lg:mr-20 xl:mr-10">
-          <span className="text-right leading-5">UNITE AL</span>
-          <span className="text-right leading-5">VIAJE</span>
-          <ChevronSVG className="ml-auto mr-px mt-2.5 w-3" />
+          <div className="flex flex-col">
+            <span className="text-right leading-5">UNITE AL</span>
+            <span className="text-right leading-5">VIAJE</span>
+            <ChevronSVG className="ml-auto mr-px mt-2.5 w-3" />
+          </div>
         </div>
 
         <Image
@@ -124,10 +126,14 @@ export default async function Home() {
           placeholder="blur"
         />
 
-        <ul className="mx-5 mt-24 border-b border-primary-blue sm:mx-10 lg:mx-20 xl:mx-10">
+        <ul className="mx-5 mt-24 sm:mx-10 lg:mx-20 xl:mx-32 xl:mt-56">
           {featuredLinksCollection.items.map((link, index) => (
             <li key={index}>
-              <LinkFeatured href={link.url} index={index + 1}>
+              <LinkFeatured
+                href={link.url}
+                index={index + 1}
+                isLast={index === featuredLinksCollection.items.length - 1}
+              >
                 {link.label}
               </LinkFeatured>
             </li>
@@ -135,7 +141,7 @@ export default async function Home() {
         </ul>
       </section>
 
-      <section className="relative mt-40 pb-20 sm:mt-64 xl:mt-[28rem] xl:pb-40">
+      <section className="relative mt-40 pb-20 sm:mt-64 xl:mt-[24rem] xl:pb-40">
         <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20 xl:hidden" />
         <RunesLargeSVG className="hidden xl:absolute xl:inset-x-20 xl:-top-24 xl:block" />
 
