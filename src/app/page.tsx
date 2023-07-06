@@ -40,7 +40,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="mt-20 text-primary-blue">
+      <section className="mt-20 text-primary-blue xl:mt-16">
         <Hero />
 
         <div className="relative -left-6 whitespace-nowrap">
