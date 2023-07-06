@@ -47,11 +47,11 @@ export default async function Yen() {
         <div className="mt-2.5 space-y-6 text-primary-blue">
           <div>BIENVENIDX A LA CASA VIRTUAL DE YEN</div>
           <div>
-            Tengo 31 años y soy de Buenos Aires, Argentina, viviendo entre la ciudad y la selva en
-            Santa Teresa. Originalmente me forme con una licencitura en comunicación y tengo una
-            Maestría en estrategias de comunicación y dirección de arte de la Universidad Elisava de
-            Barcelona. Trabajé en producción de moda y música durante varios años hasta que mi
-            corazón me puso un freno, solté todo lo que creí que era y que quería ser.
+            Tengo 32 años y soy de Buenos Aires, Argentina, viviendo entre la ciudad y la selva en
+            Santa Teresa. Originalmente me forme como Licenciada en Comunicación y Master en
+            Estrategias de Comunicación y Dirección de Arte de la Universidad Elisava de Barcelona.
+            Trabajé en producción de moda y música durante varios años hasta que mi corazón me puso
+            un freno, solté todo lo que creí que era y que quería ser.
           </div>
           <div>
             Convertí mi proceso de desintoxicación y reconexión en el eje central de mi vida y hoy
@@ -63,19 +63,17 @@ export default async function Yen() {
               liberación de los cuerpos y la recuperación de la soberanía sobre la salud y el placer
               es mi absoluta pasión y misión.
             </span>{' '}
-            Trabajo con herramientas como el huevo Yoni, las vaporizaciones Yoni (de las que tengo
-            mi propia línea de productos) y la experiencia somática del Dr. Peter Levine. Tengo
-            programas grupales, talleres online y experiencias presenciales a través de los cuales
-            comparto todo lo que se.
+            Trabajo con herramientas como el huevo Yoni y las vaporizaciones Yoni (de las que tengo
+            mi propia línea de productos). Tengo programas grupales, talleres online y experiencias
+            presenciales a través de los cuales comparto todo lo que se y que me ayudó a mi a
+            transformar mi vida.
           </div>
-          <div>
-            Además soy la productora general de los retiros que organizo junto a Mila de No Spoon en
-            Costa Rica.
-          </div>
+
           <div>
             Tuve la fortuna de instruirme con algunos seres increíbles como Sofia Sundari, Mantak
             Chia y Dr. Gabor Maté aunque soy muy autodidacta y estoy permanentemente en proceso de
-            aprendizaje y formación.
+            aprendizaje y formación. Mi herida, mi corazón y la vida misma son mis principales
+            escuelas
           </div>
         </div>
 
@@ -83,11 +81,11 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient2}
           alt="Background gradient"
-          className="absolute top-0 right-0 -z-10"
+          className="absolute right-0 top-0 -z-10"
           placeholder="blur"
         />
 
-        <div className="mt-20 mb-16 flex flex-col items-center justify-center text-center">
+        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center">
           <div className="mb-4 flex items-center gap-2">
             <div className="w-10 border border-primary-blue" />
             <span className="font-medium uppercase text-primary-blue">Convertí mi proceso de</span>
@@ -133,7 +131,7 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute top-0 left-0 -z-10 w-full"
+          className="absolute left-0 top-0 -z-10 w-full"
           placeholder="blur"
         />
       </section>
@@ -141,8 +139,8 @@ export default async function Yen() {
       <div className="relative mt-8 h-80 sm:h-[25rem]">
         <GradientYenSVG />
         <Star2SVG className="absolute left-[40%] top-0 w-20" />
-        <Star2SVG className="absolute left-0 bottom-[16%] w-48 sm:left-2 sm:bottom-[16%] md:left-6 md:bottom-[14%] lg:left-8" />
-        <GridSVG className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32" />
+        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8" />
+        <GridSVG className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32" />
       </div>
     </>
   );
