@@ -30,7 +30,7 @@ export default async function FAQ() {
     <section className="mx-5 sm:mx-10 lg:mx-20">
       <TitlePage title={title} subtitle={subtitle} />
 
-      <div className="mt-12 mb-20 border-b border-primary-blue">
+      <div className="mb-20 mt-12 border-b border-primary-blue">
         {faqsCollection.items.map((faq) => (
           <Expandable key={faq.title} title={faq.title}>
             <div className="text-primary-blue">{parseRichText(faq.content.json)}</div>
@@ -42,7 +42,7 @@ export default async function FAQ() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 -z-10 w-full"
+        className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full"
         placeholder="blur"
       />
     </section>

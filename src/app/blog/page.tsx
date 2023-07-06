@@ -29,7 +29,7 @@ export default async function Blog() {
     <section className="mx-5 mb-20 sm:mx-10 lg:mx-20">
       <TitlePage title={title} subtitle={subtitle} />
 
-      <div className="mt-12 mb-20 space-y-16">
+      <div className="mb-20 mt-12 space-y-16">
         {pageBlogPostCollection.items.map((blogPost) => (
           <PreviewBlogPost
             key={blogPost.title}
@@ -44,7 +44,7 @@ export default async function Blog() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 -z-10 w-full"
+        className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full"
         placeholder="blur"
       />
     </section>

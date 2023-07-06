@@ -50,7 +50,7 @@ export default async function Talleres() {
         <div className="mt-12 font-serif uppercase italic text-primary-blue">{disclaimer}</div>
       )}
 
-      <div className="mt-5 mb-20 border-b border-primary-blue">
+      <div className="mb-20 mt-5 border-b border-primary-blue">
         {talleresCollection.items.map((taller) => (
           <ExpandableTaller key={taller.title} taller={taller} />
         ))}
@@ -60,7 +60,7 @@ export default async function Talleres() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="absolute top-0 left-0 -z-10 w-full"
+        className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full"
         placeholder="blur"
       />
     </section>
