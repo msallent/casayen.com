@@ -45,7 +45,7 @@ export function Hero() {
 
       <Stars3SVG className="hidden sm:mx-auto sm:mt-6 sm:block sm:w-3/5 lg:hidden" />
 
-      <div className="mt-6 flex items-center justify-between sm:mx-5 sm:mt-12 lg:mx-14 xl:mx-10 xl:-mt-10 xl:justify-end">
+      <div className="mt-6 flex items-end justify-between sm:mx-5 sm:mt-12 lg:mx-14 xl:mx-10 xl:-mt-10 xl:justify-end">
         <YenSloganSVG className="hidden sm:block sm:w-36 md:w-40 xl:hidden" />
         <ChevronDouble className="mx-auto w-8 sm:mx-0 sm:w-6 md:w-8 xl:w-12" />
       </div>
