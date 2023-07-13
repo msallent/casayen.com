@@ -23,7 +23,9 @@ export function MenuList({ items }: MenuListProps) {
       <ul className="mt-6 text-right uppercase text-primary-blue">
         {items.map((link, index) => (
           <li key={index}>
-            <NextLink href={link.url}>{link.label}</NextLink>
+            <NextLink href={link.url} className="hover:text-secondary-white">
+              {link.label}
+            </NextLink>
           </li>
         ))}
       </ul>
