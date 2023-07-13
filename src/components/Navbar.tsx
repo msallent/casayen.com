@@ -45,7 +45,7 @@ export function Navbar({ menuItems }: NavbarProps) {
           <MenuSVG className="w-12" />
         </button>
 
-        <div className="hidden xl:absolute xl:right-10 xl:top-10 xl:block">
+        <div className="hidden xl:absolute xl:right-10 xl:top-10 xl:z-10 xl:block">
           <MenuList items={menuItems.slice(1)} />
         </div>
       </div>
