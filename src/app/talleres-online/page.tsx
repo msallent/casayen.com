@@ -47,7 +47,9 @@ export default async function Talleres() {
       <TitlePage title={title} subtitle={subtitle} />
 
       {disclaimer && (
-        <div className="mt-12 font-serif uppercase italic text-primary-blue">{disclaimer}</div>
+        <div className="mt-12 font-serif uppercase italic text-primary-blue xl:mt-24">
+          {disclaimer}
+        </div>
       )}
 
       <div className="mb-20 mt-5 border-b border-primary-blue">
