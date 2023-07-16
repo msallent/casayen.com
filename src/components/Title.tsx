@@ -7,10 +7,11 @@ type TitleVariant = 'primary' | 'secondary';
 type TitleProps = {
   size?: TitleSize;
   variant?: TitleVariant;
+  withHover?: boolean;
   children: ReactNode;
 };
 
-export function Title({ size = 'default', variant = 'primary', children }: TitleProps) {
+export function Title({ size = 'default', variant = 'primary', withHover, children }: TitleProps) {
   return (
     <h1
       className={classNames(
@@ -18,7 +19,8 @@ export function Title({ size = 'default', variant = 'primary', children }: Title
         { 'text-[4.285rem] leading-[78.5%] xl:text-[8rem]': size === 'default' },
         { 'text-[2.85rem] leading-[78.5%] xl:text-[3.75rem]': size === 'small' },
         { 'text-primary-blue': variant === 'primary' },
-        { 'text-primary-black': variant === 'secondary' }
+        { 'text-primary-black': variant === 'secondary' },
+        { 'hover:text-secondary-white': withHover }
       )}
     >
       {children}

@@ -13,11 +13,15 @@ export function Footer() {
         <div className="flex flex-col text-primary-blue">
           <span className="mb-2 mt-10 uppercase xl:mt-0">Contacto Yen</span>
           <a href="mailto:info@casayen.com">
-            <Title size="small">info@casayen.com</Title>
+            <Title size="small" withHover>
+              info@casayen.com
+            </Title>
           </a>
           <span className="mb-2 mt-8 uppercase">Contacto Shop</span>
           <a href="mailto:shop@casayen.com">
-            <Title size="small">shop@casayen.com</Title>
+            <Title size="small" withHover>
+              shop@casayen.com
+            </Title>
           </a>
         </div>
 
@@ -29,11 +33,11 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <InstagramSVG className="w-8" />
+            <InstagramSVG className="w-8 hover:text-secondary-white [&>path]:fill-current" />
           </a>
         </div>
 
-        <span className="absolute bottom-0 right-0 text-[1.14rem] text-primary-blue underline xl:left-0 xl:text-base">
+        <span className="absolute bottom-0 right-0 text-[1.14rem] text-primary-blue underline xl:left-0 xl:right-auto xl:text-base">
           TÉRMINOS Y CONDICIONES
         </span>
       </div>
