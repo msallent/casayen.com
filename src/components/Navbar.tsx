@@ -46,7 +46,7 @@ export function Navbar({ menuItems }: NavbarProps) {
         </button>
 
         <div className="hidden xl:absolute xl:right-10 xl:top-10 xl:z-10 xl:block">
-          <MenuList items={menuItems.slice(1)} />
+          <MenuList items={menuItems.slice(1)} currentPath={pathname} />
         </div>
       </div>
 

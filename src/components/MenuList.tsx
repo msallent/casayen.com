@@ -4,9 +4,10 @@ import { Link } from '@/types/contentful';
 
 type MenuListProps = {
   items: Array<Link>;
+  currentPath: string;
 };
 
-export function MenuList({ items }: MenuListProps) {
+export function MenuList({ items, currentPath }: MenuListProps) {
   return (
     <div className="w-56">
       <Button>
@@ -24,7 +25,7 @@ export function MenuList({ items }: MenuListProps) {
         {items.map((link, index) => (
           <li key={index}>
             <NextLink href={link.url} className="hover:text-secondary-white">
-              {link.label}
+              {link.label} {currentPath === link.url && '←'}
             </NextLink>
           </li>
         ))}
