@@ -30,7 +30,7 @@ export default async function Yen() {
       <section className="mx-5 sm:mx-10 lg:mx-20">
         <TitlePage title={title} subtitle={subtitle} />
 
-        <div className="relative mb-8">
+        <div className="relative mb-8 xl:absolute xl:right-6 xl:top-44">
           <Image
             src={yenCamiImage}
             className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5"
@@ -42,9 +42,11 @@ export default async function Yen() {
           <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%] lg:bottom-[-3%] lg:left-[17%]" />
         </div>
 
-        <Title size="small">Hola, soy Cami :)</Title>
+        <div className="mt-20">
+          <Title size="small">Hola, soy Cami :)</Title>
+        </div>
 
-        <div className="mt-2.5 space-y-6 text-primary-blue">
+        <div className="mt-2.5 space-y-6 text-primary-blue xl:max-w-xl">
           <div>BIENVENIDX A LA CASA VIRTUAL DE YEN</div>
           <div>
             Tengo 32 años y soy de Buenos Aires, Argentina, viviendo entre la ciudad y la selva en
@@ -85,7 +87,7 @@ export default async function Yen() {
           placeholder="blur"
         />
 
-        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center">
+        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center xl:my-32">
           <div className="mb-4 flex items-center gap-2">
             <div className="w-10 border border-primary-blue" />
             <span className="font-medium uppercase text-primary-blue">Convertí mi proceso de</span>
@@ -106,13 +108,13 @@ export default async function Yen() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end space-y-5 text-primary-blue">
+        <div className="flex flex-col items-end space-y-5 text-primary-blue xl:absolute xl:right-20 xl:mt-20 xl:items-start xl:text-xl">
           <div>↓ CONTACTAME ↓</div>
-          <div>
+          <div className="xl:my-4">
             <div>↓</div>
             <div>↓</div>
           </div>
-          <div className="flex flex-col items-end space-y-0.5 text-xl">
+          <div className="flex flex-col items-end space-y-0.5 text-xl xl:items-start xl:text-3xl">
             <a href="mailto:info@casayen.com">info@casayen.com</a>
             <a
               className="flex items-center"
@@ -131,16 +133,16 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full"
+          className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full xl:hidden"
           placeholder="blur"
         />
       </section>
 
-      <div className="relative mt-8 h-80 sm:h-[25rem]">
+      <div className="relative mt-8 h-80 sm:h-[25rem] xl:h-[55rem]">
         <GradientYenSVG />
-        <Star2SVG className="absolute left-[40%] top-0 w-20" />
-        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8" />
-        <GridSVG className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32" />
+        <Star2SVG className="absolute left-[40%] top-0 w-20 xl:w-40" />
+        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8 xl:bottom-[9.25%] xl:left-16 xl:w-[30rem]" />
+        <GridSVG className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32 xl:opacity-40" />
       </div>
     </>
   );
