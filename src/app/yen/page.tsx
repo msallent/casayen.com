@@ -30,16 +30,16 @@ export default async function Yen() {
       <section className="mx-5 sm:mx-10 lg:mx-20">
         <TitlePage title={title} subtitle={subtitle} />
 
-        <div className="relative mb-8 xl:absolute xl:right-6 xl:top-44">
+        <div className="relative mb-8 xl:absolute xl:right-32 xl:top-44">
           <Image
             src={yenCamiImage}
-            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5"
+            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5 xl:w-[25rem]"
             alt="Cami Yen"
             placeholder="blur"
             quality={100}
             priority
           />
-          <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%] lg:bottom-[-3%] lg:left-[17%]" />
+          <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%] lg:bottom-[-3%] lg:left-[17%] xl:bottom-[-3%] xl:left-[-5%]" />
         </div>
 
         <div className="mt-20">
