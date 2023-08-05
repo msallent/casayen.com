@@ -10,6 +10,7 @@ type ExpandableProps = {
   title: string;
   children: ReactNode;
   description?: string;
+  noBorder?: boolean;
   buttonLabel?: {
     collapsed: string;
     expanded: string;
@@ -24,6 +25,7 @@ type ExpandableProps = {
 export function Expandable({
   title,
   children,
+  noBorder,
   description,
   buttonLabel,
   extraActions,
@@ -35,9 +37,13 @@ export function Expandable({
   };
 
   return (
-    <div className="border-t border-primary-blue pb-6 pt-8">
-      <div className="flex items-start justify-between text-primary-blue">
-        <div className="max-w-[75%]">
+    <div
+      className={classNames('border-t border-primary-blue pb-6 pt-8', {
+        'xl:border-none': noBorder,
+      })}
+    >
+      <div className="flex items-center justify-between text-primary-blue xl:gap-10">
+        <div className="max-w-[75%] xl:max-w-full">
           <Title size="small">
             <Balancer>{title}</Balancer>
           </Title>
