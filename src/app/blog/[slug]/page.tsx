@@ -49,7 +49,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
   }`);
 
   return (
-    <section className="mt-2 mb-20 text-primary-blue">
+    <section className="mb-20 mt-2 text-primary-blue">
       <div className="relative h-80">
         <Image
           src={previewBlogPostPlaceholderImage}

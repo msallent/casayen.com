@@ -34,7 +34,7 @@ export function Menu({ items, onClose }: MenuProps) {
         </button>
       </div>
 
-      <StarsSVG className="mx-auto mt-6 mb-3 h-6 w-6" />
+      <StarsSVG className="mx-auto mb-3 mt-6 h-6 w-6" />
 
       <Button variant="secondary">
         <a
