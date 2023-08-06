@@ -1,14 +1,15 @@
 'use client';
 
 import { useRef } from 'react';
-import { AnimatePresence, Transition, Variant, Variants, motion } from 'framer-motion';
+import { AnimatePresence, Transition, Variants, motion } from 'framer-motion';
 import Balancer from 'react-wrap-balancer';
 import useMouse from '@react-hook/mouse-position';
 import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
+import { IndicatorPage } from '@/components/IndicatorPage';
 import RunesSVG from '@/assets/svgs/runes.svg';
-import RunesLargeSVG from '@/assets/svgs/runes-large.svg';
 import GlyphsSVG from '@/assets/svgs/glyphs.svg';
+import RunesLargeSVG from '@/assets/svgs/runes-large.svg';
 import GradientShopSVG from '@/assets/svgs/gradient-shop.svg';
 import GradientShopLargeSVG from '@/assets/svgs/gradient-shop-large.svg';
 
@@ -47,9 +48,9 @@ export function Shop() {
       className="relative mt-40 cursor-none pb-20 sm:mt-64 xl:mt-[24rem] xl:pb-40"
     >
       <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20 xl:hidden" />
-      <RunesLargeSVG className="hidden xl:absolute xl:inset-x-20 xl:-top-24 xl:block" />
+      <RunesLargeSVG className="hidden xl:absolute xl:inset-x-20 xl:-top-24 xl:block 2xl:inset-x-36 2xl:-top-36" />
 
-      <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56 md:pt-64 lg:mx-20 lg:pt-72 xl:mx-10 xl:pt-60">
+      <div className="relative mx-5 flex flex-col items-center pt-44 text-center sm:mx-10 sm:pt-56 md:pt-64 lg:mx-20 lg:pt-72 xl:mx-10 xl:pt-60 2xl:pt-80">
         <GlyphsSVG className="mb-8 w-28 xl:mb-12" />
 
         <div className="xl:w-[35rem]">
@@ -76,6 +77,10 @@ export function Shop() {
             </a>
           </Button>
         </div>
+      </div>
+
+      <div className="hidden 2xl:pointer-events-none 2xl:absolute 2xl:inset-x-10 2xl:top-1/2 2xl:flex 2xl:-translate-y-1/2 2xl:items-center 2xl:justify-between">
+        <IndicatorPage title="Shop" index="4 of 4" />
       </div>
 
       <GradientShopSVG className="absolute -left-0 top-0 -z-10 xl:hidden" />

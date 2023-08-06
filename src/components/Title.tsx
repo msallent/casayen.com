@@ -16,8 +16,8 @@ export function Title({ size = 'default', variant = 'primary', withHover, childr
     <h1
       className={classNames(
         'font-title-full',
-        { 'text-[4.285rem] leading-[78.5%] xl:text-[8rem]': size === 'default' },
-        { 'text-[2.85rem] leading-[78.5%] xl:text-[3.75rem]': size === 'small' },
+        { 'text-[4.285rem] leading-[78.5%] xl:text-[8rem] 2xl:text-[12.5rem]': size === 'default' },
+        { 'text-[2.85rem] leading-[78.5%] xl:text-[3.75rem] 2xl:text-[5rem]': size === 'small' },
         { 'text-primary-blue': variant === 'primary' },
         { 'text-primary-black': variant === 'secondary' },
         { 'hover:text-secondary-white': withHover }
