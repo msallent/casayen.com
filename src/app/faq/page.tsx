@@ -28,10 +28,10 @@ export default async function FAQ() {
   }`);
 
   return (
-    <section className="mx-5 sm:mx-10 lg:mx-20 xl:relative xl:mt-28">
-      <div className="xl:flex xl:items-start xl:gap-28">
+    <section className="mx-5 sm:mx-10 lg:mx-20 xl:relative xl:mt-28 2xl:mx-48">
+      <div className="xl:flex xl:items-start xl:gap-28 2xl:[&>*:first-child]:flex-[1]">
         <TitlePage title={title} subtitle={subtitle} vertical />
-        <div className="mb-20 mt-12 border-b border-primary-blue xl:mt-0">
+        <div className="mb-20 mt-12 border-b border-primary-blue xl:mt-0 2xl:flex-[3]">
           {faqsCollection.items.map((faq, index) => (
             <Expandable key={faq.title} title={faq.title} noBorder={index === 0}>
               <div className="text-primary-blue">{parseRichText(faq.content.json)}</div>
@@ -52,7 +52,7 @@ export default async function FAQ() {
         aria-hidden
         src={backgroundGradient2}
         alt="Background gradient"
-        className="hidden xl:absolute xl:-bottom-48 xl:-left-20 xl:-z-10 xl:block xl:w-2/3"
+        className="hidden xl:absolute xl:-bottom-48 xl:-left-20 xl:-z-10 xl:block xl:w-2/3 2xl:-left-48 2xl:w-1/2"
         placeholder="blur"
       />
     </section>

@@ -18,9 +18,10 @@ export function TitlePage({ title, subtitle, vertical }: TitlePageProps) {
       )}
     >
       <StarsSVG
-        className={classNames('mx-auto mb-4 mt-2 h-6 w-6 xl:mb-8 xl:mt-0 xl:h-10 xl:w-10', {
-          'xl:ml-auto xl:mr-24 xl:mb-0': vertical,
-        })}
+        className={classNames(
+          'mx-auto mb-4 mt-2 h-6 w-6 xl:mb-8 xl:mt-0 xl:h-10 xl:w-10 2xl:h-16 2xl:w-16',
+          { 'xl:ml-auto xl:mr-24 xl:mb-0 2xl:mr-14': vertical }
+        )}
       />
       <Title>{title}</Title>
       {subtitle && (

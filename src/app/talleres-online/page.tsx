@@ -43,7 +43,7 @@ export default async function Talleres() {
   }`);
 
   return (
-    <section className="mx-5 sm:mx-10 lg:mx-20">
+    <section className="mx-5 sm:mx-10 lg:mx-20 2xl:mx-48">
       <TitlePage title={title} subtitle={subtitle} />
 
       {disclaimer && (
@@ -53,8 +53,8 @@ export default async function Talleres() {
       )}
 
       <div className="mb-20 mt-5 border-b border-primary-blue">
-        {talleresCollection.items.map((taller) => (
-          <ExpandableTaller key={taller.title} taller={taller} />
+        {talleresCollection.items.map((taller, index) => (
+          <ExpandableTaller key={taller.title} taller={taller} index={index + 1} />
         ))}
       </div>
 

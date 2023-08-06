@@ -27,13 +27,13 @@ export default async function Yen() {
 
   return (
     <>
-      <section className="mx-5 sm:mx-10 lg:mx-20">
+      <section className="mx-5 sm:mx-10 lg:mx-20 2xl:mx-48">
         <TitlePage title={title} subtitle={subtitle} />
 
-        <div className="relative mb-8 xl:absolute xl:right-32 xl:top-44">
+        <div className="relative mb-8 xl:absolute xl:right-32 xl:top-44 2xl:right-48 2xl:top-48">
           <Image
             src={yenCamiImage}
-            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5 xl:w-[25rem]"
+            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5 xl:w-[25rem] 2xl:w-[34rem]"
             alt="Cami Yen"
             placeholder="blur"
             quality={100}
@@ -87,28 +87,37 @@ export default async function Yen() {
           placeholder="blur"
         />
 
-        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center xl:my-32">
+        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center xl:my-32 2xl:my-40">
           <div className="mb-4 flex items-center gap-2">
             <div className="w-10 border border-primary-blue" />
             <span className="font-medium uppercase text-primary-blue">Convertí mi proceso de</span>
           </div>
           <div className="relative">
-            <Title>
-              <div>Desintoxicación</div>
-              <div>y Reconexión en</div>
-              <div>el Eje Central</div>
-              <div>de mi Vida</div>
-            </Title>
+            <div className="xl:hidden">
+              <Title>
+                <div>Desintoxicación</div>
+                <div>y Reconexión en</div>
+                <div>el Eje Central</div>
+                <div>de mi Vida</div>
+              </Title>
+            </div>
+            <div className="hidden xl:block">
+              <Title>
+                <div>Desintoxicación y</div>
+                <div>Reconexión en el Eje</div>
+                <div>Central de mi Vida</div>
+              </Title>
+            </div>
             <Image
               src={yenUterusImage}
-              className="inset-center absolute w-56 pb-3 lg:w-64"
+              className="inset-center absolute w-56 pb-3 lg:w-64 2xl:w-96"
               placeholder="blur"
               alt="Uterus"
             />
           </div>
         </div>
 
-        <div className="flex flex-col items-end space-y-5 text-primary-blue xl:absolute xl:right-20 xl:mt-20 xl:items-start xl:text-xl">
+        <div className="flex flex-col items-end space-y-5 text-primary-blue xl:absolute xl:right-20 xl:mt-20 xl:items-start xl:text-xl 2xl:right-48">
           <div>↓ CONTACTAME ↓</div>
           <div className="xl:my-4">
             <div>↓</div>
@@ -138,10 +147,10 @@ export default async function Yen() {
         />
       </section>
 
-      <div className="relative mt-8 h-80 sm:h-[25rem] xl:h-[55rem]">
+      <div className="relative mt-8 h-80 sm:h-[25rem] xl:h-[55rem] 2xl:h-[75rem]">
         <GradientYenSVG />
-        <Star2SVG className="absolute left-[40%] top-0 w-20 xl:w-40" />
-        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8 xl:bottom-[9.25%] xl:left-16 xl:w-[30rem]" />
+        <Star2SVG className="absolute left-[40%] top-0 w-20 xl:w-40 2xl:w-48" />
+        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8 xl:bottom-[9.25%] xl:left-16 xl:w-[30rem] 2xl:bottom-[23.25%] 2xl:left-24 2xl:w-[34rem]" />
         <GridSVG className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32 xl:opacity-40" />
       </div>
     </>

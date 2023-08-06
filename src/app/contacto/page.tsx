@@ -34,9 +34,9 @@ export default function Contacto() {
           <div className="hidden xl:block xl:self-center">
             <BadgeMulti title="Instagram" description="@casa.yen" />
           </div>
-          <div className="relative flex items-center">
+          <div className="relative flex items-center xl:mr-20">
             <Title>→→ hablemos</Title>
-            <EllipsisSVG className="absolute right-[-3rem] top-[-1rem] w-full xl:top-[-2rem]" />
+            <EllipsisSVG className="absolute right-[-3rem] top-[-1rem] w-full xl:right-[-8rem] xl:top-[-2rem] xl:w-[110%]" />
           </div>
         </div>
 
@@ -52,7 +52,7 @@ export default function Contacto() {
           </li>
         </ul>
 
-        <div className="h-20 xl:mt-32">
+        <div className="h-20 xl:mt-32 2xl:mt-56">
           <GridSVG className="xl:opacity-50" />
         </div>
       </div>

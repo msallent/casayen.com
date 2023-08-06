@@ -11,6 +11,7 @@ type ExpandableProps = {
   children: ReactNode;
   description?: string;
   noBorder?: boolean;
+  index?: number;
   buttonLabel?: {
     collapsed: string;
     expanded: string;
@@ -23,6 +24,7 @@ type ExpandableProps = {
 };
 
 export function Expandable({
+  index,
   title,
   children,
   noBorder,
@@ -38,16 +40,22 @@ export function Expandable({
 
   return (
     <div
-      className={classNames('border-t border-primary-blue pb-6 pt-8', {
+      className={classNames('border-t border-primary-blue pb-6 pt-8 2xl:pb-10 2xl:pt-12', {
         'xl:border-none': noBorder,
       })}
     >
       <div className="flex items-center justify-between text-primary-blue xl:gap-10">
-        <div className="max-w-[75%] xl:max-w-full">
-          <Title size="small">
-            <Balancer>{title}</Balancer>
-          </Title>
-          {description && <div className="mt-2.5 uppercase">{description}</div>}
+        <div className="flex items-center">
+          {index && (
+            <div className="hidden 2xl:block 2xl:w-36">{index.toString().padStart(2, '0')}</div>
+          )}
+
+          <div className="max-w-[75%] xl:max-w-full">
+            <Title size="small">
+              <Balancer>{title}</Balancer>
+            </Title>
+            {description && <div className="mt-2.5 uppercase">{description}</div>}
+          </div>
         </div>
 
         <div className="flex gap-8">
