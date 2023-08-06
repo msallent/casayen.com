@@ -51,6 +51,24 @@ export type PageHomeData = {
   };
 };
 
+export type PageProgramasData = {
+  pageProgramas: ContentfulPage & {
+    disclaimer?: string;
+    programasCollection: {
+      items: Array<Taller>;
+    };
+  };
+};
+
+export type PagePresencialesData = {
+  pagePresenciales: ContentfulPage & {
+    disclaimer?: string;
+    talleresCollection: {
+      items: Array<Taller>;
+    };
+  };
+};
+
 export type PageTalleresOnlineData = {
   pageTalleresOnline: ContentfulPage & {
     disclaimer?: string;
