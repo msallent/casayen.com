@@ -79,7 +79,9 @@ export type PageTalleresOnlineData = {
 };
 
 export type PageYenData = {
-  pageYen: ContentfulPage;
+  pageYen: ContentfulPage & {
+    description: ContentfulRichText;
+  };
 };
 
 export type PageBlogData = {

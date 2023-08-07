@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Title } from '@/components/Title';
 import { TitlePage } from '@/components/TitlePage';
+import { parseRichText } from '@/utils/richText';
 import { fetchContent } from '@/utils/fetch';
 import { PageYenData } from '@/types/contentful';
 import GridSVG from '@/assets/svgs/grid.svg';
@@ -16,13 +17,16 @@ import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 export default async function Yen() {
   const {
     data: {
-      pageYen: { title, subtitle },
+      pageYen: { title, subtitle, description },
     },
   } = await fetchContent<PageYenData>(
     `query PageYen {
     pageYen(id: "${process.env.CONTENTFUL_PAGE_YEN_ID}") {
       title
       subtitle
+      description {
+        json
+      }
     }
   }`,
     { next: { tags: ['pageYen'] } }
@@ -50,36 +54,7 @@ export default async function Yen() {
         </div>
 
         <div className="mt-2.5 space-y-6 text-primary-blue xl:max-w-xl">
-          <div>BIENVENIDX A LA CASA VIRTUAL DE YEN</div>
-          <div>
-            Tengo 32 años y soy de Buenos Aires, Argentina, viviendo entre la ciudad y la selva en
-            Santa Teresa. Originalmente me forme como Licenciada en Comunicación y Master en
-            Estrategias de Comunicación y Dirección de Arte de la Universidad Elisava de Barcelona.
-            Trabajé en producción de moda y música durante varios años hasta que mi corazón me puso
-            un freno, solté todo lo que creí que era y que quería ser.
-          </div>
-          <div>
-            Convertí mi proceso de desintoxicación y reconexión en el eje central de mi vida y hoy
-            es mi trabajo. Encontrarme con mi sexualidad fue la experiencia más revolucionaria y
-            transformadora de mi vida que me dio herramientas que simplemente no me pude quedar para
-            mí.{' '}
-            <span className="font-bold">
-              Me dedico a la sanación sexual holística haciendo foco en el trabajo del trauma. La
-              liberación de los cuerpos y la recuperación de la soberanía sobre la salud y el placer
-              es mi absoluta pasión y misión.
-            </span>{' '}
-            Trabajo con herramientas como el huevo Yoni y las vaporizaciones Yoni (de las que tengo
-            mi propia línea de productos). Tengo programas grupales, talleres online y experiencias
-            presenciales a través de los cuales comparto todo lo que se y que me ayudó a mi a
-            transformar mi vida.
-          </div>
-
-          <div>
-            Tuve la fortuna de instruirme con algunos seres increíbles como Sofia Sundari, Mantak
-            Chia y Dr. Gabor Maté aunque soy muy autodidacta y estoy permanentemente en proceso de
-            aprendizaje y formación. Mi herida, mi corazón y la vida misma son mis principales
-            escuelas
-          </div>
+          {parseRichText(description.json)}
         </div>
 
         <Image
