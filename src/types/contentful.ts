@@ -55,7 +55,7 @@ export type PageProgramasData = {
   pageProgramas: ContentfulPage & {
     disclaimer?: string;
     programasCollection: {
-      items: Array<Taller>;
+      items: Array<Event>;
     };
   };
 };
@@ -64,7 +64,7 @@ export type PagePresencialesData = {
   pagePresenciales: ContentfulPage & {
     disclaimer?: string;
     talleresCollection: {
-      items: Array<Taller>;
+      items: Array<Event>;
     };
   };
 };
@@ -73,7 +73,7 @@ export type PageTalleresOnlineData = {
   pageTalleresOnline: ContentfulPage & {
     disclaimer?: string;
     talleresCollection: {
-      items: Array<Taller>;
+      items: Array<Event>;
     };
   };
 };
@@ -114,7 +114,7 @@ export type Link = {
   url: `/${string}`;
 };
 
-export type Taller = {
+export type Event = {
   title: string;
   hot?: boolean;
   shortDescription?: string;

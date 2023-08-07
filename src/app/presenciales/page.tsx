@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ExpandableTaller } from '@/components/ExpandableTaller';
+import { ExpandableEvent } from '@/components/ExpandableEvent';
 import { TitlePage } from '@/components/TitlePage';
 import { fetchContent } from '@/utils/fetch';
 import { PagePresencialesData } from '@/types/contentful';
@@ -54,7 +54,7 @@ export default async function Presenciales() {
 
       <div className="mb-20 mt-5 border-b border-primary-blue">
         {talleresCollection.items.map((taller, index) => (
-          <ExpandableTaller key={taller.title} taller={taller} index={index + 1} />
+          <ExpandableEvent key={taller.title} type="taller" event={taller} index={index + 1} />
         ))}
       </div>
 

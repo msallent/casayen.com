@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ExpandableTaller } from '@/components/ExpandableTaller';
+import { ExpandableEvent } from '@/components/ExpandableEvent';
 import { TitlePage } from '@/components/TitlePage';
 import { fetchContent } from '@/utils/fetch';
 import { PageProgramasData } from '@/types/contentful';
@@ -54,7 +54,12 @@ export default async function Talleres() {
 
       <div className="mb-20 mt-5 border-b border-primary-blue">
         {programasCollection.items.map((programa, index) => (
-          <ExpandableTaller key={programa.title} taller={programa} index={index + 1} />
+          <ExpandableEvent
+            key={programa.title}
+            type="programa"
+            event={programa}
+            index={index + 1}
+          />
         ))}
       </div>
 

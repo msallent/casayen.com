@@ -3,18 +3,18 @@ import { createPortal } from 'react-dom';
 import { Badge } from '@/components/Badge';
 import { Title } from '@/components/Title';
 import { Button } from '@/components/Button';
-import { Taller } from '@/types/contentful';
+import { Event } from '@/types/contentful';
 import CloseSVG from '@/assets/svgs/close.svg';
 import EllipsisMobileSVG from '@/assets/svgs/ellipsis-3.svg';
 import EllipsisDesktopSVG from '@/assets/svgs/ellipsis-5.svg';
 import backgroundGradient from '@/assets/images/gradient-1.webp';
 
 type ModalBuyProps = {
-  taller: Taller;
+  event: Event;
   onClose: () => void;
 };
 
-export function ModalBuy({ taller, onClose }: ModalBuyProps) {
+export function ModalBuy({ event, onClose }: ModalBuyProps) {
   return createPortal(
     <>
       <div className="inset-center fixed z-10 w-[calc(100%-2.5rem)] bg-primary-black pb-5 pt-9 xl:w-[56rem] xl:pb-10 xl:pt-14">
@@ -30,10 +30,10 @@ export function ModalBuy({ taller, onClose }: ModalBuyProps) {
         <div className="flex flex-col items-center justify-center text-primary-blue">
           <div className="flex w-full flex-col items-center px-5">
             <div className="mx-10 text-center">
-              <Title size="small">{taller.title}</Title>
+              <Title size="small">{event.title}</Title>
             </div>
             <div className="mx-10 mt-2.5 text-center font-medium uppercase leading-[129%]">
-              {taller.shortDescription}
+              {event.shortDescription}
             </div>
           </div>
 
