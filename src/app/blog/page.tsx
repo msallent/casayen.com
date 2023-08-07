@@ -11,7 +11,8 @@ export default async function Blog() {
       pageBlog: { title, subtitle },
       pageBlogPostCollection,
     },
-  } = await fetchContent<PageBlogData>(`query PageBlog {
+  } = await fetchContent<PageBlogData>(
+    `query PageBlog {
     pageBlog(id: "${process.env.CONTENTFUL_PAGE_BLOG_ID}") {
       title
       subtitle
@@ -23,7 +24,9 @@ export default async function Blog() {
         description
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageBlog', 'pageBlogPostCollection'] } }
+  );
 
   return (
     <section className="mx-5 mb-20 sm:mx-10 lg:mx-20">

@@ -7,7 +7,8 @@ export default async function Talleres() {
     data: {
       pageProgramas: { title, subtitle, disclaimer, programasCollection },
     },
-  } = await fetchContent<PageProgramasData>(`query PageProgramas {
+  } = await fetchContent<PageProgramasData>(
+    `query PageProgramas {
     pageProgramas(id: "${process.env.CONTENTFUL_PAGE_PROGRAMAS_ID}") {
       title
       subtitle
@@ -37,7 +38,9 @@ export default async function Talleres() {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageProgramas'] } }
+  );
 
   return (
     <PageEvent

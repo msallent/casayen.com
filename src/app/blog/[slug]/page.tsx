@@ -20,7 +20,8 @@ export default async function BlogPost({ params }: BlogPostProps) {
         items: [blogPost],
       },
     },
-  } = await fetchContent<PageBlogPostData>(`query PageBlogPostData {
+  } = await fetchContent<PageBlogPostData>(
+    `query PageBlogPostData {
     pageBlogPostCollection(limit: 1, where: { url: "${params.slug}" }) {
       items {
         title
@@ -46,7 +47,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageBlogPostCollection'] } }
+  );
 
   return (
     <section className="mb-20 mt-2 text-primary-blue">
@@ -81,13 +84,16 @@ export default async function BlogPost({ params }: BlogPostProps) {
 export async function generateStaticParams() {
   const {
     data: { pageBlogPostCollection },
-  } = await fetchContent<PageBlogPostParams>(`query PageBlogPostParams {
+  } = await fetchContent<PageBlogPostParams>(
+    `query PageBlogPostParams {
     pageBlogPostCollection {
       items {
         url
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageBlogPostCollection'] } }
+  );
 
   return pageBlogPostCollection.items.map((blogPost) => ({
     slug: blogPost.url,

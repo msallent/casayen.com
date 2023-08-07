@@ -7,7 +7,8 @@ export default async function Talleres() {
     data: {
       pageTalleresOnline: { title, subtitle, disclaimer, talleresCollection },
     },
-  } = await fetchContent<PageTalleresOnlineData>(`query PageTalleresOnline {
+  } = await fetchContent<PageTalleresOnlineData>(
+    `query PageTalleresOnline {
     pageTalleresOnline(id: "${process.env.CONTENTFUL_PAGE_TALLERES_ONLINE_ID}") {
       title
       subtitle
@@ -37,7 +38,9 @@ export default async function Talleres() {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageTalleresOnline'] } }
+  );
 
   return (
     <PageEvent

@@ -22,7 +22,8 @@ export default async function Home() {
     data: {
       pageHome: { featuredLinksCollection },
     },
-  } = await fetchContent<PageHomeData>(`query PageHome {
+  } = await fetchContent<PageHomeData>(
+    `query PageHome {
     pageHome(id: "${process.env.CONTENTFUL_PAGE_HOME_ID}") {
       featuredLinksCollection {
         items {
@@ -31,7 +32,9 @@ export default async function Home() {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageHome'] } }
+  );
 
   return (
     <>

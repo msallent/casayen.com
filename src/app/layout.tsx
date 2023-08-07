@@ -31,7 +31,8 @@ export default async function Layout({ children }: LayoutProps) {
     data: {
       navbarMenu: { menuItemsCollection },
     },
-  } = await fetchContent<NavbarMenuData>(`query NavbarMenu {
+  } = await fetchContent<NavbarMenuData>(
+    `query NavbarMenu {
     navbarMenu(id: "${process.env.CONTENTFUL_NAVBAR_MENU_ID}") {
       menuItemsCollection {
         items {
@@ -40,7 +41,9 @@ export default async function Layout({ children }: LayoutProps) {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['navbarMenu'] } }
+  );
 
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>

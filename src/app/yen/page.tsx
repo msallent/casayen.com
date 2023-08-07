@@ -18,12 +18,15 @@ export default async function Yen() {
     data: {
       pageYen: { title, subtitle },
     },
-  } = await fetchContent<PageYenData>(`query PageYen {
+  } = await fetchContent<PageYenData>(
+    `query PageYen {
     pageYen(id: "${process.env.CONTENTFUL_PAGE_YEN_ID}") {
       title
       subtitle
     }
-  }`);
+  }`,
+    { next: { tags: ['pageYen'] } }
+  );
 
   return (
     <>

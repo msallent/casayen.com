@@ -7,7 +7,8 @@ export default async function Presenciales() {
     data: {
       pagePresenciales: { title, subtitle, disclaimer, talleresCollection },
     },
-  } = await fetchContent<PagePresencialesData>(`query PagePresenciales {
+  } = await fetchContent<PagePresencialesData>(
+    `query PagePresenciales {
     pagePresenciales(id: "${process.env.CONTENTFUL_PAGE_PRESENCIALES_ID}") {
       title
       subtitle
@@ -37,7 +38,9 @@ export default async function Presenciales() {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pagePresenciales'] } }
+  );
 
   return (
     <PageEvent

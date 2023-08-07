@@ -12,7 +12,8 @@ export default async function FAQ() {
     data: {
       pageFaq: { title, subtitle, faqsCollection },
     },
-  } = await fetchContent<PageFAQData>(`query PageFAQ {
+  } = await fetchContent<PageFAQData>(
+    `query PageFAQ {
     pageFaq(id: "${process.env.CONTENTFUL_PAGE_FAQ_ID}") {
       title
       subtitle
@@ -25,7 +26,9 @@ export default async function FAQ() {
         }
       }
     }
-  }`);
+  }`,
+    { next: { tags: ['pageFaq'] } }
+  );
 
   return (
     <section className="mx-5 sm:mx-10 lg:mx-20 xl:relative xl:mt-28 2xl:mx-48">
