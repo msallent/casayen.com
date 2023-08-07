@@ -8,10 +8,10 @@ import { Event } from '@/types/contentful';
 import { parseRichText } from '@/utils/richText';
 import CartSVG from '@/assets/svgs/cart.svg';
 
-type ExpandableType = 'programa' | 'taller';
+type EventType = 'programa' | 'taller';
 
 type ExpandableEventProps = {
-  type: ExpandableType;
+  type: EventType;
   event: Event;
   index: number;
 };
