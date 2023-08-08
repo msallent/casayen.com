@@ -15,6 +15,7 @@ type ExpandableEventProps = {
 
 export function ExpandableEvent({ event, index }: ExpandableEventProps) {
   const [isPurchasing, setIsPurchasing] = useState(false);
+  const hasPurchaseLinks = event.mercadoPagoUrl || event.payPalUrl;
 
   const handleSelectBuy = () => {
     setIsPurchasing(true);
@@ -32,9 +33,7 @@ export function ExpandableEvent({ event, index }: ExpandableEventProps) {
         description={event.shortDescription}
         buttonLabel={{ collapsed: 'Info', expanded: 'Cerrar' }}
         extraActions={
-          event.mercadoPagoUrl || event.payPalUrl
-            ? [{ label: 'Comprar', Icon: CartSVG, onClick: handleSelectBuy }]
-            : []
+          hasPurchaseLinks ? [{ label: 'Comprar', Icon: CartSVG, onClick: handleSelectBuy }] : []
         }
       >
         <div className="text-primary-blue 2xl:mr-[200px] [&_p+p]:mt-4 [&_ul~p]:mt-4">
@@ -82,13 +81,15 @@ export function ExpandableEvent({ event, index }: ExpandableEventProps) {
             )}
           </div>
 
-          <div className="flex">
-            <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]" />
-            <ButtonBuy onClick={handleSelectBuy} />
-          </div>
+          {hasPurchaseLinks && (
+            <div className="flex">
+              <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]" />
+              <ButtonBuy onClick={handleSelectBuy} />
+            </div>
+          )}
 
           {event.forYou && (
-            <div className="my-14 flex xl:mt-20">
+            <div className="my-14 flex">
               <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]">
                 →
               </div>
@@ -143,10 +144,13 @@ export function ExpandableEvent({ event, index }: ExpandableEventProps) {
             </div>
           )}
 
-          <div className="flex">
-            <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]" />
-            <ButtonBuy onClick={handleSelectBuy} />
-          </div>
+          {hasPurchaseLinks &&
+            (event.forYou || event.info || event.syllabus || event.participation) && (
+              <div className="flex">
+                <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]" />
+                <ButtonBuy onClick={handleSelectBuy} />
+              </div>
+            )}
         </div>
       </Expandable>
 
