@@ -1,5 +1,5 @@
 import { PageEvent } from '@/components/PageEvent';
-import { PageTalleresOnlineData } from '@/types/contentful';
+import { Event, PageTalleresOnlineData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
 export default async function Talleres() {
@@ -44,11 +44,10 @@ export default async function Talleres() {
 
   return (
     <PageEvent
-      type="taller"
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={talleresCollection.items}
+      events={talleresCollection.items.map<Event>((taller) => ({ ...taller, type: 'taller' }))}
     />
   );
 }

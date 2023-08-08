@@ -4,17 +4,14 @@ import { ExpandableEvent } from '@/components/ExpandableEvent';
 import { Event } from '@/types/contentful';
 import backgroundGradient from '@/assets/images/gradient-1.webp';
 
-type EventType = 'programa' | 'taller';
-
 type PageEvent = {
   title: string;
-  type: EventType;
   subtitle?: string;
   disclaimer?: string;
   events: Array<Event>;
 };
 
-export function PageEvent({ title, subtitle, disclaimer, events, type }: PageEvent) {
+export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
   return (
     <section className="mx-5 sm:mx-10 lg:mx-20 2xl:mx-48">
       <TitlePage title={title} subtitle={subtitle} />
@@ -27,7 +24,7 @@ export function PageEvent({ title, subtitle, disclaimer, events, type }: PageEve
 
       <div className="mb-20 mt-5 border-b border-primary-blue">
         {events.map((event, index) => (
-          <ExpandableEvent key={event.title} type={type} event={event} index={index + 1} />
+          <ExpandableEvent key={event.title} event={event} index={index + 1} />
         ))}
       </div>
 

@@ -1,11 +1,11 @@
 import { PageEvent } from '@/components/PageEvent';
-import { PagePresencialesData } from '@/types/contentful';
+import { Event, PagePresencialesData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
 export default async function Presenciales() {
   const {
     data: {
-      pagePresenciales: { title, subtitle, disclaimer, talleresCollection },
+      pagePresenciales: { title, subtitle, disclaimer, presencialesCollection },
     },
   } = await fetchContent<PagePresencialesData>(
     `query PagePresenciales {
@@ -13,7 +13,7 @@ export default async function Presenciales() {
       title
       subtitle
       disclaimer
-      talleresCollection {
+      presencialesCollection {
         items {
           hot
           title
@@ -44,11 +44,13 @@ export default async function Presenciales() {
 
   return (
     <PageEvent
-      type="taller"
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={talleresCollection.items}
+      events={presencialesCollection.items.map<Event>((taller) => ({
+        ...taller,
+        type: 'encuentro',
+      }))}
     />
   );
 }

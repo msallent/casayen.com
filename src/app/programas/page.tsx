@@ -1,5 +1,5 @@
 import { PageEvent } from '@/components/PageEvent';
-import { PageProgramasData } from '@/types/contentful';
+import { Event, PageProgramasData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
 export default async function Talleres() {
@@ -44,11 +44,13 @@ export default async function Talleres() {
 
   return (
     <PageEvent
-      type="programa"
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={programasCollection.items}
+      events={programasCollection.items.map<Event>((programa) => ({
+        ...programa,
+        type: 'programa',
+      }))}
     />
   );
 }

@@ -8,15 +8,12 @@ import { Event } from '@/types/contentful';
 import { parseRichText } from '@/utils/richText';
 import CartSVG from '@/assets/svgs/cart.svg';
 
-type EventType = 'programa' | 'taller';
-
 type ExpandableEventProps = {
-  type: EventType;
   event: Event;
   index: number;
 };
 
-export function ExpandableEvent({ type, event, index }: ExpandableEventProps) {
+export function ExpandableEvent({ event, index }: ExpandableEventProps) {
   const [isPurchasing, setIsPurchasing] = useState(false);
 
   const handleSelectBuy = () => {
@@ -84,7 +81,7 @@ export function ExpandableEvent({ type, event, index }: ExpandableEventProps) {
               </div>
               <div>
                 <div className="mb-4 text-2xl">
-                  <span className="2xl:hidden">→</span> Este {type} es para vos si:
+                  <span className="2xl:hidden">→</span> Este {event.type} es para vos si:
                 </div>
                 {parseRichText(event.forYou.json)}
               </div>

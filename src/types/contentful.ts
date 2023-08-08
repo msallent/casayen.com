@@ -63,7 +63,7 @@ export type PageProgramasData = {
 export type PagePresencialesData = {
   pagePresenciales: ContentfulPage & {
     disclaimer?: string;
-    talleresCollection: {
+    presencialesCollection: {
       items: Array<Event>;
     };
   };
@@ -127,6 +127,7 @@ export type Event = {
   forYou?: ContentfulRichText;
   info?: ContentfulRichText;
   syllabus?: ContentfulRichText;
+  type: 'encuentro' | 'programa' | 'taller';
 };
 
 export type BlogPost = {
