@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
 import { Title } from '@/components/Title';
+import { tags } from '@/constants/tags';
 import { fetchContent } from '@/utils/fetch';
 import { parseRichText } from '@/utils/richText';
 import { formateDateString } from '@/utils/dates';
@@ -48,7 +49,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
       }
     }
   }`,
-    { next: { tags: ['pageBlogPostCollection'] } }
+    { next: { tags: [tags.blogPost] } }
   );
 
   return (
@@ -92,7 +93,7 @@ export async function generateStaticParams() {
       }
     }
   }`,
-    { next: { tags: ['pageBlogPostCollection'] } }
+    { next: { tags: [tags.blogPost] } }
   );
 
   return pageBlogPostCollection.items.map((blogPost) => ({

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Title } from '@/components/Title';
 import { TitlePage } from '@/components/TitlePage';
+import { tags } from '@/constants/tags';
 import { parseRichText } from '@/utils/richText';
 import { fetchContent } from '@/utils/fetch';
 import { PageYenData } from '@/types/contentful';
@@ -29,7 +30,7 @@ export default async function Yen() {
       }
     }
   }`,
-    { next: { tags: ['pageYen'] } }
+    { next: { tags: [tags.yen] } }
   );
 
   return (

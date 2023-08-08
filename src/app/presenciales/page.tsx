@@ -1,4 +1,5 @@
 import { PageEvent } from '@/components/PageEvent';
+import { tags } from '@/constants/tags';
 import { Event, PagePresencialesData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
@@ -39,7 +40,7 @@ export default async function Presenciales() {
       }
     }
   }`,
-    { next: { tags: ['pagePresenciales'] } }
+    { next: { tags: [tags.presenciales] } }
   );
 
   return (

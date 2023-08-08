@@ -5,6 +5,7 @@ import { Shop } from '@/components/Shop';
 import { Title } from '@/components/Title';
 import { LinkFeatured } from '@/components/LinkFeatured';
 import { IndicatorPage } from '@/components/IndicatorPage';
+import { tags } from '@/constants/tags';
 import { fetchContent } from '@/utils/fetch';
 import { PageHomeData } from '@/types/contentful';
 import GlobeSVG from '@/assets/svgs/globe.svg';
@@ -34,7 +35,7 @@ export default async function Home() {
       }
     }
   }`,
-    { next: { tags: ['pageHome'] } }
+    { next: { tags: [tags.home] } }
   );
 
   return (

@@ -1,4 +1,5 @@
 import { PageEvent } from '@/components/PageEvent';
+import { tags } from '@/constants/tags';
 import { Event, PageProgramasData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
@@ -39,7 +40,7 @@ export default async function Programas() {
       }
     }
   }`,
-    { next: { tags: ['pageProgramas'] } }
+    { next: { tags: [tags.programas] } }
   );
 
   return (

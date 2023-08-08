@@ -1,4 +1,5 @@
 import { PageEvent } from '@/components/PageEvent';
+import { tags } from '@/constants/tags';
 import { Event, PageMasterclassesData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
@@ -45,7 +46,7 @@ export default async function Masterclasses() {
       }
     }
   }`,
-    { next: { tags: ['pageMasterclasses'] } }
+    { next: { tags: [tags.masterclasses] } }
   );
 
   return (

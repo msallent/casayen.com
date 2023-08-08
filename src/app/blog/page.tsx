@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { PreviewBlogPost } from '@/components/PreviewBlogPost';
 import { TitlePage } from '@/components/TitlePage';
+import { tags } from '@/constants/tags';
 import { fetchContent } from '@/utils/fetch';
 import { PageBlogData } from '@/types/contentful';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
@@ -26,7 +27,7 @@ export default async function Blog() {
       }
     }
   }`,
-    { next: { tags: ['pageBlog', 'pageBlogPostCollection'] } }
+    { next: { tags: [tags.blog, tags.blogPost] } }
   );
 
   return (

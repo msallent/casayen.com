@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { TitlePage } from '@/components/TitlePage';
 import { Expandable } from '@/components/Expandable';
+import { tags } from '@/constants/tags';
 import { parseRichText } from '@/utils/richText';
 import { fetchContent } from '@/utils/fetch';
 import { PageFAQData } from '@/types/contentful';
@@ -27,7 +28,7 @@ export default async function FAQ() {
       }
     }
   }`,
-    { next: { tags: ['pageFaq'] } }
+    { next: { tags: [tags.faq] } }
   );
 
   return (
