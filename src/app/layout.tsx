@@ -47,9 +47,9 @@ export default async function Layout({ children }: LayoutProps) {
 
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
-      <body className="overscroll-none bg-primary-black selection:bg-secondary-white">
+      <body className="flex min-h-screen flex-col overscroll-none bg-primary-black selection:bg-secondary-white">
         <Navbar menuItems={menuItemsCollection.items} />
-        <main className="overflow-hidden">{children}</main>
+        <main className="flex-1 overflow-hidden">{children}</main>
         <Footer />
         <div className="pointer-events-none fixed left-0 top-0 z-20 h-full w-full bg-grain-texture mix-blend-overlay" />
       </body>
