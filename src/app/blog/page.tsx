@@ -3,7 +3,8 @@ import { PreviewBlogPost } from '@/components/PreviewBlogPost';
 import { TitlePage } from '@/components/TitlePage';
 import { fetchContent } from '@/utils/fetch';
 import { PageBlogData } from '@/types/contentful';
-import backgroundGradient from '@/assets/images/gradient-1.webp';
+import backgroundGradient1 from '@/assets/images/gradient-1.webp';
+import backgroundGradient1Large from '@/assets/images/gradient-1-large.webp';
 
 export default async function Blog() {
   const {
@@ -45,10 +46,20 @@ export default async function Blog() {
 
       <Image
         aria-hidden
-        src={backgroundGradient}
+        src={backgroundGradient1}
         alt="Background gradient"
-        className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full"
+        className="absolute left-0 top-0 -z-10 w-full xl:hidden"
         placeholder="blur"
+        loading="eager"
+      />
+
+      <Image
+        aria-hidden
+        src={backgroundGradient1Large}
+        alt="Background gradient"
+        className="hidden xl:absolute xl:left-0 xl:top-0 xl:-z-10 xl:block xl:w-full"
+        placeholder="blur"
+        loading="eager"
       />
     </section>
   );

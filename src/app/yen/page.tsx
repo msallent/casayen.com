@@ -120,7 +120,7 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute left-0 top-0 -z-10 max-h-[1200px] w-full xl:hidden"
+          className="absolute left-0 top-0 -z-10 w-full xl:hidden"
           placeholder="blur"
         />
       </section>
