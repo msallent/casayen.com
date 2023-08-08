@@ -83,7 +83,7 @@ export function Expandable({
               className={classNames('mb-2 w-8 h-8 xl:w-12 xl:h-12', { 'rotate-45': isExpanded })}
             />
             {buttonLabel && (
-              <span className="uppercase">
+              <span className="hidden md:block md:uppercase">
                 {isExpanded ? buttonLabel?.expanded : buttonLabel?.collapsed}
               </span>
             )}
