@@ -69,10 +69,10 @@ export type PagePresencialesData = {
   };
 };
 
-export type PageTalleresOnlineData = {
-  pageTalleresOnline: ContentfulPage & {
+export type PageMasterclassesData = {
+  pageMasterclasses: ContentfulPage & {
     disclaimer?: string;
-    talleresCollection: {
+    masterclassesCollection: {
       items: Array<Event>;
     };
   };
