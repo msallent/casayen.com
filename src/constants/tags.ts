@@ -6,5 +6,6 @@ export const tags = {
   masterclasses: 'pageMasterclasses',
   presenciales: 'pagePresenciales',
   programas: 'pageProgramas',
+  retiros: 'pageRetiros',
   yen: 'pageYen',
 } as const;

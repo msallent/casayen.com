@@ -78,6 +78,15 @@ export type PageMasterclassesData = {
   };
 };
 
+export type PageRetirosData = {
+  pageRetiros: ContentfulPage & {
+    disclaimer?: string;
+    retirosCollection: {
+      items: Array<Event>;
+    };
+  };
+};
+
 export type PageYenData = {
   pageYen: ContentfulPage & {
     description: ContentfulRichText;
@@ -131,7 +140,7 @@ export type Event = {
   info?: ContentfulRichText;
   syllabus?: ContentfulRichText;
   participation?: ContentfulRichText;
-  type: 'encuentro' | 'programa' | 'taller';
+  type: 'encuentro' | 'programa' | 'retiro' | 'taller';
 };
 
 export type BlogPost = {

@@ -7,5 +7,6 @@ export const paths = {
   masterclasses: '/masterclasses',
   presenciales: '/presenciales',
   programas: '/programas',
+  retiros: '/retiros',
   yen: '/yen',
 } as const;
