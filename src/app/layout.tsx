@@ -33,16 +33,15 @@ export default async function Layout({ children }: LayoutProps) {
     },
   } = await fetchContent<NavbarMenuData>(
     `query NavbarMenu {
-    navbarMenu(id: "${process.env.CONTENTFUL_NAVBAR_MENU_ID}") {
-      menuItemsCollection {
-        items {
-          label
-          url
+      navbarMenu(id: "${process.env.CONTENTFUL_NAVBAR_MENU_ID}") {
+        menuItemsCollection {
+          items {
+            label
+            url
+          }
         }
       }
-    }
-  }`,
-    { next: { tags: ['navbarMenu'] } }
+    }`
   );
 
   return (
