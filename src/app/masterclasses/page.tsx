@@ -1,7 +1,7 @@
 import { PageEvent } from '@/components/PageEvent';
 import { tags } from '@/constants/tags';
 import { Event, PageMasterclassesData } from '@/types/contentful';
-import { fetchContent } from '@/utils/fetch';
+import { eventFields, fetchContent } from '@/utils/fetch';
 
 export default async function Masterclasses() {
   const {
@@ -15,34 +15,7 @@ export default async function Masterclasses() {
       subtitle
       disclaimer
       masterclassesCollection {
-        items {
-          hot
-          title
-          shortDescription
-          longDescription
-          startDate
-          duration
-          mercadoPagoUrl
-          payPalUrl
-          value {
-            json
-          }
-          includes {
-            json
-          }
-          forYou {
-            json
-          }
-          info {
-            json
-          }
-          syllabus {
-            json
-          }
-          participation {
-            json
-          }
-        }
+        ${eventFields}
       }
     }
   }`,

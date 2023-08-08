@@ -17,3 +17,34 @@ export async function fetchContent<T = any>(query: string, init?: RequestInit) {
 
   return response.json() as Promise<ContentfulResponse<T>>;
 }
+
+export const eventFields = `
+  items {
+    hot
+    title
+    shortDescription
+    longDescription
+    startDate
+    duration
+    mercadoPagoUrl
+    payPalUrl
+    value {
+      json
+    }
+    includes {
+      json
+    }
+    forYou {
+      json
+    }
+    info {
+      json
+    }
+    syllabus {
+      json
+    }
+    participation {
+      json
+    }
+  }
+`;
