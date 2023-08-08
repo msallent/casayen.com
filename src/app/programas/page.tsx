@@ -20,7 +20,10 @@ export default async function Programas() {
           title
           shortDescription
           longDescription
+          startDate
           duration
+          mercadoPagoUrl
+          payPalUrl
           value {
             json
           }
@@ -34,6 +37,9 @@ export default async function Programas() {
             json
           }
           syllabus {
+            json
+          }
+          participation {
             json
           }
         }
