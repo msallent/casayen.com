@@ -42,7 +42,7 @@ export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
         aria-hidden
         src={backgroundGradient1Large}
         alt="Background gradient"
-        className="hidden xl:absolute xl:left-0 xl:top-0 xl:-z-10 xl:block xl:w-full"
+        className="hidden xl:absolute xl:-left-20 xl:-top-20 xl:-z-10 xl:block xl:w-full"
         placeholder="blur"
         loading="eager"
       />
