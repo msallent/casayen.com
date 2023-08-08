@@ -50,15 +50,37 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
           </div>
 
           <div className="flex w-full flex-col items-center px-5 xl:flex-row xl:justify-center xl:gap-8">
-            <div className="w-full xl:w-auto">
-              <div className="mb-1.5 font-bold">↓ TERRITORIO ARGENTINO</div>
-              <Button>COMPRAR →</Button>
-            </div>
+            {event.mercadoPagoUrl && (
+              <div className="w-full xl:w-auto">
+                <div className="mb-1.5 font-bold">↓ TERRITORIO ARGENTINO</div>
+                <Button>
+                  <a
+                    className="flex h-full items-center justify-center"
+                    href={event.mercadoPagoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    COMPRAR X MERCADOPAGO →
+                  </a>
+                </Button>
+              </div>
+            )}
 
-            <div className="w-full xl:w-auto">
-              <div className="mb-1.5 mt-5 font-bold xl:mt-0 xl:text-right">RESTO DEL MUNDO ↓</div>
-              <Button>COMPRAR X PAYPAL →</Button>
-            </div>
+            {event.payPalUrl && (
+              <div className="w-full xl:w-auto">
+                <div className="mb-1.5 mt-5 font-bold xl:mt-0 xl:text-right">RESTO DEL MUNDO ↓</div>
+                <Button>
+                  <a
+                    className="flex h-full items-center justify-center"
+                    href={event.payPalUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    COMPRAR X PAYPAL →
+                  </a>
+                </Button>
+              </div>
+            )}
           </div>
         </div>
 

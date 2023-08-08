@@ -31,7 +31,11 @@ export function ExpandableEvent({ event, index }: ExpandableEventProps) {
         title={event.title}
         description={event.shortDescription}
         buttonLabel={{ collapsed: 'Info', expanded: 'Cerrar' }}
-        extraActions={[{ label: 'Comprar', Icon: CartSVG, onClick: handleSelectBuy }]}
+        extraActions={
+          event.mercadoPagoUrl || event.payPalUrl
+            ? [{ label: 'Comprar', Icon: CartSVG, onClick: handleSelectBuy }]
+            : []
+        }
       >
         <div className="text-primary-blue 2xl:mr-[200px] [&_p+p]:mt-4 [&_ul~p]:mt-4">
           {event.longDescription && (
@@ -40,6 +44,15 @@ export function ExpandableEvent({ event, index }: ExpandableEventProps) {
                 →
               </div>
               <div>{event.longDescription}</div>
+            </div>
+          )}
+
+          {event.startDate && (
+            <div className="flex">
+              <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]" />
+              <div className="mt-2 text-sm uppercase text-white">
+                Fecha de Inicio: <span className="font-bold">{event.startDate}</span>
+              </div>
             </div>
           )}
 
@@ -112,6 +125,20 @@ export function ExpandableEvent({ event, index }: ExpandableEventProps) {
                   <span className="2xl:hidden">→</span> ¿Qué vamos a ver?
                 </div>
                 {parseRichText(event.syllabus.json)}
+              </div>
+            </div>
+          )}
+
+          {event.participation && (
+            <div className="my-14 flex">
+              <div className="hidden 2xl:-mt-2 2xl:block 2xl:w-36 2xl:shrink-0 2xl:text-[2rem]">
+                →
+              </div>
+              <div>
+                <div className="mb-4 text-2xl">
+                  <span className="2xl:hidden">→</span> ¿Quién puede participar?
+                </div>
+                {parseRichText(event.participation.json)}
               </div>
             </div>
           )}

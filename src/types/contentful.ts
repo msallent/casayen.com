@@ -121,12 +121,16 @@ export type Event = {
   hot?: boolean;
   shortDescription?: string;
   longDescription?: string;
+  startDate?: string;
   duration?: string;
+  mercadoPagoUrl?: string;
+  payPalUrl?: string;
   value?: ContentfulRichText;
   includes?: ContentfulRichText;
   forYou?: ContentfulRichText;
   info?: ContentfulRichText;
   syllabus?: ContentfulRichText;
+  participation?: ContentfulRichText;
   type: 'encuentro' | 'programa' | 'taller';
 };
 

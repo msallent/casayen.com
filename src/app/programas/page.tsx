@@ -2,7 +2,7 @@ import { PageEvent } from '@/components/PageEvent';
 import { Event, PageProgramasData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
-export default async function Talleres() {
+export default async function Programas() {
   const {
     data: {
       pageProgramas: { title, subtitle, disclaimer, programasCollection },

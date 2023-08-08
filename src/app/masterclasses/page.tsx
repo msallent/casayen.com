@@ -2,7 +2,7 @@ import { PageEvent } from '@/components/PageEvent';
 import { Event, PageMasterclassesData } from '@/types/contentful';
 import { fetchContent } from '@/utils/fetch';
 
-export default async function Talleres() {
+export default async function Masterclasses() {
   const {
     data: {
       pageMasterclasses: { title, subtitle, disclaimer, masterclassesCollection },
@@ -19,7 +19,10 @@ export default async function Talleres() {
           title
           shortDescription
           longDescription
+          startDate
           duration
+          mercadoPagoUrl
+          payPalUrl
           value {
             json
           }
@@ -33,6 +36,9 @@ export default async function Talleres() {
             json
           }
           syllabus {
+            json
+          }
+          participation {
             json
           }
         }
