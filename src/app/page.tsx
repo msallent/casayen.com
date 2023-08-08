@@ -42,7 +42,7 @@ export default async function Home() {
       <section className="mt-20 text-primary-blue xl:mt-16 2xl:mt-24">
         <Hero />
 
-        <div className="hidden 2xl:pointer-events-none 2xl:absolute 2xl:inset-x-10 2xl:top-1/2 2xl:flex 2xl:-translate-y-1/2 2xl:items-center 2xl:justify-between">
+        <div className="hidden 2xl:pointer-events-none 2xl:absolute 2xl:inset-x-10 2xl:top-[calc(50%-10rem)] 2xl:flex 2xl:-translate-y-1/2 2xl:items-center 2xl:justify-between">
           <IndicatorPage title="Bienvenidx" index="1 of 4" />
           <div className="2xl:font-title-full 2xl:text-8xl">†</div>
         </div>
