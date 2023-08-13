@@ -18,6 +18,18 @@ export async function fetchContent<T = any>(query: string, init?: RequestInit) {
   return response.json() as Promise<ContentfulResponse<T>>;
 }
 
+const imageFields = `
+  items {
+    sys {
+      id
+    }
+    height
+    title
+    url
+    width
+  }
+`;
+
 export const eventFields = `
   items {
     hot
@@ -26,6 +38,12 @@ export const eventFields = `
     longDescription
     startDate
     duration
+    photosFirstRowCollection {
+      ${imageFields}
+    }
+    photosSecondRowCollection {
+      ${imageFields}
+    }
     mercadoPagoUrl
     payPalUrl
     value {
@@ -33,6 +51,9 @@ export const eventFields = `
     }
     includes {
       json
+    }
+    photosThirdRowCollection {
+      ${imageFields}
     }
     forYou {
       json
@@ -45,6 +66,12 @@ export const eventFields = `
     }
     participation {
       json
+    }
+    photosFourthRowCollection {
+      ${imageFields}
+    }
+    photosFifthRowCollection {
+      ${imageFields}
     }
   }
 `;

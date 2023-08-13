@@ -132,14 +132,29 @@ export type Event = {
   longDescription?: string;
   startDate?: string;
   duration?: string;
+  photosFirstRowCollection: {
+    items: Array<ContentfulAsset>;
+  };
+  photosSecondRowCollection: {
+    items: Array<ContentfulAsset>;
+  };
   mercadoPagoUrl?: string;
   payPalUrl?: string;
   value?: ContentfulRichText;
   includes?: ContentfulRichText;
+  photosThirdRowCollection: {
+    items: Array<ContentfulAsset>;
+  };
   forYou?: ContentfulRichText;
   info?: ContentfulRichText;
   syllabus?: ContentfulRichText;
   participation?: ContentfulRichText;
+  photosFourthRowCollection: {
+    items: Array<ContentfulAsset>;
+  };
+  photosFifthRowCollection: {
+    items: Array<ContentfulAsset>;
+  };
   type: 'encuentro' | 'programa' | 'retiro' | 'taller';
 };
 
