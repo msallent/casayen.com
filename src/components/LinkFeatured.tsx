@@ -12,7 +12,7 @@ type LinkProps = {
 
 export function LinkFeatured({ href, index, children, isLast }: LinkProps) {
   return (
-    <div className="font-title-full relative flex justify-between text-[2.85rem] uppercase leading-[78.5%] xl:text-[3.75rem] 2xl:text-[5rem]">
+    <div className="font-title-full relative flex justify-between text-[2.85rem] uppercase leading-[78.5%] xl:text-[3.75rem] 2xl:text-[4.25rem] 3xl:text-[5rem]">
       <SnowflakeSVG className="absolute left-0 top-1/2 w-2 -translate-y-1/2 xl:w-5" />
 
       <NextLink

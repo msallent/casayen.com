@@ -38,10 +38,10 @@ export default async function Yen() {
       <section className="mx-5 sm:mx-10 lg:mx-20 2xl:mx-48">
         <TitlePage title={title} subtitle={subtitle} />
 
-        <div className="relative mb-8 xl:absolute xl:right-32 xl:top-44 2xl:right-48 2xl:top-48">
+        <div className="relative mb-8 xl:absolute xl:right-32 xl:top-44 2xl:right-36 2xl:top-52 3xl:right-48 3xl:top-48">
           <Image
             src={yenCamiImage}
-            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5 xl:w-[25rem] 2xl:w-[34rem]"
+            className="mt-2 sm:mx-auto sm:w-4/5 md:w-4/6 lg:w-3/5 xl:w-[25rem] 2xl:w-[30rem] 3xl:w-[34rem]"
             alt="Cami Yen"
             placeholder="blur"
             quality={100}
@@ -67,7 +67,7 @@ export default async function Yen() {
         />
 
         <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center xl:my-32 2xl:my-40">
-          <div className="mb-4 flex items-center gap-2">
+          <div className="mb-4 flex items-center gap-2 xl:mb-6 2xl:mb-8">
             <div className="w-10 border border-primary-blue" />
             <span className="font-medium uppercase text-primary-blue">Convertí mi proceso de</span>
           </div>
@@ -126,10 +126,10 @@ export default async function Yen() {
         />
       </section>
 
-      <div className="relative mt-8 h-80 sm:h-[25rem] xl:h-[55rem] 2xl:h-[75rem]">
+      <div className="relative mt-8 h-80 sm:h-[25rem] xl:h-[55rem] 2xl:h-[65rem] 3xl:h-[75rem]">
         <GradientYenSVG />
         <Star2SVG className="absolute left-[40%] top-0 w-20 xl:w-40 2xl:w-48" />
-        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8 xl:bottom-[9.25%] xl:left-16 xl:w-[30rem] 2xl:bottom-[23.25%] 2xl:left-24 2xl:w-[34rem]" />
+        <Star2SVG className="absolute bottom-[16%] left-0 w-48 sm:bottom-[16%] sm:left-2 md:bottom-[14%] md:left-6 lg:left-8 xl:bottom-[9.25%] xl:left-16 xl:w-[30rem] 2xl:bottom-[12.5%] 2xl:left-[4.5rem] 2xl:w-[38rem] 3xl:bottom-[23.25%] 3xl:left-24 3xl:w-[34rem]" />
         <GridSVG className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 px-5 sm:-bottom-14 md:-bottom-28 lg:-bottom-32 xl:opacity-40" />
       </div>
     </>

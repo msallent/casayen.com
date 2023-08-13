@@ -43,11 +43,6 @@ export default async function Home() {
       <section className="mt-20 text-primary-blue xl:mt-16 2xl:mt-24">
         <Hero />
 
-        <div className="hidden 2xl:pointer-events-none 2xl:absolute 2xl:inset-x-10 2xl:top-[calc(50%-10rem)] 2xl:flex 2xl:-translate-y-1/2 2xl:items-center 2xl:justify-between">
-          <IndicatorPage title="Bienvenidx" index="1 of 4" />
-          <div className="2xl:font-title-full 2xl:text-8xl">†</div>
-        </div>
-
         <div className="relative -left-6 whitespace-nowrap">
           COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC SEXUALITY
           <span className="mx-1.5">≈</span>COSMIC SEXUALITY<span className="mx-1.5">≈</span>COSMIC
@@ -65,7 +60,7 @@ export default async function Home() {
           alt="Background gradient"
           className="absolute left-0 top-0 -z-10 w-full xl:hidden"
           placeholder="blur"
-          loading="eager"
+          priority
         />
 
         <Image
@@ -74,7 +69,7 @@ export default async function Home() {
           alt="Background gradient"
           className="hidden xl:absolute xl:-left-20 xl:-top-20 xl:-z-10 xl:block xl:w-full"
           placeholder="blur"
-          loading="eager"
+          priority
         />
       </section>
 
