@@ -17,9 +17,6 @@ import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
 export const metadata = {
   title: 'Cami',
-  openGraph: {
-    title: 'Cami',
-  },
 };
 
 export default async function Yen() {

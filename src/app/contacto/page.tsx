@@ -9,9 +9,6 @@ import backgroundGradient from '@/assets/images/gradient-3.webp';
 
 export const metadata = {
   title: 'Contacto',
-  openGraph: {
-    title: 'Contacto',
-  },
 };
 
 export default function Contacto() {

@@ -5,9 +5,6 @@ import { eventFields, fetchContent } from '@/utils/fetch';
 
 export const metadata = {
   title: 'Retiros',
-  openGraph: {
-    title: 'Retiros',
-  },
 };
 
 export default async function Programas() {

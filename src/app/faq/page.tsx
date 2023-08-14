@@ -10,9 +10,6 @@ import backgroundGradient2 from '@/assets/images/gradient-4.webp';
 
 export const metadata = {
   title: 'FAQ',
-  openGraph: {
-    title: 'FAQ',
-  },
 };
 
 export default async function FAQ() {
