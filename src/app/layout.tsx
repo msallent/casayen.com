@@ -5,6 +5,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { fetchContent } from '@/utils/fetch';
 import { NavbarMenuData } from '@/types/contentful';
+import { openGraph } from '@/constants/metadata';
 import '@/styles/globals.css';
 
 type LayoutProps = {
@@ -19,23 +20,24 @@ const ppNeueWorld = localFont({
   variable: '--font-pp-neue-world',
 });
 
+const title = {
+  default: 'Yen',
+  template: 'Yen | %s',
+};
+
+const description = 'Viaje Intergaláctico de Reprogramación Sexual';
+
 export const metadata = {
-  title: {
-    default: 'Yen',
-    template: 'Yen | %s',
-  },
-  description: 'Viaje Intergaláctico de Reprogramación Sexual',
-  authors: [{ name: 'Camila Sallent' }, { name: 'Matias Sallent' }],
+  title,
+  description,
   keywords: ['casa', 'yen'],
   openGraph: {
-    title: {
-      default: 'Yen',
-      template: 'Yen | %s',
-    },
-    description: 'Viaje Intergaláctico de Reprogramación Sexual',
-    url: 'https://casayen.com',
-    type: 'website',
+    ...openGraph,
+    title,
+    description,
+    url: '/',
   },
+  authors: [{ name: 'Camila Sallent' }, { name: 'Matias Sallent' }],
 };
 
 export default async function Layout({ children }: LayoutProps) {

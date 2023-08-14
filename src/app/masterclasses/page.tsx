@@ -1,10 +1,16 @@
 import { PageEvent } from '@/components/PageEvent';
+import { openGraph } from '@/constants/metadata';
 import { tags } from '@/constants/tags';
 import { Event, PageMasterclassesData } from '@/types/contentful';
 import { eventFields, fetchContent } from '@/utils/fetch';
 
+const title = 'Masterclasses';
+const description = 'Masterclasses y talleres on demand y en vivo';
+
 export const metadata = {
-  title: 'Masterclasses',
+  title,
+  description,
+  openGraph: { ...openGraph, title, description, url: '/masterclasses' },
 };
 
 export default async function Masterclasses() {

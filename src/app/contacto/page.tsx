@@ -1,14 +1,20 @@
 import Image from 'next/image';
 import { BadgeMulti } from '@/components/BadgeMulti';
 import { Title } from '@/components/Title';
+import { openGraph } from '@/constants/metadata';
 import GridSVG from '@/assets/svgs/grid.svg';
 import Globes1SVG from '@/assets/svgs/globes-1.svg';
 import Globes2SVG from '@/assets/svgs/globes-2.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-4.svg';
 import backgroundGradient from '@/assets/images/gradient-3.webp';
 
+const title = 'Contacto';
+const description = 'Hablemos!';
+
 export const metadata = {
-  title: 'Contacto',
+  title,
+  description,
+  openGraph: { ...openGraph, title, description, url: '/contacto' },
 };
 
 export default function Contacto() {

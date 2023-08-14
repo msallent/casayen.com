@@ -1,10 +1,16 @@
 import { PageEvent } from '@/components/PageEvent';
+import { openGraph } from '@/constants/metadata';
 import { tags } from '@/constants/tags';
 import { Event, PageProgramasData } from '@/types/contentful';
 import { eventFields, fetchContent } from '@/utils/fetch';
 
+const title = 'Programas';
+const description = 'Todos los programas virtuales y sus próximas fechas de inicio';
+
 export const metadata = {
-  title: 'Programas',
+  title,
+  description,
+  openGraph: { ...openGraph, title, description, url: '/programas' },
 };
 
 export default async function Programas() {

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { TitlePage } from '@/components/TitlePage';
 import { Expandable } from '@/components/Expandable';
+import { openGraph } from '@/constants/metadata';
 import { tags } from '@/constants/tags';
 import { parseRichText } from '@/utils/richText';
 import { fetchContent } from '@/utils/fetch';
@@ -8,8 +9,13 @@ import { PageFAQData } from '@/types/contentful';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-4.webp';
 
+const title = 'FAQ';
+const description = 'Preguntas y respuestas';
+
 export const metadata = {
-  title: 'FAQ',
+  title,
+  description,
+  openGraph: { ...openGraph, title, description, url: '/faq' },
 };
 
 export default async function FAQ() {

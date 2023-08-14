@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Title } from '@/components/Title';
 import { TitlePage } from '@/components/TitlePage';
+import { openGraph } from '@/constants/metadata';
 import { tags } from '@/constants/tags';
 import { parseRichText } from '@/utils/richText';
 import { fetchContent } from '@/utils/fetch';
@@ -15,8 +16,13 @@ import yenUterusImage from '@/assets/images/yen-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
+const title = 'Detrás de Yen';
+const description = 'Hola, soy Cami :)';
+
 export const metadata = {
-  title: 'Cami',
+  title,
+  description,
+  openGraph: { ...openGraph, title, description, url: '/yen' },
 };
 
 export default async function Yen() {
