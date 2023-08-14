@@ -3,6 +3,13 @@ import { tags } from '@/constants/tags';
 import { Event, PageMasterclassesData } from '@/types/contentful';
 import { eventFields, fetchContent } from '@/utils/fetch';
 
+export const metadata = {
+  title: 'Masterclasses',
+  openGraph: {
+    title: 'Masterclasses',
+  },
+};
+
 export default async function Masterclasses() {
   const {
     data: {

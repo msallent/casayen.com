@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { EB_Garamond, Inter } from 'next/font/google';
 import localFont from 'next/font/local';
@@ -20,10 +19,23 @@ const ppNeueWorld = localFont({
   variable: '--font-pp-neue-world',
 });
 
-export const metadata: Metadata = {
-  title: 'casayen.com',
-  description: 'Casa Yen',
-  icons: '/favicon.ico',
+export const metadata = {
+  title: {
+    default: 'Yen',
+    template: 'Yen | %s',
+  },
+  description: 'Viaje Intergaláctico de Reprogramación Sexual',
+  authors: [{ name: 'Camila Sallent' }, { name: 'Matias Sallent' }],
+  keywords: ['casa', 'yen'],
+  openGraph: {
+    title: {
+      default: 'Yen',
+      template: 'Yen | %s',
+    },
+    description: 'Viaje Intergaláctico de Reprogramación Sexual',
+    url: 'https://casayen.com',
+    type: 'website',
+  },
 };
 
 export default async function Layout({ children }: LayoutProps) {
@@ -45,7 +57,7 @@ export default async function Layout({ children }: LayoutProps) {
   );
 
   return (
-    <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
+    <html lang="es" className={`${inter.variable} ${ebGaramond.variable} ${ppNeueWorld.variable}`}>
       <body className="flex min-h-screen flex-col overscroll-none bg-primary-black selection:bg-secondary-white">
         <Navbar menuItems={menuItemsCollection.items} />
         <main className="flex-1 overflow-hidden">{children}</main>

@@ -3,6 +3,13 @@ import { tags } from '@/constants/tags';
 import { Event, PageProgramasData } from '@/types/contentful';
 import { eventFields, fetchContent } from '@/utils/fetch';
 
+export const metadata = {
+  title: 'Programas',
+  openGraph: {
+    title: 'Programas',
+  },
+};
+
 export default async function Programas() {
   const {
     data: {

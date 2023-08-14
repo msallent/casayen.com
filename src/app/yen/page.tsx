@@ -15,6 +15,13 @@ import yenUterusImage from '@/assets/images/yen-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
 
+export const metadata = {
+  title: 'Cami',
+  openGraph: {
+    title: 'Cami',
+  },
+};
+
 export default async function Yen() {
   const {
     data: {

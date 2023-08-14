@@ -8,6 +8,13 @@ import { PageFAQData } from '@/types/contentful';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-4.webp';
 
+export const metadata = {
+  title: 'FAQ',
+  openGraph: {
+    title: 'FAQ',
+  },
+};
+
 export default async function FAQ() {
   const {
     data: {

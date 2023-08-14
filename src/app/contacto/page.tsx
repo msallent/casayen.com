@@ -7,6 +7,13 @@ import Globes2SVG from '@/assets/svgs/globes-2.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-4.svg';
 import backgroundGradient from '@/assets/images/gradient-3.webp';
 
+export const metadata = {
+  title: 'Contacto',
+  openGraph: {
+    title: 'Contacto',
+  },
+};
+
 export default function Contacto() {
   return (
     <section className="relative mt-10 xl:mt-40">

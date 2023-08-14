@@ -3,6 +3,13 @@ import { tags } from '@/constants/tags';
 import { Event, PagePresencialesData } from '@/types/contentful';
 import { eventFields, fetchContent } from '@/utils/fetch';
 
+export const metadata = {
+  title: 'Presenciales',
+  openGraph: {
+    title: 'Presenciales',
+  },
+};
+
 export default async function Presenciales() {
   const {
     data: {
