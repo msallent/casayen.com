@@ -49,7 +49,7 @@ export default async function Blog() {
         aria-hidden
         src={backgroundGradient1}
         alt="Background gradient"
-        className="absolute left-0 top-0 -z-10 w-full xl:hidden"
+        className="pointer-events-none absolute left-0 top-0 -z-10 w-full xl:hidden"
         placeholder="blur"
         priority
       />
@@ -58,7 +58,7 @@ export default async function Blog() {
         aria-hidden
         src={backgroundGradient1Large}
         alt="Background gradient"
-        className="hidden xl:absolute xl:-left-20 xl:-top-20 xl:-z-10 xl:block xl:w-full"
+        className="hidden xl:pointer-events-none xl:absolute xl:-left-20 xl:-top-20 xl:-z-10 xl:block xl:w-full"
         placeholder="blur"
         priority
       />

@@ -88,7 +88,7 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
           aria-hidden
           src={backgroundGradient}
           alt="Background gradient"
-          className="absolute left-0 top-0 -z-10 h-full w-full"
+          className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full"
           placeholder="blur"
         />
 
@@ -96,7 +96,7 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
           aria-hidden
           src={backgroundGradient}
           alt="Background gradient"
-          className="absolute left-0 top-0 -z-10 h-full w-full rotate-180"
+          className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full rotate-180"
           placeholder="blur"
         />
       </div>

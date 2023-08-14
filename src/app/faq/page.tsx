@@ -48,7 +48,7 @@ export default async function FAQ() {
         aria-hidden
         src={backgroundGradient1}
         alt="Background gradient"
-        className="absolute left-0 top-0 -z-10 w-full xl:hidden"
+        className="pointer-events-none absolute left-0 top-0 -z-10 w-full xl:hidden"
         placeholder="blur"
       />
 
@@ -56,7 +56,7 @@ export default async function FAQ() {
         aria-hidden
         src={backgroundGradient2}
         alt="Background gradient"
-        className="hidden xl:absolute xl:-bottom-48 xl:-left-20 xl:-z-10 xl:block xl:w-2/3 2xl:-left-48"
+        className="hidden xl:pointer-events-none xl:absolute xl:-bottom-48 xl:-left-20 xl:-z-10 xl:block xl:w-2/3 2xl:-left-48"
         placeholder="blur"
       />
     </section>

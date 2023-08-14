@@ -62,7 +62,7 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient2}
           alt="Background gradient"
-          className="absolute right-0 top-0 -z-10"
+          className="pointer-events-none absolute right-0 top-0 -z-10"
           placeholder="blur"
         />
 
@@ -121,7 +121,7 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient1}
           alt="Background gradient"
-          className="absolute left-0 top-0 -z-10 w-full xl:hidden"
+          className="pointer-events-none absolute left-0 top-0 -z-10 w-full xl:hidden"
           placeholder="blur"
         />
       </section>
