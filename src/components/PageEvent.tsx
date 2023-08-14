@@ -35,7 +35,6 @@ export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
         alt="Background gradient"
         className="pointer-events-none absolute left-0 top-0 -z-10 w-full xl:hidden"
         placeholder="blur"
-        priority
       />
 
       <Image
@@ -44,7 +43,6 @@ export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
         alt="Background gradient"
         className="hidden xl:pointer-events-none xl:absolute xl:-left-20 xl:-top-20 xl:-z-10 xl:block xl:w-full"
         placeholder="blur"
-        priority
       />
     </section>
   );
