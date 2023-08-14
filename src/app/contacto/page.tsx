@@ -13,7 +13,9 @@ export default function Contacto() {
       <div className="mx-5 uppercase text-primary-blue sm:mx-10 lg:mx-20 xl:mx-10">
         <div className="flex items-baseline justify-between border-y border-primary-blue pb-3 pt-7">
           <div className="hidden xl:block xl:self-center">
-            <BadgeMulti title="Yen" description="info@casayen.com" />
+            <a className="hover:text-secondary-white" href="mailto:info@casayen.com">
+              <BadgeMulti title="Yen" description="info@casayen.com" />
+            </a>
           </div>
           <Title>Tenés dudas /</Title>
           <Globes1SVG className="h-5 xl:h-10" />
@@ -27,12 +29,22 @@ export default function Contacto() {
             </div>
           </div>
           <div className="hidden xl:block xl:self-center">
-            <BadgeMulti title="Shop" description="shop@casayen.com" />
+            <a className="hover:text-secondary-white" href="mailto:shop@casayen.com">
+              <BadgeMulti title="Shop" description="shop@casayen.com" />
+            </a>
           </div>
         </div>
         <div className="flex items-baseline justify-end border-b border-primary-blue pb-3 pt-7 xl:justify-between">
           <div className="hidden xl:block xl:self-center">
-            <BadgeMulti title="Instagram" description="@casa.yen" />
+            <a
+              className="flex items-center hover:text-secondary-white"
+              aria-label="Instagram"
+              href="https://instagram.com/casa.yen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BadgeMulti title="Instagram" description="@casa.yen" />
+            </a>
           </div>
           <div className="relative flex items-center xl:mr-20">
             <Title>→→ hablemos</Title>
@@ -42,13 +54,25 @@ export default function Contacto() {
 
         <ul className="mb-28 mt-10 space-y-5 xl:hidden">
           <li>
-            <BadgeMulti title="Yen" description="info@casayen.com" />
+            <a href="mailto:info@casayen.com">
+              <BadgeMulti title="Yen" description="info@casayen.com" />
+            </a>
           </li>
           <li>
-            <BadgeMulti title="Shop" description="shop@casayen.com" />
+            <a href="mailto:shop@casayen.com">
+              <BadgeMulti title="Shop" description="shop@casayen.com" />
+            </a>
           </li>
           <li>
-            <BadgeMulti title="Instagram" description="@casa.yen" />
+            <a
+              className="flex items-center"
+              aria-label="Instagram"
+              href="https://instagram.com/casa.yen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BadgeMulti title="Instagram" description="@casa.yen" />
+            </a>
           </li>
         </ul>
 

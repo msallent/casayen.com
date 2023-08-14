@@ -96,22 +96,24 @@ export default async function Yen() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end space-y-5 text-primary-blue xl:absolute xl:right-20 xl:mt-20 xl:items-start xl:text-xl 2xl:right-48">
+        <div className="flex flex-col items-end space-y-5 text-primary-blue xl:absolute xl:right-20 xl:z-10 xl:mt-20 xl:items-start xl:text-xl 2xl:right-48">
           <div>↓ CONTACTAME ↓</div>
           <div className="xl:my-4">
             <div>↓</div>
             <div>↓</div>
           </div>
           <div className="flex flex-col items-end space-y-0.5 text-xl xl:items-start xl:text-3xl">
-            <a href="mailto:info@casayen.com">info@casayen.com</a>
+            <a className="hover:text-secondary-white" href="mailto:info@casayen.com">
+              info@casayen.com
+            </a>
             <a
-              className="flex items-center"
+              className="flex items-center hover:text-secondary-white"
               aria-label="Instagram"
               href="https://instagram.com/casa.yen"
               target="_blank"
               rel="noreferrer"
             >
-              <InstagramSVG className="mr-2.5 w-5" />
+              <InstagramSVG className="mr-2.5 w-5 [&>path]:fill-current" />
               <span>@casa.yen</span>
             </a>
           </div>
