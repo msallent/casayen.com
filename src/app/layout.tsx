@@ -31,12 +31,8 @@ export const metadata = {
   title,
   description,
   keywords: ['casa', 'yen'],
-  openGraph: {
-    ...openGraph,
-    title,
-    description,
-    url: '/',
-  },
+  metadataBase: new URL('https://casayen.com'),
+  openGraph: { ...openGraph, title, description, url: '/' },
   authors: [{ name: 'Camila Sallent' }, { name: 'Matias Sallent' }],
 };
 
