@@ -40,9 +40,10 @@ export function Expandable({
 
   return (
     <div
-      className={classNames('border-t border-primary-blue pb-6 pt-8 2xl:pb-10 2xl:pt-12', {
-        'xl:border-none xl:pt-0 2xl:pt-0': noBorder,
-      })}
+      className={classNames(
+        'border-t border-primary-blue pb-6 pt-8 2xl:pb-10',
+        noBorder ? 'xl:border-none xl:pt-0 2xl:pt-0' : '2xl:pt-12'
+      )}
     >
       <div className="flex items-center justify-between gap-10 text-primary-blue">
         <div className="flex items-center">
