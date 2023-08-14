@@ -60,7 +60,7 @@ export default async function Layout({ children }: LayoutProps) {
         <Navbar menuItems={menuItemsCollection.items} />
         <main className="flex-1 overflow-hidden">{children}</main>
         <Footer />
-        <div className="pointer-events-none fixed left-0 top-0 z-20 h-full w-full bg-grain-texture mix-blend-overlay" />
+        <div className="pointer-events-none fixed left-0 top-0 z-30 h-full w-full bg-grain-texture mix-blend-overlay" />
       </body>
     </html>
   );

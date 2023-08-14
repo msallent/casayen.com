@@ -17,7 +17,7 @@ type ModalBuyProps = {
 export function ModalBuy({ event, onClose }: ModalBuyProps) {
   return createPortal(
     <>
-      <div className="inset-center fixed z-10 w-[calc(100%-2.5rem)] bg-primary-black pb-5 pt-9 xl:w-[56rem] xl:pb-10 xl:pt-14">
+      <div className="inset-center fixed z-20 w-[calc(100%-2.5rem)] bg-primary-black pb-5 pt-9 xl:w-[56rem] xl:pb-10 xl:pt-14">
         <button
           className="absolute -top-10 right-0"
           type="button"
@@ -101,7 +101,7 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
         />
       </div>
 
-      <div className="fixed inset-0 z-0 bg-primary-black opacity-80" onClick={onClose} />
+      <div className="fixed inset-0 z-10 bg-primary-black opacity-80" onClick={onClose} />
     </>,
     document.body
   );
