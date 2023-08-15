@@ -25,7 +25,7 @@ const title = {
   template: 'Yen | %s',
 };
 
-const description = 'Viaje Intergaláctico de Reprogramación Sexual';
+const description = 'Bienvenidx a tu viaje intergaláctico de reprogramación sexual';
 
 export const metadata = {
   title,
