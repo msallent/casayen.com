@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-secondary-black px-5 py-8 sm:p-10 lg:px-20 xl:p-10">
       <div className="relative xl:flex xl:justify-between">
         <div className="border-b border-primary-blue pb-5 xl:basis-1/2 xl:self-start xl:pb-10">
-          <YenSloganSVG className="w-40 xl:w-44 2xl:w-52" />
+          <YenSloganSVG className="w-40 xl:w-44 2xl:w-48 3xl:w-52" />
         </div>
 
         <div className="flex flex-col text-primary-blue">
