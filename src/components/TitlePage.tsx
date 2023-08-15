@@ -27,7 +27,7 @@ export function TitlePage({ title, subtitle, vertical }: TitlePageProps) {
       />
       <Title>{title}</Title>
       {subtitle && (
-        <div className={classNames('mt-4 xl:mt-1 xl:w-3/4', { 'xl:w-auto': vertical })}>
+        <div className={classNames('mt-2 xl:mt-1 xl:w-3/4', { 'xl:w-auto': vertical })}>
           <Balancer>{subtitle}</Balancer>
         </div>
       )}
