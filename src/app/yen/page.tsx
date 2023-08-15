@@ -10,11 +10,13 @@ import GridSVG from '@/assets/svgs/grid.svg';
 import Star1SVG from '@/assets/svgs/star-1.svg';
 import Star2SVG from '@/assets/svgs/star-2.svg';
 import InstagramSVG from '@/assets/svgs/instagram.svg';
+import YenSloganSVG from '@/assets/svgs/yen-slogan.svg';
 import GradientYenSVG from '@/assets/svgs/gradient-yen.svg';
 import yenCamiImage from '@/assets/images/yen-cami.webp';
 import yenUterusImage from '@/assets/images/yen-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
+import backgroundGradient2Large from '@/assets/images/gradient-2-large.webp';
 
 const title = 'Detrás de Yen';
 const description = 'Hola, soy Cami :)';
@@ -57,7 +59,9 @@ export default async function Yen() {
             quality={100}
             priority
           />
-          <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%] lg:bottom-[-3%] lg:left-[17%] xl:bottom-[-3%] xl:left-[-5%]" />
+          <Star1SVG className="absolute bottom-[-3%] left-[-5%] w-36 sm:bottom-[-1%] sm:left-[8%] md:bottom-[-2%] md:left-[15%] lg:bottom-[-3%] lg:left-[17%] xl:hidden" />
+          <Star2SVG className="hidden xl:absolute xl:bottom-[-9%] xl:left-[-13%] xl:block xl:w-52 2xl:bottom-[-9.5%] 2xl:left-[-14%] 2xl:w-64 3xl:bottom-[-11%] 3xl:left-[-16.5%] 3xl:w-80" />
+          <YenSloganSVG className="hidden xl:absolute xl:right-5 xl:block xl:w-44 2xl:right-7 2xl:w-48 3xl:right-8 3xl:w-52" />
         </div>
 
         <div className="mt-20">
@@ -72,7 +76,15 @@ export default async function Yen() {
           aria-hidden
           src={backgroundGradient2}
           alt="Background gradient"
-          className="pointer-events-none absolute right-0 top-0 -z-10"
+          className="pointer-events-none absolute right-0 top-0 -z-10 xl:hidden"
+          placeholder="blur"
+        />
+
+        <Image
+          aria-hidden
+          src={backgroundGradient2Large}
+          alt="Background gradient"
+          className="hidden xl:pointer-events-none xl:absolute xl:right-0 xl:top-32 xl:-z-10 xl:block"
           placeholder="blur"
         />
 

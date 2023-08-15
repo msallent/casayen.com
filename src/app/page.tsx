@@ -18,6 +18,7 @@ import homeUterusImage from '@/assets/images/home-uterus.webp';
 import backgroundGradient1 from '@/assets/images/gradient-1.webp';
 import backgroundGradient1Large from '@/assets/images/gradient-1-large.webp';
 import backgroundGradient2 from '@/assets/images/gradient-2.webp';
+import backgroundGradient2Large from '@/assets/images/gradient-2-large.webp';
 
 export default async function Home() {
   const {
@@ -150,7 +151,15 @@ export default async function Home() {
           aria-hidden
           src={backgroundGradient2}
           alt="Background gradient"
-          className="pointer-events-none absolute -top-1/2 right-0 z-50"
+          className="pointer-events-none absolute -top-1/2 right-0 -z-10 xl:hidden"
+          placeholder="blur"
+        />
+
+        <Image
+          aria-hidden
+          src={backgroundGradient2Large}
+          alt="Background gradient"
+          className="hidden xl:pointer-events-none xl:absolute xl:-top-3/4 xl:right-0 xl:-z-10 xl:block"
           placeholder="blur"
         />
 

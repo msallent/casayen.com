@@ -7,6 +7,7 @@ import Globes1SVG from '@/assets/svgs/globes-1.svg';
 import Globes2SVG from '@/assets/svgs/globes-2.svg';
 import EllipsisSVG from '@/assets/svgs/ellipsis-4.svg';
 import backgroundGradient from '@/assets/images/gradient-3.webp';
+import backgroundGradientLarge from '@/assets/images/gradient-3-large.webp';
 
 const title = 'Contacto';
 const description = 'Hablemos!';
@@ -19,7 +20,7 @@ export const metadata = {
 
 export default function Contacto() {
   return (
-    <section className="relative mt-10 xl:mt-40">
+    <section className="relative mt-10 xl:mt-[6.5rem]">
       <div className="mx-5 uppercase text-primary-blue sm:mx-10 lg:mx-20 xl:mx-10">
         <div className="flex items-baseline justify-between border-y border-primary-blue pb-3 pt-7">
           <div className="hidden xl:block xl:self-center">
@@ -95,7 +96,15 @@ export default function Contacto() {
         aria-hidden
         src={backgroundGradient}
         alt="Background gradient"
-        className="pointer-events-none absolute -top-36 left-0 -z-10 w-full sm:-top-64 md:-top-96"
+        className="pointer-events-none absolute -top-36 left-0 -z-10 w-full sm:-top-64 md:-top-96 xl:hidden"
+        placeholder="blur"
+      />
+
+      <Image
+        aria-hidden
+        src={backgroundGradientLarge}
+        alt="Background gradient"
+        className="hidden xl:pointer-events-none xl:absolute xl:-bottom-24 xl:-right-32 xl:-z-10 xl:block"
         placeholder="blur"
       />
     </section>
