@@ -49,7 +49,7 @@ export default async function Blog() {
         aria-hidden
         src={backgroundGradient1}
         alt="Background gradient"
-        className="pointer-events-none absolute left-0 top-0 -z-10 w-full xl:hidden"
+        className="pointer-events-none absolute left-0 top-0 -z-10 max-h-[1024px] w-full xl:hidden"
         placeholder="blur"
       />
 
