@@ -43,7 +43,9 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
               <span className="mb-4 font-medium uppercase">
                 Para completar tu compra y acceder al material, enviá el comprobante de pago a:
               </span>
-              <Badge>info@casayen.com</Badge>
+              <a className="hover:text-secondary-white" href="mailto:info@casayen.com">
+                <Badge>info@casayen.com</Badge>{' '}
+              </a>
             </div>
             <EllipsisMobileSVG className="xl:hidden" />
             <EllipsisDesktopSVG className="hidden xl:block" />
