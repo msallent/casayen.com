@@ -88,7 +88,7 @@ export default async function Yen() {
           placeholder="blur"
         />
 
-        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center xl:my-32 2xl:my-40">
+        <div className="mb-16 mt-20 flex flex-col items-center justify-center text-center xl:my-32 2xl:my-40 3xl:my-52">
           <div className="mb-4 flex items-center gap-2 xl:mb-6 2xl:mb-8">
             <div className="w-10 border border-primary-blue" />
             <span className="font-medium uppercase text-primary-blue">Convertí mi proceso de</span>

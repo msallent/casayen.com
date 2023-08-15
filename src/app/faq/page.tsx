@@ -45,7 +45,7 @@ export default async function FAQ() {
     <section className="mx-5 sm:mx-10 lg:mx-20 xl:relative xl:mt-40 2xl:mx-48">
       <div className="xl:flex xl:items-start xl:gap-28 2xl:[&>*:first-child]:flex-[1]">
         <TitlePage title={title} subtitle={subtitle} vertical />
-        <div className="mb-20 mt-12 border-b border-primary-blue xl:mt-0 2xl:flex-[3]">
+        <div className="mb-28 mt-12 border-b border-primary-blue xl:mt-0 2xl:flex-[3]">
           {faqsCollection.items.map((faq, index) => (
             <Expandable key={faq.title} title={faq.title} noBorder={index === 0}>
               <div className="text-primary-blue">{parseRichText(faq.content.json)}</div>
