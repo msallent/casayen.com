@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import classNames from 'classnames';
 import { TitlePage } from '@/components/TitlePage';
 import { ExpandableEvent } from '@/components/ExpandableEvent';
 import { Event } from '@/types/contentful';
@@ -14,16 +15,21 @@ type PageEvent = {
 
 export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
   return (
-    <section className="mx-5 sm:mx-10 lg:mx-20 2xl:mx-48">
+    <section className="mx-5 sm:mx-10 lg:mx-20 xl:min-h-screen 2xl:mx-48">
       <TitlePage title={title} subtitle={subtitle} />
 
       {disclaimer && (
-        <div className="mt-12 font-serif uppercase italic text-primary-blue xl:mt-24">
+        <div className="mt-14 font-serif uppercase italic text-primary-blue xl:mt-24">
           {disclaimer}
         </div>
       )}
 
-      <div className="mb-20 mt-5 border-b border-primary-blue">
+      <div
+        className={classNames(
+          'mb-28 border-b border-primary-blue',
+          disclaimer ? 'mt-5' : 'mt-14 xl:mt-24'
+        )}
+      >
         {events.map((event, index) => (
           <ExpandableEvent key={event.title} event={event} index={index + 1} />
         ))}
@@ -33,7 +39,7 @@ export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
         aria-hidden
         src={backgroundGradient1}
         alt="Background gradient"
-        className="pointer-events-none absolute left-0 top-0 -z-10 w-full xl:hidden"
+        className="pointer-events-none absolute left-0 top-0 -z-10 max-h-[1024px] w-full xl:hidden"
         placeholder="blur"
       />
 
