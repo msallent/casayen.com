@@ -45,7 +45,7 @@ export default async function Yen() {
 
   return (
     <>
-      <section className="mx-5 sm:mx-10 lg:mx-20 2xl:mx-48">
+      <section className="mx-5 sm:mx-10 lg:mx-20 xl:mx-28 2xl:mx-56 3xl:mx-[22rem]">
         <TitlePage title={title} subtitle={subtitle} />
 
         <div className="relative mb-8 xl:absolute xl:right-32 xl:top-44 2xl:right-36 2xl:top-52 3xl:right-48 3xl:top-48">
@@ -106,13 +106,13 @@ export default async function Yen() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end space-y-5 text-primary-blue xl:absolute xl:right-20 xl:z-10 xl:mt-20 xl:items-start xl:text-xl 2xl:right-48">
+        <div className="flex flex-col items-end gap-5 text-primary-blue xl:absolute xl:right-28 xl:z-10 xl:mt-20 xl:items-start xl:text-xl 2xl:right-56 3xl:right-[22rem]">
           <div>↓ CONTACTAME ↓</div>
           <div className="xl:my-4">
             <div>↓</div>
             <div>↓</div>
           </div>
-          <div className="flex flex-col items-end space-y-0.5 text-xl xl:items-start xl:text-3xl">
+          <div className="flex flex-col items-end gap-0.5 text-xl xl:items-start xl:text-3xl">
             <a className="hover:text-secondary-white" href="mailto:info@casayen.com">
               info@casayen.com
             </a>
@@ -123,7 +123,7 @@ export default async function Yen() {
               target="_blank"
               rel="noreferrer"
             >
-              <InstagramSVG className="mr-2.5 w-5 [&>path]:fill-current" />
+              <InstagramSVG className="mr-2.5 mt-0.5 w-5 xl:mt-1 xl:w-6 [&>path]:fill-current" />
               <span>@casa.yen</span>
             </a>
           </div>
