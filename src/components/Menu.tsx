@@ -36,16 +36,29 @@ export function Menu({ items, onClose }: MenuProps) {
 
       <StarsSVG className="mx-auto mb-3 mt-6 h-6 w-6" />
 
-      <Button variant="secondary">
-        <a
-          className="flex h-full items-center justify-center"
-          href="https://shop.casayen.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          IR AL SHOP ONLINE →
-        </a>
-      </Button>
+      <div className="flex flex-col gap-4">
+        <Button variant="secondary">
+          <a
+            className="flex h-full items-center justify-center"
+            href="https://shop.casayen.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            SHOP ARGENTINA →
+          </a>
+        </Button>
+
+        <Button variant="secondary">
+          <a
+            className="flex h-full items-center justify-center"
+            href="https://europe.casayen.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            SHOP EUROPA →
+          </a>
+        </Button>
+      </div>
 
       <ul className="mt-12 space-y-6">
         {items.map((link, index) => (
