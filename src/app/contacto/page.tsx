@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function Contacto() {
   return (
-    <section className="relative mt-10 xl:mt-[6.5rem]">
+    <section className="relative mt-10 xl:mt-[7.5rem]">
       <div className="mx-5 uppercase text-primary-blue sm:mx-10 lg:mx-20 xl:mx-10">
         <div className="flex items-baseline justify-between border-y border-primary-blue pb-3 pt-7">
           <div className="hidden xl:block xl:self-center">
