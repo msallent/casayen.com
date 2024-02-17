@@ -37,10 +37,7 @@ export default async function Programas() {
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={programasCollection.items.map<Event>((programa) => ({
-        ...programa,
-        type: 'programa',
-      }))}
+      events={programasCollection.items.map((programa) => ({ ...programa, type: 'programa' }))}
     />
   );
 }

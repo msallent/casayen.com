@@ -38,7 +38,7 @@ export default async function Sesiones() {
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={sesionesCollection.items.map<Event>((sesion) => ({ ...sesion, type: 'sesion' }))}
+      events={sesionesCollection.items.map((sesion) => ({ ...sesion, type: 'sesion' }))}
     />
   );
 }

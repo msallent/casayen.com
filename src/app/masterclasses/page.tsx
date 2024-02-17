@@ -37,7 +37,7 @@ export default async function Masterclasses() {
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={masterclassesCollection.items.map<Event>((masterclass) => ({
+      events={masterclassesCollection.items.map((masterclass) => ({
         ...masterclass,
         type: 'taller',
       }))}

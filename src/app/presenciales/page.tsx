@@ -37,7 +37,7 @@ export default async function Presenciales() {
       title={title}
       subtitle={subtitle}
       disclaimer={disclaimer}
-      events={presencialesCollection.items.map<Event>((presencial) => ({
+      events={presencialesCollection.items.map((presencial) => ({
         ...presencial,
         type: 'encuentro',
       }))}
