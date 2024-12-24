@@ -78,10 +78,10 @@ export type PageMasterclassesData = {
   };
 };
 
-export type PageSesionesData = {
-  pageSesiones: ContentfulPage & {
+export type PagePacksData = {
+  pagePacks: ContentfulPage & {
     disclaimer?: string;
-    sesionesCollection: {
+    packsCollection: {
       items: Array<Event>;
     };
   };
@@ -155,7 +155,7 @@ export type Event = {
   photosFifthRowCollection: {
     items: Array<ContentfulAsset>;
   };
-  type: 'encuentro' | 'programa' | 'sesion' | 'taller';
+  type: 'encuentro' | 'pack' | 'programa' | 'taller';
 };
 
 export type BlogPost = {

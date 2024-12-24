@@ -4,8 +4,8 @@ export const tags = {
   faq: 'pageFaq',
   home: 'pageHome',
   masterclasses: 'pageMasterclasses',
+  packs: 'pagePacks',
   presenciales: 'pagePresenciales',
   programas: 'pageProgramas',
-  sesiones: 'pageSesiones',
   yen: 'pageYen',
 } as const;
