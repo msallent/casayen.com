@@ -90,7 +90,7 @@ export default async function Home() {
               †
             </div>
 
-            <Balancer className="2xl:w-[50%]">
+            <Balancer className="2xl:w-1/2">
               Un espacio para la liberación del cuerpo y el corazón, la recuperación del placer, la
               soberanía y la autogestión.{' '}
               <span className="font-serif italic">

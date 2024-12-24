@@ -35,7 +35,7 @@ export default function Contacto() {
           <Globes2SVG className="h-5 xl:h-10" />
           <div className="relative flex items-center">
             <Title>comentarios?</Title>
-            <div className="font-title-full absolute left-[-1.75rem] top-[-0.75rem] rotate-90 text-[2rem] xl:left-[-3.75rem] xl:top-[-2.25rem] xl:text-7xl">
+            <div className="font-title-full absolute -left-7 -top-3 rotate-90 text-[2rem] xl:-top-9 xl:left-[-3.75rem] xl:text-7xl">
               ‡
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Contacto() {
           </div>
           <div className="relative flex items-center xl:mr-20">
             <Title>→→ hablemos</Title>
-            <EllipsisSVG className="absolute right-[-3rem] top-[-1rem] w-full xl:right-[-8rem] xl:top-[-2rem] xl:w-[110%]" />
+            <EllipsisSVG className="absolute -right-12 -top-4 w-full xl:-right-32 xl:-top-8 xl:w-[110%]" />
           </div>
         </div>
 

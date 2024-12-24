@@ -45,7 +45,7 @@ export function Shop() {
   return (
     <section
       ref={containerRef}
-      className="relative mt-40 cursor-none pb-20 sm:mt-64 xl:mt-[24rem] xl:pb-40"
+      className="relative mt-40 cursor-none pb-20 sm:mt-64 xl:mt-96 xl:pb-40"
     >
       <RunesSVG className="absolute -top-12 mx-5 sm:-top-16 sm:mx-10 lg:mx-20 xl:hidden" />
       <RunesLargeSVG className="hidden xl:absolute xl:inset-x-20 xl:-top-24 xl:block 2xl:inset-x-36 2xl:-top-36" />
@@ -94,7 +94,7 @@ export function Shop() {
             initial={{ scale: 0, opacity: 0 }}
             exit={{ scale: 0, opacity: 0, transition: { duration: 0.25 } }}
             variants={variants}
-            className="absolute left-0 top-0 z-10 flex h-52 w-52 origin-center flex-col items-center justify-center rounded-full bg-primary-black font-serif leading-tight text-secondary-white"
+            className="absolute left-0 top-0 z-10 flex size-52 origin-center flex-col items-center justify-center rounded-full bg-primary-black font-serif leading-tight text-secondary-white"
             href="https://shop.casayen.com"
             target="_blank"
             rel="noreferrer"

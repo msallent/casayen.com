@@ -18,7 +18,7 @@ export function Hero() {
         </div>
         <h1>VIAJE</h1>
         <EllipsisSVG className="pointer-events-none absolute left-[4%] top-[-30%] z-10 w-[16.5rem] lg:left-[9%] lg:top-[-55%] lg:w-[26rem] xl:left-[6%] xl:top-[-38%] 2xl:left-[4%] 2xl:top-[-40%] 2xl:w-[28rem] 3xl:left-[3%] 3xl:top-[-30%] 3xl:w-[30rem]" />
-        <Stars1SVG className="pointer-events-none absolute left-[87%] top-[-60%] z-10 w-12 sm:left-[75%] md:left-[73%] md:w-14 lg:left-[74%] lg:top-[-68%] lg:w-24 xl:left-[53%] xl:top-[-62%] 2xl:left-[48%] 3xl:left-[45.5%] 3xl:w-28" />
+        <Stars1SVG className="pointer-events-none absolute left-[87%] top-[-60%] z-10 w-12 sm:left-3/4 md:left-[73%] md:w-14 lg:left-[74%] lg:top-[-68%] lg:w-24 xl:left-[53%] xl:top-[-62%] 2xl:left-[48%] 3xl:left-[45.5%] 3xl:w-28" />
       </div>
 
       <div className="sm:hidden">
@@ -36,9 +36,9 @@ export function Hero() {
         <h1>INTERGALACTICO DE</h1>
         <h1>REPROGRAMACION</h1>
         <h1 className="sm:relative">
-          <YenSloganSVG className="hidden xl:absolute xl:left-[21%] xl:block xl:w-44 2xl:left-[25%] 2xl:w-48 3xl:left-[26%] 3xl:w-52" />
+          <YenSloganSVG className="hidden xl:absolute xl:left-[21%] xl:block xl:w-44 2xl:left-1/4 2xl:w-48 3xl:left-[26%] 3xl:w-52" />
           <span>SEXUAL</span>
-          <div className="sm:absolute sm:right-[28%] sm:top-[-54%] sm:rotate-90 sm:text-[3rem] lg:text-[4rem] xl:right-[34%] xl:top-[-50%] xl:text-[4.5rem] 2xl:right-[36%] 2xl:text-[6rem]">
+          <div className="sm:absolute sm:right-[28%] sm:top-[-54%] sm:rotate-90 sm:text-[3rem] lg:text-[4rem] xl:-top-1/2 xl:right-[34%] xl:text-[4.5rem] 2xl:right-[36%] 2xl:text-[6rem]">
             ‡
           </div>
         </h1>
