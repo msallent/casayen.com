@@ -30,7 +30,7 @@ export default async function Sesiones() {
       }
     }
   }`,
-    { next: { tags: [tags.packs] } }
+    { next: { tags: [tags.packs] } },
   );
 
   return (

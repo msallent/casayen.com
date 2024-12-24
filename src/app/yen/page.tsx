@@ -42,7 +42,7 @@ export default async function Yen() {
       }
     }
   }`,
-    { next: { tags: [tags.yen] } }
+    { next: { tags: [tags.yen] } },
   );
 
   return (

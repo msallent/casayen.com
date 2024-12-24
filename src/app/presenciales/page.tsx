@@ -29,7 +29,7 @@ export default async function Presenciales() {
       }
     }
   }`,
-    { next: { tags: [tags.presenciales] } }
+    { next: { tags: [tags.presenciales] } },
   );
 
   return (

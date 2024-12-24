@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettify": "prettier --write \"src/**/*\"",
+    "prettify": "prettier --write \"src/**/*.ts?(x)\"",
     "prepare": "husky install"
   },
   "dependencies": {

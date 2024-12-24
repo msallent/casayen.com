@@ -24,7 +24,7 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
           aria-label="Cerrar menu"
           onClick={onClose}
         >
-          <CloseSVG className="h-8 w-8 text-primary-blue" />
+          <CloseSVG className="size-8 text-primary-blue" />
         </button>
 
         <div className="flex flex-col items-center justify-center text-primary-blue">
@@ -90,7 +90,7 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
           aria-hidden
           src={backgroundGradient}
           alt="Background gradient"
-          className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full"
+          className="pointer-events-none absolute left-0 top-0 -z-10 size-full"
           placeholder="blur"
         />
 
@@ -98,13 +98,13 @@ export function ModalBuy({ event, onClose }: ModalBuyProps) {
           aria-hidden
           src={backgroundGradient}
           alt="Background gradient"
-          className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full rotate-180"
+          className="pointer-events-none absolute left-0 top-0 -z-10 size-full rotate-180"
           placeholder="blur"
         />
       </div>
 
       <div className="fixed inset-0 z-10 bg-primary-black opacity-80" onClick={onClose} />
     </>,
-    document.body
+    document.body,
   );
 }

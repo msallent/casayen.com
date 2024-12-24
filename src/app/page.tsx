@@ -36,7 +36,7 @@ export default async function Home() {
       }
     }
   }`,
-    { next: { tags: [tags.home] } }
+    { next: { tags: [tags.home] } },
   );
 
   return (
@@ -79,7 +79,7 @@ export default async function Home() {
         <div className="relative text-center">
           <div className="mb-4 xl:text-xl">¿QUÉ ES YEN?</div>
 
-          <div className="2xl:mx-auto 2xl:w-[60%]">
+          <div className="2xl:mx-auto 2xl:w-3/5">
             <Title>
               <Balancer>Yen es un proyecto de Sexualidad Consciente</Balancer>
             </Title>
@@ -126,7 +126,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="relative mt-44 text-primary-blue sm:mt-52 xl:mt-[24rem]">
+      <section className="relative mt-44 text-primary-blue sm:mt-52 xl:mt-96">
         <div className="mx-5 sm:mx-10 lg:mx-20 xl:mx-32 xl:flex xl:items-center xl:justify-between 2xl:mx-56">
           <div className="flex flex-col">
             <span className="leading-5">UNITE AL</span>
@@ -135,9 +135,9 @@ export default async function Home() {
           </div>
 
           <div className="relative mb-16 mt-9 xl:my-0">
-            <GlobeSVG className="mx-auto h-14 w-14" />
+            <GlobeSVG className="mx-auto size-14" />
             <EllipsisSVG className="inset-center absolute h-[25rem]" />
-            <TextEllipsisSVG className="inset-center absolute h-[20rem]" />
+            <TextEllipsisSVG className="inset-center absolute h-80" />
           </div>
 
           <div className="flex flex-col">

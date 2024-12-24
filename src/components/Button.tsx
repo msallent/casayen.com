@@ -17,7 +17,7 @@ export function Button({ children, variant = 'primary', onClick }: ButtonProps) 
       className={classNames(
         'w-full h-16 rounded-sm font-serif font-medium uppercase tracking-[0.075em] [text-shadow:0_0_7px_rgba(255,255,255,0.65)] text-secondary-white xl:h-12 xl:min-w-[14rem] xl:px-6',
         { 'bg-primary-blue': variant === 'primary' },
-        { 'bg-primary-black': variant === 'secondary' }
+        { 'bg-primary-black': variant === 'secondary' },
       )}
     >
       {children}

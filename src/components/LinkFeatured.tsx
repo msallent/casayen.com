@@ -19,7 +19,7 @@ export function LinkFeatured({ href, index, children, isLast }: LinkProps) {
         href={href}
         className={classNames(
           'relative w-full border-t border-primary-blue pt-8 pb-4 text-center hover:text-secondary-white xl:mx-auto xl:w-[45rem] xl:pt-10 xl:pb-6',
-          { 'border-b': isLast }
+          { 'border-b': isLast },
         )}
       >
         <span className="absolute top-6 font-sans text-xs xl:top-8">

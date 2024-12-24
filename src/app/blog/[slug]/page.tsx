@@ -49,7 +49,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
       }
     }
   }`,
-    { next: { tags: [tags.blogPost] } }
+    { next: { tags: [tags.blogPost] } },
   );
 
   return (
@@ -58,7 +58,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         <Image
           src={previewBlogPostPlaceholderImage}
           alt="Blog post"
-          className="h-full w-full object-cover brightness-75"
+          className="size-full object-cover brightness-75"
           placeholder="blur"
         />
 
@@ -93,7 +93,7 @@ export async function generateStaticParams() {
       }
     }
   }`,
-    { next: { tags: [tags.blogPost] } }
+    { next: { tags: [tags.blogPost] } },
   );
 
   return pageBlogPostCollection.items.map((blogPost) => ({

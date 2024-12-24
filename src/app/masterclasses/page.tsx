@@ -29,7 +29,7 @@ export default async function Masterclasses() {
       }
     }
   }`,
-    { next: { tags: [tags.masterclasses] } }
+    { next: { tags: [tags.masterclasses] } },
   );
 
   return (

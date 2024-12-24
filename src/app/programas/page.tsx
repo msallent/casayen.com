@@ -29,7 +29,7 @@ export default async function Programas() {
       }
     }
   }`,
-    { next: { tags: [tags.programas] } }
+    { next: { tags: [tags.programas] } },
   );
 
   return (

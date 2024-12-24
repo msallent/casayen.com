@@ -26,7 +26,7 @@ export function Title({ size = 'default', variant = 'primary', withHover, childr
         },
         { 'text-primary-blue': variant === 'primary' },
         { 'text-primary-black': variant === 'secondary' },
-        { 'hover:text-secondary-white': withHover }
+        { 'hover:text-secondary-white': withHover },
       )}
     >
       {children}

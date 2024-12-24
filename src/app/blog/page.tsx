@@ -27,7 +27,7 @@ export default async function Blog() {
       }
     }
   }`,
-    { next: { tags: [tags.blog, tags.blogPost] } }
+    { next: { tags: [tags.blog, tags.blogPost] } },
   );
 
   return (

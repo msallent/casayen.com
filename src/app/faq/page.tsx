@@ -38,7 +38,7 @@ export default async function FAQ() {
       }
     }
   }`,
-    { next: { tags: [tags.faq] } }
+    { next: { tags: [tags.faq] } },
   );
 
   return (

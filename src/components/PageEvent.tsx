@@ -27,7 +27,7 @@ export function PageEvent({ title, subtitle, disclaimer, events }: PageEvent) {
       <div
         className={classNames(
           'mb-28 border-b border-primary-blue',
-          disclaimer ? 'mt-5' : 'mt-14 xl:mt-24'
+          disclaimer ? 'mt-5' : 'mt-14 xl:mt-24',
         )}
       >
         {events.map((event, index) => (

@@ -14,7 +14,7 @@ export function TitlePage({ title, subtitle, vertical }: TitlePageProps) {
     <div
       className={classNames(
         'flex flex-col items-center justify-center text-center uppercase text-primary-blue',
-        { 'xl:relative xl:items-start xl:text-left': vertical }
+        { 'xl:relative xl:items-start xl:text-left': vertical },
       )}
     >
       <StarsSVG
@@ -22,7 +22,7 @@ export function TitlePage({ title, subtitle, vertical }: TitlePageProps) {
           'mx-auto mb-4 mt-2 h-6 w-6 xl:mt-0 xl:h-10 xl:w-10 2xl:h-16 2xl:w-16',
           vertical
             ? 'xl:absolute xl:right-0 xl:-top-8 xl:mb-0 2xl:-right-8 2xl:-top-14 3xl:right-0'
-            : 'xl:mb-8'
+            : 'xl:mb-8',
         )}
       />
       <Title>{title}</Title>

@@ -12,7 +12,7 @@ export async function fetchContent<T = any>(query: string, init?: RequestInit) {
       },
       body: JSON.stringify({ query }),
       ...init,
-    }
+    },
   );
 
   return response.json() as Promise<ContentfulResponse<T>>;

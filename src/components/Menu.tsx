@@ -30,11 +30,11 @@ export function Menu({ items, onClose }: MenuProps) {
         <YenLogoSVG className="h-8" />
 
         <button type="button" aria-label="Cerrar menu" onClick={onClose}>
-          <CloseSVG className="h-8 w-8 text-white" />
+          <CloseSVG className="size-8 text-white" />
         </button>
       </div>
 
-      <StarsSVG className="mx-auto mb-3 mt-6 h-6 w-6" />
+      <StarsSVG className="mx-auto mb-3 mt-6 size-6" />
 
       <div className="flex flex-col gap-4">
         <Button variant="secondary">
@@ -68,6 +68,6 @@ export function Menu({ items, onClose }: MenuProps) {
         ))}
       </ul>
     </div>,
-    document.body
+    document.body,
   );
 }
