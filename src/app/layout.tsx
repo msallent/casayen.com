@@ -49,6 +49,7 @@ export default async function Layout({ children }: LayoutProps) {
           items {
             label
             url
+            external
           }
         }
       }

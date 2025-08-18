@@ -122,7 +122,8 @@ export type PageFAQData = {
 
 export type Link = {
   label: string;
-  url: `/${string}`;
+  url: string;
+  external: boolean;
 };
 
 export type Event = {

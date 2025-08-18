@@ -32,6 +32,7 @@ export default async function Home() {
         items {
           label
           url
+          external
         }
       }
     }
@@ -169,6 +170,7 @@ export default async function Home() {
               <LinkFeatured
                 href={link.url}
                 index={index + 1}
+                external={link.external}
                 isLast={index === featuredLinksCollection.items.length - 1}
               >
                 {link.label}

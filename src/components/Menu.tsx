@@ -47,23 +47,14 @@ export function Menu({ items, onClose }: MenuProps) {
             SHOP ARGENTINA →
           </a>
         </Button>
-
-        <Button variant="secondary">
-          <a
-            className="flex h-full items-center justify-center"
-            href="https://europe.casayen.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            SHOP EUROPA →
-          </a>
-        </Button>
       </div>
 
       <ul className="mt-12 space-y-6">
         {items.map((link, index) => (
           <li key={index}>
-            <Link href={link.url}>{link.label}</Link>
+            <Link href={link.url} external={link.external}>
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>
