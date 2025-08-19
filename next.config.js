@@ -17,6 +17,40 @@ const nextConfig = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/masterclasses',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/packs',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/presenciales',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/programas',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
